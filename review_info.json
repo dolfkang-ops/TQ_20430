@@ -1,0 +1,133 @@
+{
+  "code": 200,
+  "message": null,
+  "data": {
+    "campSeq": 20430,
+    "campName": "더선셋 캠핑장",
+    "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+    "score": 4.6,
+    "reviewCount": 60,
+    "likedList": [
+      {
+        "code": "RT000",
+        "value": "뷰맛집",
+        "count": 48
+      },
+      {
+        "code": "RT008",
+        "value": "친절한캠지기",
+        "count": 34
+      },
+      {
+        "code": "RC000",
+        "value": "연인/배우자",
+        "count": 22
+      },
+      {
+        "code": "RT006",
+        "value": "넓은사이트간격",
+        "count": 22
+      },
+      {
+        "code": "RT001",
+        "value": "힐링스팟",
+        "count": 19
+      },
+      {
+        "code": "RT009",
+        "value": "매너타임엄수",
+        "count": 18
+      },
+      {
+        "code": "RC002",
+        "value": "아이",
+        "count": 18
+      },
+      {
+        "code": "RT020",
+        "value": "깔끔깨끗",
+        "count": 17
+      },
+      {
+        "code": "RT003",
+        "value": "인생사진",
+        "count": 16
+      },
+      {
+        "code": "RT002",
+        "value": "조용한분위기",
+        "count": 10
+      },
+      {
+        "code": "RT023",
+        "value": "공용시설굿",
+        "count": 9
+      },
+      {
+        "code": "RT005",
+        "value": "럭셔리",
+        "count": 8
+      },
+      {
+        "code": "RT014",
+        "value": "온수콸콸",
+        "count": 8
+      },
+      {
+        "code": "RC001",
+        "value": "친구",
+        "count": 5
+      },
+      {
+        "code": "RC003",
+        "value": "지인",
+        "count": 5
+      },
+      {
+        "code": "RC006",
+        "value": "혼자",
+        "count": 5
+      },
+      {
+        "code": "RT018",
+        "value": "주차장최고",
+        "count": 5
+      },
+      {
+        "code": "RT021",
+        "value": "개수대굿",
+        "count": 4
+      },
+      {
+        "code": "RT011",
+        "value": "전기빵빵",
+        "count": 2
+      },
+      {
+        "code": "RT016",
+        "value": "냉난방빵빵",
+        "count": 2
+      },
+      {
+        "code": "RT015",
+        "value": "벌레제로",
+        "count": 1
+      },
+      {
+        "code": "RC005",
+        "value": "부모님",
+        "count": 1
+      },
+      {
+        "code": "RT013",
+        "value": "인테리어굿",
+        "count": 1
+      },
+      {
+        "code": "RC004",
+        "value": "친척/형제",
+        "count": 1
+      }
+    ]
+  }
+}

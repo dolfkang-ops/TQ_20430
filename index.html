@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>더선셋 캠핑장 | 서해의 붉은 노을과 바다, 그리고 감성 힐링</title>
+  <meta name="description" content="충남 홍성 남당항 앞바다, 서해의 황홀한 붉은 낙조와 시원한 파도 소리를 품은 오션뷰 힐링 캠핑장 '더선셋 캠핑장' 공식 안내 페이지">
+  
+  <!-- Favicon & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External Clean Modular CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="logo">
+          <div class="logo-badge">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">더선셋 캠핑장</span>
+            <span class="logo-sub">The Sunset Camping</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" onclick="closeMobileNav()">캠핑장 소개</a></li>
+          <li><a href="#scenery" onclick="closeMobileNav()">풍경 갤러리</a></li>
+          <li><a href="#sites" onclick="closeMobileNav()">사이트 &amp; 배치도</a></li>
+          <li><a href="#facilities" onclick="closeMobileNav()">부대시설</a></li>
+          <li><a href="#reviews" onclick="closeMobileNav()">실제 이용후기</a></li>
+          <li><a href="#attractions" onclick="closeMobileNav()">주변 관광지</a></li>
+          <li><a href="#guide" onclick="closeMobileNav()">이용수칙</a></li>
+          <li><a href="#location" onclick="closeMobileNav()">오시는 길</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="https://m.thankqcamping.com/resv/view.hbb?cseq=20430" target="_blank" rel="noopener" class="btn-reserve">
+            <i class="fa-solid fa-calendar-check"></i> 실시간 예약
+          </a>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" onclick="toggleMobileNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <i class="fa-solid fa-location-dot"></i> 충남 홍성 남당항로 오션뷰 감성 캠핑
+      </div>
+      <h1 class="hero-title">
+        바다와 붉은 노을,<br>
+        <span class="highlight">예술과 쉼이 머무는 곳</span>
+      </h1>
+      <p class="hero-desc">
+        텐트 문을 여는 순간 펼쳐지는 서해의 극적인 붉은 낙조와 시원한 파도소리.<br>
+        50개 사이트의 여유로운 공간에서 자연과 예술이 주는 온전한 힐링을 경험해보세요.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://m.thankqcamping.com/resv/view.hbb?cseq=20430" target="_blank" rel="noopener" class="btn-hero-primary">
+          <i class="fa-solid fa-calendar-check"></i> 땡큐캠핑 실시간 예약하기
+        </a>
+        <a href="#scenery" class="btn-hero-secondary">
+          <i class="fa-solid fa-images"></i> 멋진 풍경 둘러보기
+        </a>
+      </div>
+
+      <!-- Quick Highlights Bar -->
+      <div class="highlights-bar">
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-water"></i></div>
+          <div class="highlight-info">
+            <h4>전 사이트 오션뷰</h4>
+            <p>서해 낙조 직관 명당</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-campground"></i></div>
+          <div class="highlight-info">
+            <h4>총 50개 사이트</h4>
+            <p>오토캠핑 · 캠핑카 · 반려견</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+          <div class="highlight-info">
+            <h4>갤러리 &amp; 카페</h4>
+            <p>1박당 무료음료 쿠폰 증정</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="highlight-info">
+            <h4>평점 4.6 칭찬후기</h4>
+            <p>땡큐캠핑 실제 캠퍼 추천</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-main-img">
+            <img src="images/camp1.jpg" alt="더선셋 캠핑장 전경">
+          </div>
+          <div class="about-floating-card">
+            <div class="floating-badge">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="floating-text">
+              <h5>Gallery &amp; Coffee</h5>
+              <p>세계 명소 사진전 &amp; 바다 전망 카페</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">About The Sunset</span>
+          <h3>서해바다를 가장 완벽하게 품은<br>볼거리와 쉼의 안식처</h3>
+          <p>
+            충남 홍성군 서부면 남당항 해안선 바로 앞에 자리잡은 <strong>더선셋 캠핑장</strong>은 
+            텐트를 치고 의자에 앉는 것만으로 눈부신 서해 바다와 주홍빛 노을을 정면에서 마주할 수 있는 특별한 힐링 공간입니다.
+          </p>
+          <p>
+            초록빛 조경과 서해 바다 곁에 둘레길 산책로가 조성되어 있으며, 
+            캠핑장 내 파라솔 벤치에 가만히 앉아 바다를 바라보는 것만으로도 복잡한 일상의 피로가 씻겨 내려갑니다.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-card">
+              <i class="fa-solid fa-sun"></i>
+              <h5>서해 낙조 파노라마</h5>
+              <p>하루 중 가장 아름다운 골든아워, 텐트 앞에서 황홀한 붉은 노을 감상</p>
+            </div>
+            <div class="feature-card">
+              <i class="fa-solid fa-tree"></i>
+              <h5>해안 둘레길 산책로</h5>
+              <p>바다 바람과 야자매트를 따라 여유롭게 걷는 힐링 산책로 및 루프탑</p>
+            </div>
+            <div class="feature-card">
+              <i class="fa-solid fa-palette"></i>
+              <h5>예술이 흐르는 갤러리</h5>
+              <p>전문 사진작가의 세계 명소 작품들을 커피 한 잔과 함께 감상</p>
+            </div>
+            <div class="feature-card">
+              <i class="fa-solid fa-paw"></i>
+              <h5>반려견 전용 존 (E)</h5>
+              <p>사랑하는 반려견과 함께 바다를 즐길 수 있는 안심 펫 프렌들리 구역</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scenery Gallery Section -->
+  <section id="scenery" class="scenery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Breathtaking Views</span>
+        <h2 class="section-title">더선셋이 빚어내는 황홀한 풍경</h2>
+        <p class="section-desc">낮에는 푸른 서해바다의 청량함을, 해질녘에는 온 세상을 붉게 물들이는 극적인 낙조를 만나보세요.</p>
+      </div>
+
+      <div class="gallery-filter">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">전체보기</button>
+        <button class="filter-btn" onclick="filterGallery('sunset', this)">황홀한 노을</button>
+        <button class="filter-btn" onclick="filterGallery('ocean', this)">오션뷰 캠핑</button>
+        <button class="filter-btn" onclick="filterGallery('cafe', this)">갤러리 &amp; 시설</button>
+      </div>
+
+      <div class="gallery-masonry" id="galleryGrid">
+        <!-- Item 1 (Large) -->
+        <div class="gallery-item large" data-category="sunset" onclick="openModal('images/camp11.jpg')">
+          <img src="images/camp11.jpg" alt="더선셋 노을 전경">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Sunset Highlight</span>
+            <h4 class="gallery-title">서해를 수놓는 황금빛 노을</h4>
+            <p class="gallery-sub">사이트 바로 앞에서 펼쳐지는 감동적인 골든아워</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="ocean" onclick="openModal('images/camp2.jpg')">
+          <img src="images/camp2.jpg" alt="캠핑장 사이트 바다 조망">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Ocean View</span>
+            <h4 class="gallery-title">청량한 바다와 사이트</h4>
+            <p class="gallery-sub">탁 트인 수평선이 안겨주는 힐링</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="sunset" onclick="openModal('images/camp13.jpg')">
+          <img src="images/camp13.jpg" alt="붉은 노을 하늘">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Golden Hour</span>
+            <h4 class="gallery-title">주홍빛 하늘과 텐트 실루엣</h4>
+            <p class="gallery-sub">더선셋에서만 담을 수 있는 인생샷</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="sunset" onclick="openModal('images/camp14.jpg')">
+          <img src="images/camp14.jpg" alt="낙조 풍경">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Twilight</span>
+            <h4 class="gallery-title">바다로 내려앉는 태양</h4>
+            <p class="gallery-sub">하루를 고요하게 매듭짓는 사색의 시간</p>
+          </div>
+        </div>
+
+        <!-- Item 5 (Large) -->
+        <div class="gallery-item large" data-category="ocean" onclick="openModal('images/camp4.jpg')">
+          <img src="images/camp4.jpg" alt="바다 산책로">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Walking Path</span>
+            <h4 class="gallery-title">바닷바람 솔솔 부는 둘레길</h4>
+            <p class="gallery-sub">파라솔 벤치와 야자매트 산책로</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="cafe" onclick="openModal('images/camp3.jpg')">
+          <img src="images/camp3.jpg" alt="더선셋 갤러리앤커피">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Gallery &amp; Coffee</span>
+            <h4 class="gallery-title">더선셋 갤러리 카페</h4>
+            <p class="gallery-sub">예술 사진 작품 감상과 프리미엄 커피</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item" data-category="sunset" onclick="openModal('images/camp16.jpg')">
+          <img src="images/camp16.jpg" alt="노을 빛 야경">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Romantic Night</span>
+            <h4 class="gallery-title">황혼에서 밤으로 이어지는 낭만</h4>
+            <p class="gallery-sub">랜턴 불빛 아래 피어나는 캠핑의 감성</p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item" data-category="ocean" onclick="openModal('images/camp7.jpg')">
+          <img src="images/camp7.jpg" alt="캠핑 사이트 모습">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Camping Life</span>
+            <h4 class="gallery-title">자연 속에 머무는 완벽한 쉼</h4>
+            <p class="gallery-sub">정갈하게 정돈된 파쇄석 사이트</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sites & Layout Map Section -->
+  <section id="sites">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Camping Zones</span>
+        <h2 class="section-title">사이트 안내 &amp; 전체 배치도</h2>
+        <p class="section-desc">총 50개 사이트로 여유롭게 구성된 다양한 테마 구역을 확인해보세요.</p>
+      </div>
+
+      <!-- Site Map Display -->
+      <div class="site-map-container">
+        <div class="map-wrapper" onclick="openModal('images/map.jpg')">
+          <img src="images/map.jpg" alt="더선셋 캠핑장 전체 배치도">
+        </div>
+        <div class="map-toolbar">
+          <span><i class="fa-solid fa-circle-info"></i> 이미지를 클릭하시면 고화질 배치도를 크게 확대하여 보실 수 있습니다.</span>
+          <button class="btn-view-map" onclick="openModal('images/map.jpg')">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i> 배치도 크게보기
+          </button>
+        </div>
+      </div>
+
+      <!-- Zone Information Cards -->
+      <div class="zones-grid">
+        <!-- Zone A -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-badge-wrap">
+              <h3 class="zone-name">A 사이트</h3>
+              <span class="zone-tag tag-camper">차박 · 카라반 가능</span>
+            </div>
+            <p class="zone-desc">바다 조망과 함께 사이트 옆 1대 주차가 가능하며 카라반/캠핑카 진입이 가능한 구역입니다.</p>
+          </div>
+          <ul class="zone-specs">
+            <li><i class="fa-solid fa-check"></i> <strong>A1~A5, A12:</strong> 캠핑카 · 카라반 (400~600급) 가능</li>
+            <li><i class="fa-solid fa-check"></i> 사이트 바로 옆 1대 주차 가능</li>
+            <li><i class="fa-solid fa-check"></i> 바다와 근접한 탁 트인 조망권</li>
+          </ul>
+        </div>
+
+        <!-- Zone B & C & D -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-badge-wrap">
+              <h3 class="zone-name">B · C · D 사이트</h3>
+              <span class="zone-tag tag-ocean">오션뷰 명당</span>
+            </div>
+            <p class="zone-desc">차량 진입 소음 없이 고요하게 바다와 낙조를 만끽할 수 있는 텐트 전용 오토캠핑 사이트입니다.</p>
+          </div>
+          <ul class="zone-specs">
+            <li><i class="fa-solid fa-check"></i> 일반 텐트 전용 (1사이트 당 1텐트 + 1타프)</li>
+            <li><i class="fa-solid fa-check"></i> 차량은 전용 주차장에 안전하게 주차</li>
+            <li><i class="fa-solid fa-check"></i> 바다 산책로와 가까워 힐링에 최적화</li>
+          </ul>
+        </div>
+
+        <!-- Zone E (Pet) -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-badge-wrap">
+              <h3 class="zone-name">E 사이트</h3>
+              <span class="zone-tag tag-pet">반려견 동반 전용</span>
+            </div>
+            <p class="zone-desc">사랑하는 반려견과 함께 머무를 수 있는 단독 지정 펫 프렌들리 구역입니다.</p>
+          </div>
+          <ul class="zone-specs">
+            <li><i class="fa-solid fa-check"></i> 10kg 미만 소형견 동반 가능 (리드줄 필수)</li>
+            <li><i class="fa-solid fa-check"></i> <strong>중요:</strong> 캠핑장 내 타 구역 출입 불가(E사이트 내 체류)</li>
+            <li><i class="fa-solid fa-check"></i> 반려견을 위한 개인 펜스 설치 권장</li>
+          </ul>
+        </div>
+
+        <!-- Zone F & P -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-badge-wrap">
+              <h3 class="zone-name">F &amp; P 사이트</h3>
+              <span class="zone-tag tag-standard">두가족 &amp; 카라반</span>
+            </div>
+            <p class="zone-desc">두 가족이 함께 캠핑을 즐길 수 있는 전용 사이트 및 여유로운 대형 사이트입니다.</p>
+          </div>
+          <ul class="zone-specs">
+            <li><i class="fa-solid fa-check"></i> <strong>F2 (두가족 사이트):</strong> 2텐트 피칭 &amp; 정원 8인 가능</li>
+            <li><i class="fa-solid fa-check"></i> <strong>F5, P2, P3:</strong> 캠핑카 및 트레일러 진입 가능</li>
+            <li><i class="fa-solid fa-check"></i> F구역 사이트 옆 1대 주차 가능</li>
+          </ul>
+        </div>
+
+        <!-- Zone G & H -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-badge-wrap">
+              <h3 class="zone-name">G &amp; H 사이트</h3>
+              <span class="zone-tag tag-standard">아늑한 숲/바다 조망</span>
+            </div>
+            <p class="zone-desc">편의시설 접근성이 우수하고 쾌적하며 동계 장박으로도 인기 높은 사이트입니다.</p>
+          </div>
+          <ul class="zone-specs">
+            <li><i class="fa-solid fa-check"></i> 일반 텐트 전용 구역</li>
+            <li><i class="fa-solid fa-check"></i> <strong>H1~H6:</strong> 26-27 동계 장박 운영 지정 사이트</li>
+            <li><i class="fa-solid fa-check"></i> 화장실, 개수대, 관리동 이용 편리</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Convenient Amenities</span>
+        <h2 class="section-title">쾌적하고 청결한 편의시설</h2>
+        <p class="section-desc">호텔 수준의 청결함을 유지하는 공용시설과 머무름을 풍성하게 하는 부대시설</p>
+      </div>
+
+      <div class="facility-grid">
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-shower"></i></div>
+          <h4>온수 샤워장 (에어컨 완비)</h4>
+          <p>08:00 ~ 22:00 상시 운영<br>샴푸, 린스, 비누 비치 &amp; 쾌적한 냉난방</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-sink"></i></div>
+          <h4>실내 개수대 &amp; 공용냉장고</h4>
+          <p>개별 음식물 분리수거함 구비<br>화로대 전용 세척장 별도 운영</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-store"></i></div>
+          <h4>캠핑 매점 (A관리동)</h4>
+          <p>장작, 얼음, 제철 대하, 홍성 한돈<br>주류/음료/간식 (08:30~22:00)</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-wifi"></i></div>
+          <h4>초고속 Wi-Fi</h4>
+          <p>전 사이트 안정적인 무선 인터넷<br>스트리밍 및 업무도 쾌적하게</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-shoe-prints"></i></div>
+          <h4>해안 산책로 &amp; 야자매트</h4>
+          <p>야간 보행 소음을 줄인 야자매트길<br>파라솔 쉼터와 루프탑 전망대</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-water-ladder"></i></div>
+          <h4>서해 갯벌 해루질 체험</h4>
+          <p>캠핑장 바로 앞 갯벌 (소라, 바지락)<br>해양활동 후 모래 제거 세척 설비</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+          <h4>정기 방역 &amp; 위생소독</h4>
+          <p>월 1회 전체 방역 / 주 1회 공용시설<br>벌레 걱정 없는 위생적인 환경</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fa-solid fa-dolly"></i></div>
+          <h4>골프카트 짐 운반 지원</h4>
+          <p>차량 비진입 구역도 카트로 편안하게<br>캠퍼의 편의를 생각한 세심한 서비스</p>
+        </div>
+      </div>
+
+      <!-- Special Feature Box: Gallery Cafe -->
+      <div class="special-feature">
+        <div class="special-text">
+          <span class="section-tag">Special Benefit</span>
+          <h3>더선셋 갤러리앤커피 (Gallery &amp; Cafe)</h3>
+          <p>
+            캠핑장 바로 앞에 자리잡은 '더선셋 갤러리앤커피'는 세계 명소들의 감동적인 사진 작품들을 감상할 수 있는 문화 공간입니다.
+            더선셋 캠핑장에 머무시는 <strong>모든 캠퍼님께 1박당 무료 음료 쿠폰 1장</strong>을 증정해 드립니다.
+          </p>
+          <div class="special-tags">
+            <span><i class="fa-solid fa-ticket"></i> 사이트당 1박 1음료 무료</span>
+            <span><i class="fa-solid fa-image"></i> 세계 명소 사진전</span>
+            <span><i class="fa-solid fa-coffee"></i> 스페셜티 커피 &amp; 디저트</span>
+            <span><i class="fa-solid fa-glasses"></i> 고요한 사색의 쉼터</span>
+          </div>
+        </div>
+        <div class="special-img">
+          <img src="images/camp3.jpg" alt="갤러리 카페">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section (ThankQ Camping Real Reviews) -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Real Visitor Reviews</span>
+        <h2 class="section-title">땡큐캠핑 캠퍼들이 직접 전하는 생생 후기</h2>
+        <p class="section-desc">실제 예약하고 방문하신 캠퍼님들의 솔직한 평가와 만족도가 더선셋 캠핑장의 품격을 증명합니다.</p>
+      </div>
+
+      <!-- Review Summary Score Box -->
+      <div class="review-score-hero">
+        <div class="score-summary-left">
+          <div class="big-score-box">
+            <div class="big-score-num">4.6</div>
+            <div class="big-score-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="score-desc-box">
+            <h4>땡큐캠핑 인증 방문후기</h4>
+            <p>최근 1개월 7,816명 방문 · 200+ 예약 달성</p>
+            <p style="color: #4ade80; font-weight: 600; font-size: 0.85rem; margin-top: 4px;">
+              <i class="fa-solid fa-circle-check"></i> 방문객 만족도 최우수 캠핑장
+            </p>
+          </div>
+        </div>
+
+        <!-- Liked Keywords Cloud -->
+        <div class="liked-keywords-cloud">
+          <span class="keyword-pill"><i class="fa-solid fa-heart"></i> 깨끗해요 <b>48</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-thumbs-up"></i> 친절해요 <b>34</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-mountain-sun"></i> 뷰맛집 <b>22</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-campground"></i> 사이트가 넓어요 <b>22</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-bath"></i> 화장실이 깨끗해요 <b>19</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-volume-xmark"></i> 매너타임 준수 <b>18</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-snowflake"></i> 에어컨 쾌적해요 <b>17</b></span>
+          <span class="keyword-pill"><i class="fa-solid fa-mug-saucer"></i> 갤러리카페 힐링 <b>16</b></span>
+        </div>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="reviewer-meta">
+                  <h5>땡큐캠핑 인증 캠퍼</h5>
+                  <span>가족 캠핑 / 가오픈 첫 방문</span>
+                </div>
+              </div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-content">
+              “남당항 가면서 눈여겨보았던 신상 캠핑장인데 기대 이상으로 탁 트인 오션뷰가 환상이었습니다! 5성급 캠핑장이라고 해도 부족함 없을 정도로 편의시설이 깔끔하고, 특히 <strong>화장실, 개수대, 샤워실마다 에어컨이 설치</strong>되어 있어 감동했어요. 사장님과 직원분들도 너무 친절하시고 무료 음료 쿠폰으로 마신 커피도 시원했습니다. 남당항도 차로 5분 거리라 가족 캠핑으로 강력 추천합니다!”
+            </p>
+          </div>
+          <div class="review-badge-row">
+            <span class="badge-highlight">#5성급시설</span>
+            <span class="badge-highlight">#전시설에어컨</span>
+            <span class="badge-highlight">#남당항5분</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="reviewer-meta">
+                  <h5>C사이트 이용 캠퍼</h5>
+                  <span>남당리 대하축제 연계 방문</span>
+                </div>
+              </div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-content">
+              “지대가 높아 가슴이 뻥 뚫리는 진정한 뷰 맛집입니다. C사이트가 워낙 넓어서 대형 텐트에 타프까지 치고도 공간이 여유로웠어요. <strong>캠핑장 의자에 앉아 바라본 서해 노을은 평생 기억에 남을 정도로 장관</strong>이었습니다. 샤워실에 샴푸, 린스, 바디워시까지 기본 세팅되어 있고 아침 바다 산책로도 최고예요. 다음번에도 무조건 재방문 예약합니다!”
+            </p>
+          </div>
+          <div class="review-badge-row">
+            <span class="badge-highlight">#인생노을뷰</span>
+            <span class="badge-highlight">#넓은사이트</span>
+            <span class="badge-highlight">#어메니티완비</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="reviewer-meta">
+                  <h5>땡큐캠핑 베테랑 캠퍼</h5>
+                  <span>가을 힐링 캠핑</span>
+                </div>
+              </div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-content">
+              “사이트 옆으로 야자매트가 깔려 있어서 새벽에 화장실 갈 때 파쇄석 발자국 소리가 나지 않도록 배려하신 섬세함에 놀랐습니다. 차량 진입이 어려운 위쪽 사이트는 <strong>골프카트로 짐을 친절하게 다 실어다 주셔서</strong> 너무 편했어요. 화로대 전용 세척장까지 캠퍼 입장에서 꼼꼼하게 만든 최고의 캠핑장입니다.”
+            </p>
+          </div>
+          <div class="review-badge-row">
+            <span class="badge-highlight">#야자매트배려</span>
+            <span class="badge-highlight">#카트짐운반</span>
+            <span class="badge-highlight">#화로대세척장</span>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="reviewer-meta">
+                  <h5>아이 동반 가족 캠퍼</h5>
+                  <span>할로윈 이벤트 참여</span>
+                </div>
+              </div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-content">
+              “서울에서 3시간 걸려 찾아왔는데 피로가 싹 풀릴 만큼 완벽한 뷰맛집입니다. 사장님께서 진행해주신 할로윈 이벤트와 폴라로이드 사진 덕분에 아이들에게 잊지 못할 추억이 되었어요. 관리동 매점에 고기와 대하, 장작도 팔고 있어 든든했습니다. 가족 모두 엄지척 올렸습니다!”
+            </p>
+          </div>
+          <div class="review-badge-row">
+            <span class="badge-highlight">#키즈친화이벤트</span>
+            <span class="badge-highlight">#홍성은돈매점</span>
+            <span class="badge-highlight">#가족힐링</span>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="reviewer-meta">
+                  <h5>해루질 마니아 캠퍼</h5>
+                  <span>바다 &amp; 갯벌 체험</span>
+                </div>
+              </div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-content">
+              “캠핑장 바로 앞 갯벌에서 소라, 박하지, 바지락을 잡는 해루질이 가능해서 정말 재미있었습니다. 다녀와서 모래 씻는 곳도 잘 되어 있고, 밤 10시 매너타임도 방송과 함께 철저히 지켜져서 파도 소리 들으며 조용히 꿀잠 잤습니다. 지금까지 가본 해안 캠핑장 중 최고 1순위입니다.”
+            </p>
+          </div>
+          <div class="review-badge-row">
+            <span class="badge-highlight">#갯벌해루질</span>
+            <span class="badge-highlight">#매너타임철저</span>
+            <span class="badge-highlight">#파도소리힐링</span>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="reviewer-meta">
+                  <h5>재방문 캠퍼</h5>
+                  <span>사진 &amp; 문화 힐링</span>
+                </div>
+              </div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review-content">
+              “피칭 중 대표님께서 오늘 노을이 특별히 멋질 것 같다고 산책을 권해주셨는데, 바다 전체가 붉게 타오르는 모습에 전율이 돋았습니다. 캠핑장 입구 갤러리 카페에서 대표님이 직접 찍으신 전세계 명소 사진들도 설명과 함께 감상할 수 있어 단순한 캠핑을 넘어 품격 있는 여행이 되었습니다.”
+            </p>
+          </div>
+          <div class="review-badge-row">
+            <span class="badge-highlight">#사진갤러리카페</span>
+            <span class="badge-highlight">#대표님친절</span>
+            <span class="badge-highlight">#골든아워감동</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Attractions Section -->
+  <section id="attractions" class="attractions-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nearby Attractions</span>
+        <h2 class="section-title">더선셋 캠핑장과 함께 떠나는 서해 여행</h2>
+        <p class="section-desc">차량으로 5~15분 거리! 캠핑과 함께 즐기기 좋은 홍성 남당항과 서해안 대표 명소들을 소개합니다.</p>
+      </div>
+
+      <div class="attractions-grid">
+        <!-- Attraction 1 -->
+        <div class="attraction-card">
+          <div class="attraction-thumb">
+            <img src="images/camp4.jpg" alt="남당항 해양분수공원">
+            <span class="attraction-dist"><i class="fa-solid fa-car"></i> 차량 5분</span>
+          </div>
+          <div class="attraction-body">
+            <div>
+              <h4 class="attraction-title">홍성 남당항 &amp; 해양분수공원</h4>
+              <p class="attraction-desc">
+                서해안 대표 미식의 성지! 가을 대하축제와 겨울 새조개 축제로 유명한 남당항. 최신 음악분수공원과 트릭아트 포토존, 네트어드벤처가 갖춰져 온 가족이 즐기기 좋습니다.
+              </p>
+            </div>
+            <div class="attraction-tags">
+              <span>#남당항대하축제</span>
+              <span>#해양분수공원</span>
+              <span>#수산시장</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 2 -->
+        <div class="attraction-card">
+          <div class="attraction-thumb">
+            <img src="images/camp11.jpg" alt="홍성스카이타워">
+            <span class="attraction-dist"><i class="fa-solid fa-car"></i> 차량 6분</span>
+          </div>
+          <div class="attraction-body">
+            <div>
+              <h4 class="attraction-title">홍성스카이타워 (Sky Tower)</h4>
+              <p class="attraction-desc">
+                2024년 새롭게 개장한 홍성의 랜드마크! 65m 높이에서 천수만 바다를 조망하는 360도 파노라마 전망대와 투명 바닥 스카이워크를 통해 아찔한 스릴을 경험할 수 있습니다.
+              </p>
+            </div>
+            <div class="attraction-tags">
+              <span>#홍성랜드마크</span>
+              <span>#스카이워크</span>
+              <span>#360도전망</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 3 -->
+        <div class="attraction-card">
+          <div class="attraction-thumb">
+            <img src="images/camp14.jpg" alt="속동전망대 모섬">
+            <span class="attraction-dist"><i class="fa-solid fa-car"></i> 차량 7분</span>
+          </div>
+          <div class="attraction-body">
+            <div>
+              <h4 class="attraction-title">속동전망대 &amp; 해안공원</h4>
+              <p class="attraction-desc">
+                울창한 해송림 사이 데크 산책로를 따라 작은 모섬으로 이어지는 낭만 전망대. 배 모형의 타이타닉 포토존에서 서해 갯벌과 일몰을 배경으로 인생 사진을 남겨보세요.
+              </p>
+            </div>
+            <div class="attraction-tags">
+              <span>#해송림산책</span>
+              <span>#타이타닉포토존</span>
+              <span>#일몰명소</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 4 -->
+        <div class="attraction-card">
+          <div class="attraction-thumb">
+            <img src="images/camp13.jpg" alt="서산 간월암">
+            <span class="attraction-dist"><i class="fa-solid fa-car"></i> 차량 15분</span>
+          </div>
+          <div class="attraction-body">
+            <div>
+              <h4 class="attraction-title">서산 간월암 (신비로운 바다사찰)</h4>
+              <p class="attraction-desc">
+                밀물 때는 바다 위에 떠 있는 외로운 섬이 되고, 썰물 때는 걸어서 건널 수 있는 신비의 바다 암자. 조선 무학대사가 달을 보며 깨달음을 얻었다는 고즈넉한 명소입니다.
+              </p>
+            </div>
+            <div class="attraction-tags">
+              <span>#모세의기적</span>
+              <span>#바다암자</span>
+              <span>#힐링사찰</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Travel Course Banner -->
+      <div class="tour-course-box">
+        <div class="tour-course-info">
+          <h4><i class="fa-solid fa-route"></i> 캠지기 추천 서해안 1박 2일 완벽 힐링 코스</h4>
+          <p>더선셋 캠핑장을 베이스캠프로 알차게 즐기는 서해안 드라이브 &amp; 미식 여행 코스</p>
+          <div class="course-steps">
+            <span class="course-step">간월암 바다 산책</span>
+            <i class="fa-solid fa-chevron-right course-arrow"></i>
+            <span class="course-step">홍성스카이타워 전망</span>
+            <i class="fa-solid fa-chevron-right course-arrow"></i>
+            <span class="course-step">더선셋 캠핑장 피칭 &amp; 노을 감상</span>
+            <i class="fa-solid fa-chevron-right course-arrow"></i>
+            <span class="course-step">남당항 제철 해산물 만찬</span>
+            <i class="fa-solid fa-chevron-right course-arrow"></i>
+            <span class="course-step">갤러리 모닝커피 &amp; 갯벌체험</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Guide & Regulations -->
+  <section id="guide" class="scenery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Important Rules</span>
+        <h2 class="section-title">캠핑장 이용 안내 &amp; 운영 정책</h2>
+        <p class="section-desc">모두가 안전하고 평화로운 휴식을 즐길 수 있도록 기본 매너를 지켜주세요.</p>
+      </div>
+
+      <div class="policy-grid">
+        <!-- Box 1: Time & Capacity -->
+        <div class="policy-box">
+          <div class="policy-box-header">
+            <i class="fa-solid fa-clock"></i>
+            <h4>입·퇴실 &amp; 매너타임</h4>
+          </div>
+          <ul class="policy-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>입실(체크인):</strong> 14:00 (오후 2시) ~ 21:00까지<br><small style="color: #94a3b8;">* 21시 이후 입실 불가 / 22시까지 피칭 완료</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>퇴실(체크아웃):</strong> 12:00 (정오)<br><small style="color: #94a3b8;">* 조기입실/늦은퇴실은 시간당 5,000원 추가 (사전 문의)</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>매너타임 준수:</strong> 22:00 ~ 08:00<br><small style="color: #94a3b8;">* 21:30분부터 정리 시작. 음주/소음/음악 엄격 제한 (민원 시 퇴실 조치)</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>기준 인원:</strong> 1사이트당 4인 기준 (성인/소인 구분 없음)<br><small style="color: #94a3b8;">* 다자녀 가정은 성인2+미성년 자녀 3인까지 가능</small></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Box 2: Pitching & Vehicles -->
+        <div class="policy-box">
+          <div class="policy-box-header">
+            <i class="fa-solid fa-car-side"></i>
+            <h4>피칭 &amp; 차량/장비 규정</h4>
+          </div>
+          <ul class="policy-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>1사이트 1텐트:</strong> 두가족(F2) 제외 1텐트 1타프 기준<br><small style="color: #94a3b8;">* 1인용 텐트의 경우 2동까지 허용</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>주차 안내:</strong> 사이트당 1대 기본<br><small style="color: #94a3b8;">* A, F사이트는 옆 주차 가능 / 그 외 주차장 이용 (추가차량 1박 1만원)</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>바람 대비 필수:</strong> 40cm 이상 장팩 사용 권장<br><small style="color: #94a3b8;">* 바닷가 특성상 돌풍에 대비해 스트링 2중 고정 필수</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>카라반/캠핑카:</strong> 400급 이하만 진입 가능<br><small style="color: #94a3b8;">* A1~A5, A12, F5, P2, P3 한정 (A3, P2만 600급 가능)</small></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Box 3: Pet & Safety -->
+        <div class="policy-box">
+          <div class="policy-box-header">
+            <i class="fa-solid fa-shield-virus"></i>
+            <h4>반려견 &amp; 화재 안전</h4>
+          </div>
+          <ul class="policy-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>반려견 동반:</strong> 오직 E사이트만 예약 가능<br><small style="color: #94a3b8;">* 10kg 미만 소형견 한정, 리드줄 필수 (타 구역 산책/출입 엄격 금지)</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>화재 안전 수칙:</strong> 전용 화로대 필수 사용<br><small style="color: #94a3b8;">* 잔불 완전 소화 후 금속 재수거함에 배출, 폭죽 반입 금지</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>전기 사용량:</strong> 사이트당 최대 600W 이하<br><small style="color: #94a3b8;">* 고전력 열풍기, 인덕션 등 과부하 기기 사용 금지</small></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>전 구역 금연:</strong> 지정된 흡연 부스에서만 흡연 가능</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Winter Long Stay Notice -->
+      <div class="winter-banner">
+        <div class="winter-content">
+          <h4><i class="fa-regular fa-snowflake"></i> 2026-2027 동계 장박 예약 안내</h4>
+          <p>
+            서해의 청명한 겨울 바다와 붉은 노을을 오래도록 누릴 수 있는 동계 장박!<br>
+            운영 기간: 2026년 12월 1일 ~ 2027년 3월 31일 (금·토 입실 주말 및 연휴) | 대상: H사이트 (텐트 전용), A5/A12 (카라반/캠핑카 가능)
+          </p>
+        </div>
+        <a href="tel:010-7907-5587" class="btn-winter">
+          <i class="fa-solid fa-phone"></i> 장박 문의 : 010-7907-5587
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">오시는 길 &amp; 찾아오시는 방법</h2>
+        <p class="section-desc">충남 홍성 남당항 바닷가, 서해안 최고의 드라이브 코스 곁에 위치해 있습니다.</p>
+      </div>
+
+      <div class="location-box">
+        <div class="location-details">
+          <div>
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="loc-text">
+                <h5>주소 안내</h5>
+                <p>충청남도 홍성군 서부면 남당항로213번길 126 (남당리)</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="loc-text">
+                <h5>고객센터 &amp; 문의</h5>
+                <p>전화: 0507-1332-5207 / 041-631-5207<br>상담시간: 평일 09:00 ~ 18:00 (점심시간 12:00~13:00)</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon"><i class="fa-solid fa-compass"></i></div>
+              <div class="loc-text">
+                <h5>인근 접근성</h5>
+                <p>수도권(인천, 김포, 경기남부)에서 약 1시간 40분 ~ 2시간 거리로 주말 여행에 최적화</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Tip Notice -->
+          <div class="nav-guide-alert">
+            <h6><i class="fa-solid fa-triangle-exclamation"></i> 내비게이션 검색 꿀팁</h6>
+            <p>
+              내비게이션에 <strong>'더선셋 갤러리앤커피'</strong>를 검색하고 오시면 카페 바로 왼쪽 캠핑장 <strong>정문</strong>으로 수월하게 진입하실 수 있습니다.<br>
+              <small style="color: #fed7aa;">※ 캠핑카, 카라반, 미니버스 등 대형차량은 <strong>'전망이있는곳'</strong> 검색 후 <strong>후문</strong>으로 진입해 주세요.</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="location-map-side">
+          <!-- Google Maps Official Embed (100% Free, No API Key Required) -->
+          <iframe 
+            src="https://maps.google.com/maps?q=%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%ED%99%8D%EC%84%B1%EA%B5%B0%20%EC%84%9C%EB%B6%80%EB%A9%B4%20%EB%82%A8%EB%8B%B9%ED%95%AD%EB%A1%9C213%EB%B2%88%EA%B8%B8%20126&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            title="더선셋 캠핑장 오시는 길 지도"
+            style="width: 100%; height: 100%; min-height: 420px; border: 0;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <!-- Map Overlay Shortcut Navigation Buttons -->
+          <div class="map-nav-links">
+            <a href="https://map.naver.com/p/search/%EB%8D%94%EC%84%A0%EC%85%8B%EC%BA%A0%ED%95%91%EC%9E%A5" target="_blank" rel="noopener" class="map-link-btn btn-naver">
+              <i class="fa-solid fa-n"></i> 네이버지도 길찾기
+            </a>
+            <a href="https://map.kakao.com/link/search/%EB%8D%94%EC%84%A0%EC%85%8B%EC%BA%A0%ED%95%91%EC%9E%A5" target="_blank" rel="noopener" class="map-link-btn btn-kakao">
+              <i class="fa-solid fa-k"></i> 카카오맵 길찾기
+            </a>
+            <a href="https://tmap.life/search/%EB%8D%94%EC%84%A0%EC%85%8B%EC%BA%A0%ED%95%91%EC%9E%A5" target="_blank" rel="noopener" class="map-link-btn btn-tmap">
+              <i class="fa-solid fa-diamond-turn-right"></i> 티맵(TMAP)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation CTA Section -->
+  <div class="container">
+    <div class="cta-section">
+      <span class="cta-badge"><i class="fa-solid fa-fire"></i> ThankQ Camping Realtime Booking</span>
+      <h2 class="cta-title">오늘, 서해의 붉은 노을 속으로<br>캠핑을 떠나보세요</h2>
+      <p class="cta-desc">
+        더선셋 캠핑장은 땡큐캠핑 실시간 예약 시스템을 통해 투명하고 간편하게 예약하실 수 있습니다. 
+        사이트당 무료 음료 쿠폰 혜택과 함께 잊지 못할 추억을 만들어보세요.
+      </p>
+
+      <div class="cta-btn-group">
+        <a href="https://m.thankqcamping.com/resv/view.hbb?cseq=20430" target="_blank" rel="noopener" class="btn-thankq-main">
+          <i class="fa-solid fa-calendar-check"></i> 땡큐캠핑 실시간 예약 바로가기
+        </a>
+        <a href="tel:0507-1332-5207" class="btn-call-camp">
+          <i class="fa-solid fa-phone"></i> 0507-1332-5207
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <h4>더선셋 캠핑장</h4>
+          <p>충남 홍성군 서부면 남당항로213번길 126 (남당리) | 대표자: 이재서</p>
+          <p>사업자등록정보 및 통신판매업 정식 등록 완료 | 한국관광공사 고캠핑 인증 관광사업자</p>
+          <p>예약문의: 0507-1332-5207 / 041-631-5207 | 장박문의: 010-7907-5587</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>바로가기</h5>
+          <ul>
+            <li><a href="#about">캠핑장 소개</a></li>
+            <li><a href="#scenery">풍경 갤러리</a></li>
+            <li><a href="#sites">사이트 &amp; 배치도</a></li>
+            <li><a href="#reviews">실제 이용후기</a></li>
+            <li><a href="#attractions">주변 관광지</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>예약 &amp; 고객지원</h5>
+          <ul>
+            <li><a href="https://m.thankqcamping.com/resv/view.hbb?cseq=20430" target="_blank" rel="noopener">땡큐캠핑 실시간 예약</a></li>
+            <li><a href="#guide">이용안내 &amp; 운영정책</a></li>
+            <li><a href="#guide">환불규정 안내</a></li>
+            <li><a href="#location">오시는 길 안내</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 더선셋 캠핑장 (The Sunset Camping). All rights reserved.</p>
+        <p>온라인 예약 대행 서비스: (주)하비에르 땡큐캠핑</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Call Floating Button -->
+  <div class="floating-reserve-bar">
+    <a href="tel:0507-1332-5207" class="float-call" title="전화 문의">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <img id="modalImg" src="" alt="확대 이미지">
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script>
+    // Header scroll background styling
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Gallery Category Filter with proper active button handling
+    function filterGallery(category, btnElement) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      if (btnElement) {
+        btnElement.classList.add('active');
+      }
+
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Lightbox Modal open/close
+    function openModal(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImg');
+      modalImg.src = src;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Escape key modal close
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Mobile Navigation Toggle
+    function toggleMobileNav() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+
+    function closeMobileNav() {
+      const menu = document.getElementById('navMenu');
+      if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>

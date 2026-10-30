@@ -1,0 +1,774 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.5, minimum-scale=1.0, user-scalable=yes,target-densitydpi=medium-dpi"-->
+    <script type="text/javascript" src="/js/jquery-1.12.4.min.js?version=20261001-1"></script>
+		<script src="/js/jquery-ui.min.js?version=20261001-1"></script> 
+		<script language="JavaScript">
+	// HTTP프로토콜 HTTPS로 변경
+	
+	if (document.location.protocol == 'http:') {
+		if (document.location.href.search("/talk/write") < 0 && document.location.href.search("/used/write") < 0) {
+			document.location.href = document.location.href.replace('http:', 'https:');
+		}
+	}
+	
+	var app_yn	= ""
+	var app_os	= ""
+	var app_ver	= "0"
+	var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+	var mobileApp = varUA.indexOf("/app/") > -1 ? true : false;
+  if (mobileApp==true && varUA.indexOf('android') > -1) {
+		app_yn = "Y"
+		app_os = "android"
+		app_ver = window.Android.getAppVer()
+  } else if (mobileApp==true && (varUA.indexOf("ios") > -1||varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 )) {
+  	app_yn = "Y"
+		app_os = "ios";
+		if (varUA.indexOf("appver") > -1) {
+			app_ver = varUA.split('appver')[1].substr(0,5).replaceAll('.','')
+		}
+  }
+ 	/*
+ 	if (app_yn=="Y" && app_ver!="0" && ("/resv/pop_mapimg.hbb"=="/main.hbb" || "/resv/pop_mapimg.hbb"=="/my/main.hbb")) {
+		$.ajax({
+			type: "POST",
+	    url: "/app/ver_sav.hbb",
+	    data:{app_ver:app_ver},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {}
+	  function onError() {}	  	
+  }
+  */
+  
+	var app_mem	= ""
+    function goUrl(url,pop_yn,pop_loc) {
+        //if(url.indexOf('https://m.thankqcamping.com')>-1) url=replace(url,'https://m.thankqcamping.com','')
+      
+        var fullUrl = ((url.indexOf('http') > -1) ? '' : $('#site_url').html()) + url;
+        var isInstagramUrl =
+            fullUrl.indexOf('instagram.com') > -1 ||
+            fullUrl.indexOf('www.instagram.com') > -1 ||
+            fullUrl.indexOf('instagr.am') > -1;
+      
+        if(app_yn=='Y') {
+      
+            // 인스타 URL이면 네이티브 앱 호출
+            if (isInstagramUrl) {
+                if (app_os == "android") {
+                    if (typeof Android !== "undefined" && typeof Android.openInstagram === "function") {
+                        Android.openInstagram(fullUrl);
+                        return;
+                    }
+                } else {
+                    goIosAp('openInstagram', fullUrl);
+                    return;
+                }
+            }
+      
+            if(app_ver!="") {
+                //if(parseInt(app_ver) > 18) {
+                    if (pop_yn=='N') {
+                        location.href = fullUrl;
+                    } else {
+                        if (app_os == "android" && parseInt(app_ver) < 49) {
+                            location.href = ((pop_loc!='') ? pop_loc+'://' : '') + fullUrl;
+                        } else {
+                            winOpen(fullUrl,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.');
+                        }
+                    }
+                    /*
+                    if (app_os == "android") {
+                        location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#site_url').html()) + url
+                    } else {
+                        winOpen($('#site_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+                    }
+                    */
+                //} else {
+                //	if(confirm('신규 어플 업데이트를 해주시기 바랍니다.\n이전 버전 사용시 서비스 이용에 오류가 발생할 수 있습니다.\n만약, 업데이트후에도 이 메시지가 나오신다면 폰설정 > 애플리케이션 > 땡큐캠핑 > 저장공간에서 데이터 및 캐시를 삭제후 다시 이용해 보시기 바랍니다.')) {
+                //		location.href = 'market://details?id=com.habb.thankq'
+                //	} else {
+                //		if(pop_yn=='Y') {
+                //			winOpen($('#site_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+                //		} else {
+                //			location.href = $('#site_url').html() + url
+                //		}
+                //	}
+                //}
+            } else {
+                location.href = fullUrl;
+                /*
+                if (app_os == "android") {
+                    location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#site_url').html()) + url
+                } else {
+                    winOpen($('#site_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+                }
+                */
+            }
+        } else {
+            if(pop_yn=='Y') {
+                //if(pop_loc=="pop") {
+                    winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.');
+                //} else {
+                //	location.href = url
+                //}
+            } else {
+                location.href = url;
+            }
+        }
+    }
+	function goShopUrl(url,pop_yn,pop_loc) {
+		if(app_yn=='Y') {
+			if(app_ver!="") {
+				//if(parseInt(app_ver) > 18) {
+					if (app_os == "android" && parseInt(app_ver) < 49) {
+						location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+					} else {
+						winOpen(((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+					}
+				//} else {
+				//	if(confirm('신규 어플 업데이트를 해주시기 바랍니다.\n이전 버전 사용시 서비스 이용에 오류가 발생할 수 있습니다.\n만약, 업데이트후에도 이 메시지가 나오신다면 폰설정 > 애플리케이션 > 땡큐캠핑 > 저장공간에서 데이터 및 캐시를 삭제후 다시 이용해 보시기 바랍니다.')) {
+				//		location.href = 'market://details?id=com.habb.thankq'
+				//	} else {
+				//		if(pop_yn=='Y') {
+				//			winOpen(((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+				//		} else {
+				//			location.href = ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+				//		}
+				//	}
+				//}
+			} else {
+				if (app_os == "android" && parseInt(app_ver) < 49) {
+					location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+				} else {
+					winOpen($('#shop_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+				}
+			}
+		} else {
+			url = ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+			if(pop_yn=='Y') {
+				//if(pop_loc=="pop") {
+					winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+				//} else {
+				//	location.href = url
+				//}
+			} else {
+				location.href = url
+			}
+		}
+	}
+	function goResAppUrl(url,app_yn,app_os) {
+		if (app_yn=="Y") {
+			if (app_os=="android" && parseInt(app_ver) < 49) {
+				location.href = url
+			} else {
+				winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+			}
+		} else {
+			winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+		}	
+	}	
+	function appPopReload(pop_loc) {
+		if(parseInt(app_ver) >= 23 && pop_loc!='') {
+			appPopReloadAp()
+			//window.Android.popReload(pop_loc);
+		} else {
+			appPopReloadAp()
+		}
+	}
+	
+	//앱리로드
+	function appPopReloadAp() {
+		if(app_os=="android") {
+			window.Android.pop_reload();
+		} else {
+			goIosAp('pop_reload','')
+		}
+	}
+
+	//캠핑장 상세보기
+	function cback(cseq) {
+		goUrl('/resv/view.hbb?cseq='+cseq,'Y','pop')
+	}
+	//캠핑장 상세보기
+	function goCampView(cseq,res_dt) {
+		goUrl('/resv/view.hbb?cseq='+cseq+'&res_dt='+res_dt,'N','pop')
+	}
+
+	//캠핑장 실시간예약
+	function goRes() {
+		var frm = document.campForm
+		var campseq = frm.cseq.value
+		var res_dt	= frm.res_dt.value
+		var res_edt	= frm.res_edt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var couponId = frm.couponId.value
+		var ser_res_days = frm.res_days.value
+
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&res_edt="+res_edt+"&ser_res_days="+ser_res_days+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq+"&partnseq=&partnmemseq=&site_tp="+site_tp+"&couponId="+couponId;
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 실시간예약
+	function goResStep(campseq, campsiteseq, res_dt) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&campsiteseq="+campsiteseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 실시간예약
+	function goResStepDays(campseq, campsiteseq, res_dt, res_edt, res_days) {
+		//캠핑장 실시간예약
+		var frm = document.form
+		var temporary_yn = frm.temporary_yn.value
+		var wg_pass = frm.wg_pass.value
+		if (frm.betatest_yn.value=='Y') {
+			var rfrm = document.resform
+			$.ajax({
+				type: "POST",
+		    url: "/booking/axCampResUrl.hbb",
+			data:{campseq:campseq,campsiteseq:campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        $('#resform').empty()
+				$('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+				$('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+				$('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+				$('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+				$('#resform').append("<input type='hidden' name='res_days' value='"+res_days+"'>")
+				$('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+				$('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+				$('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+				$('#resform').append("<input type='hidden' name='wg_pass' value='"+wg_pass+"'>")
+				//goUrl(url+'?campseq='+campseq+'&campsiteseq='+campsiteseq+'&res_dt='+res_dt+'&res_edt='+res_edt+'&res_days='+res_days+'&res_path='+res_path+'&enter_path='+enter_path+'&temporary_yn='+temporary_yn+'&wg_pass='+wg_pass,'Y','pop3');
+				document.resform.action = url
+				document.resform.submit()
+		  }
+		  function onError() {}	
+		} else {
+			//캠핑장 실시간예약
+			var frm = document.form
+			$.ajax({
+				type: "POST",
+		    url: "/resv/axCampResUrl.hbb",
+		    data:{campseq:campseq,campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				// var url = dataobj + '&temporary_yn='+temporary_yn
+				// if (app_yn!="Y" && url.indexOf('res_path') < 0) url += "&res_path=HM"
+				// goResAppUrl(url,app_yn,app_os)
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        var access_token = dataobj.split('?')[3]
+        var imseq = ""
+        if (access_token=="") imseq = dataobj.split('?')[4]
+        $('#resform').empty()
+        $('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+        $('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+        $('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+        $('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+        $('#resform').append("<input type='hidden' name='ser_res_days' value='"+res_days+"'>")
+        $('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+        $('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+        $('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+        $('#resform').append("<input type='hidden' name='access_token' value='"+access_token+"'>")
+        $('#resform').append("<input type='hidden' name='imseq' value='"+imseq+"'>")
+        $('#resform').append("<input type='hidden' name='thankq_yn' value='Y'>")
+        goUrl(url+'?campseq='+campseq+'&campsiteseq='+campsiteseq+'&res_dt='+res_dt+'&res_edt='+res_edt+'&ser_res_days='+res_days+'&res_path='+res_path+'&enter_path='+enter_path+'&temporary_yn='+temporary_yn+'&access_token='+access_token+'&imseq='+imseq+'&thankq_yn=Y','Y','pop3');
+        //document.resform.action = url
+        //document.resform.submit()
+		  }
+		  function onError() {}	
+		}
+	}
+
+	//캠핑장 실시간예약
+	function goResStepDaysNoti(campseq, campsiteseq, res_dt, res_edt, res_days) {
+		//캠핑장 실시간예약
+		var frm = document.form
+		var temporary_yn = frm.temporary_yn.value
+		if (frm.betatest_yn.value=='Y') {
+		    $('#loading').show();
+			var rfrm = document.resform
+			$.ajax({
+				type: "POST",
+		    url: "/booking/axCampResUrl.hbb",
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				var url = dataobj.split('?')[0]
+                var res_path = dataobj.split('?')[1]
+                if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+                var enter_path = dataobj.split('?')[2]
+                $('#resform').empty()
+				$('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+				$('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+				$('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+				$('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+				$('#resform').append("<input type='hidden' name='res_days' value='"+res_days+"'>")
+				$('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+				$('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+				$('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+				document.resform.action = url
+				document.resform.submit()
+		  }
+		  function onError() { $('#loading').hide(); }	
+		} else {
+			//캠핑장 실시간예약
+			var frm = document.form
+			$.ajax({
+				type: "POST",
+		    url: "/resv/axCampResUrl.hbb",
+		    data:{campseq:campseq,campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				// var url = dataobj + '&temporary_yn='+temporary_yn
+				// if (app_yn!="Y" && url.indexOf('res_path') < 0) url += "&res_path=HM"
+				// goResAppUrl(url,app_yn,app_os)
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        var access_token = dataobj.split('?')[3]
+        var imseq = ""
+        if (access_token=="") imseq = dataobj.split('?')[4]
+        $('#resform').empty()
+        $('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+        $('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+        $('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+        $('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+        $('#resform').append("<input type='hidden' name='ser_res_days' value='"+res_days+"'>")
+        $('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+        $('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+        $('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+        $('#resform').append("<input type='hidden' name='access_token' value='"+access_token+"'>")
+        $('#resform').append("<input type='hidden' name='imseq' value='"+imseq+"'>")
+        $('#resform').append("<input type='hidden' name='thankq_yn' value='Y'>")
+        document.resform.action = url
+        document.resform.submit()
+		  }
+		  function onError() {}	
+		}
+		window.addEventListener('pageshow', function(e) {
+            $('#loading').hide();
+        });
+        window.addEventListener('popstate', function() {
+            $('#loading').hide();
+        });
+	}
+	
+	//캠핑장 예약바로가기
+	function goResDirect(seq,dt,days) {
+		var url = '/resv/view.hbb?cseq='+seq+(dt!=''&&typeof dt!='undefined'?'&res_dt='+dt:'')+(days!=''&&typeof days!='undefined'?'&ser_res_days='+days:'')+(dt!=''&&typeof dt!='undefined'?'#booking_dt':'')
+		location.href = url
+		/*
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	  */
+	}
+
+	//캠핑장 예약바로가기
+	function goResDirectDt(seq,dt,edt) {
+		var url = '/resv/view.hbb?cseq='+seq+(dt!=''&&typeof dt!='undefined'?'&res_dt='+dt:'')+(edt!=''&&typeof edt!='undefined'?'&res_edt='+edt:'')+(dt!=''&&typeof dt!='undefined'?'#booking_dt':'')
+		location.href = url
+		/*
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	  */
+	}
+
+	//캠핑장 예약바로가기
+	function goMemResDirect(seq) {
+		
+	  	alert('회원로그인후 예약하실 수 있습니다.');	
+	  
+	}
+
+	//캠핑장 예약바로가기
+	function goResEmpty(seq,emptyseq) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&emptyseq="+emptyseq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	}
+	
+	//캠핑장 실시간예약
+	function goResStep2(campseq, campsiteseq) {
+		var frm = document.form
+		var res_dt	= frm.res_dt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var couponId = frm.couponId.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&campsiteseq="+campsiteseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq+"&partnseq=&partnmemseq=&site_tp="+site_tp+"&couponId="+couponId;
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	
+	//캠핑장 이벤트예약
+	function goResEvent(cseq) {
+		var frm = document.form
+		var campseq = cseq
+		var res_dt	= frm.res_dt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 실시간예약
+	function goResPop(cseq) {
+		var campseq = cseq
+		var res_dt	= document.form.res_dt.value
+		var region 	= document.form.region.value
+		var site_tp	= document.form.site_tp.value
+		var tema	= document.form.tema.value
+		var keyword	= document.form.keyword.value
+		var disc_yn	= document.form.disc_yn.value
+		var camp_tp	= document.form.camp_tp.value
+		var page	= document.form.page_num.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 예약확인
+	function goResView(campseq,reserveseq,status,page,page_k) {
+		var res_url = "myResList$"+status+"$"+page+"$"+page_k
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reserveseq="+reserveseq+"&thankq_app="+app_yn+"&thankq_rurl="+res_url+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	//캠핑장 예약확인
+	function goResCertView(campseq,reserveseq,status,rnd_num) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reserveseq="+reserveseq+"&thankq_app="+app_yn+"&rnd_num="+rnd_num+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	//캠핑장 장박예약확인
+	function goResLongView(campseq,reslongseq,status,page,page_k) {
+		var res_url = "myResList$"+status+"$"+page+"$"+page_k
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reslongseq="+reslongseq+"&thankq_app="+app_yn+"&thankq_rurl="+res_url+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+		
+	//이벤트 쇼핑몰 호출
+	function goShopPop(gseq) {
+		location.href= 'https://m.shop.thankqcamping.com/shopMain.hbb?ser_good_id='+gseq
+
+	}
+          
+	//하단메뉴 검색
+	function Bmenu(url) {
+		$("#Lmnu").html('<div class="modal-dialog"><div class="modal-content"><div id="spinner_pop"></div></div></div>');
+		//$("#spinner_pop").show();
+		location.href = url
+	}
+	
+	//모달창 닫기
+	function modalClose() {
+		$(".close").click();
+	}
+
+	//파트너 회원로그인
+	function partnLoginAp() {	
+			var frm = document.loginForm
+			
+			if(frm.h_telno.value=="") {
+				alert("휴대폰번호를 입력해주세요.")
+				frm.h_telno.focus()
+				return
+			} else
+			if(frm.pwd.value=="") {
+				alert("비밀번호를 입력해주세요.")
+				frm.pwd.focus()
+				return
+			} else {
+				//frm.ret_url.value = encodeURIComponent(frm.ret_url.value)
+				frm.action = "https://m.thankqcamping.com/join/login_ok.hbb"
+				frm.target = "job"
+				frm.submit();		
+			}	   
+	}
+	
+	//배너노출
+	function axBannerViewCount(c) {
+		if ($("#BN"+c)) {
+			if($("#BN"+c).html().indexOf("B") > -1 && $("#Lmnu").attr('class').indexOf('in') < 0) {
+				$.ajax({
+					type: "POST",
+			    url: "/inc/axBannerViewCount.hbb",
+			    data:{ seq:$("#BN"+c).html().replace("B","") },
+			    success: onSuccess,
+			    error: onError
+				});		
+				function onSuccess(dataobj) {}
+			  function onError() {}				
+			}
+		}
+	}
+	//모달 페이지 이동
+	function goModalReUrl(url) {
+		goUrl(url,'Y','pop')
+	}
+
+	//먹거리구매 상세확인
+	function goResGoodView(campseq,resgoodseq) {
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&resgoodseq="+resgoodseq+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+//메인알람
+function mainNoti(id,tit,msg,url) {
+	if(get_cookie("mainNoti_"+id)==null) { 
+		setCookie("mainNoti_"+id, "Y", false)
+		txt = "<div class=\"pop_conts\">"
+		txt += "	<p class=\"txt1\">"+tit+"</p>"
+		txt += "	<p class=\"txt2\">"+msg+"</p>"
+		txt += "</div>"
+		txt += "<span href=\"#\" class=\"sprite btn_layerClose2\" onclick=\"ly_close()\"></span>"
+		txt += "<button type=\"button\" class=\"btn\" onClick=\"ly_close();"+url+"\">바로가기</button>"
+		$('#divMainNoti').html(txt);
+		ly_open();
+	}
+}
+//외부오픈창열기
+function outOpen(url) {
+	if(app_yn=='Y') {
+		if ((app_os=='android' && parseInt(app_ver) < 51) || (app_os=='ios' && parseInt(app_ver) < 38)) {
+			open(url,'_blank','')
+		} else {
+			if(app_os=='ios') {
+				goIosAp('openBrowser',url)
+			} else {
+				try {
+		    	location.href = "blank://" + url
+		    } catch(e) {
+		      open(url,'_blank','')
+		    }
+		  }
+		}
+	} else {
+		open(url,'','')
+	}
+}
+
+</script>
+    <script src="/js/m_com.js?version=20261001-1"></script>
+</head>
+
+
+<body>
+    <div class="wrap" id="wrap">
+        <div class="wrap_in">
+            <div class="head map_img">
+                <div class="head_in">
+                    <a href="javascript:popClose('');" class="btn_back"></a>
+                    <!-- <h1>
+                        <span class="title">더선셋 캠핑장</span>
+                    </h1> -->
+                </div>
+            </div><!--// head -->
+
+            <div class="container">
+                 <!--↓↓↓↓↓↓ 컨텐츠 시작 ↓↓↓↓↓↓-->
+                <div class="con notice_con pd0 map_con">
+				    <div class="pic">
+                        <img src="https://image.thankqcamping.com/file/2026/10/24/515edc4e-434d-4f7e-973f-e66f8234dd55.jpg" style="max-width: 2000px;" />
+                    </div>
+                </div><!-- //notice_con -->
+
+
+
+                 <!--↑↑↑↑↑↑ 컨텐츠 끝 *******************↑↑↑↑↑↑↑↑↑ -->
+            </div> <!--// container -->
+
+      
+    
+
+        </div><!-- //wrap_in -->
+       
+    </div> <!--// wrap -->
+    <style>
+        .head.map_img {
+            position: fixed;
+            top: 0;
+            z-index: 202;
+            background: #fff;
+        }
+        .head.map_img .head_in .btn_back {
+            position:fixed; float:left; display:flex;
+            width:50px;height:50px;text-align:center; margin: 12px;
+            color: #222; text-decoration: none; 
+        }
+        .head.map_img .head_in .btn_back:after {content: "\00d7"; font-size:40px;line-height:1;}
+        .map_con {
+            margin-top: 80px;
+        }
+    </style>
+</body>
+</html>

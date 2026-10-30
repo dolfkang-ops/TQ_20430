@@ -1,0 +1,5359 @@
+{
+  "code": 200,
+  "message": null,
+  "data": {
+    "content": [
+      {
+        "reviewSeq": 89179,
+        "reviewWriteUser": {
+          "memSeq": 922955,
+          "nickName": "기선쿠",
+          "memImgUrl": "",
+          "reviewWriteCount": 0,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9654999,
+          "checkInDate": "20260828",
+          "checkOutDate": "20260830",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135930,
+          "campSiteName": "C사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/09/03/2026090357445.88.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112249,
+          "siteNoName": "C-1",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": true
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 0,
+        "content": "남당항 다녀오면서 문여겨보았던 신상캠핑장이였는데 드디어 가오픈하셨길래 1등! 으로 다녀왔어요!\r\n생각했던것보다 더 확트인 뷰도 좋았고 편의시설도 깔끔했어요 오픈전 많은 준비를 하신게 눈에 보이네요\r\n아직 매점은 없지만 다른 편의시설들이 5성급 캠핑장이라고 해도 부족함없이 너무 편리하고 맘에들었어요\r\n특히 화장실, 개수대, 샤워실 다 에어컨 설치되있는게 좋았어요\r\n또, 높은곳에서 바라보는 뷰가 너무 좋았는데 머무는동안 비가 오는 바람에 멋진 노을뷰를 볼순 없어서 조금 아쉬웠네요\r\n그래도 뻥 뚫린 바다뷰가 지친 마음을 힐링시켜줘서 온가족 만족했어요\r\n사장님뿐만 아니라 관리하시는 모든분들이 친절하셨고 불편함 없는지 계속 세세하게 신경써주셨어요\r\n캠장 초입에 무인카페도 같이 운영하고 계셔서 주신 쿠폰으로 맛있는 음료, 커피도 시원하게 먹었어요\r\n주변 남당항도 차로 5분이여서 각종 축제, 죽도여행, 놀이시설등 이용할거리가 많으니 가족 캠핑여행으로 추천드려요~",
+        "createDate": "20260831152804",
+        "reviewImages": [
+          {
+            "imgSeq": 102836,
+            "reviewSeq": 89179,
+            "url": "https://m.thankqcamping.com/file/2026/08/31/2026083154537.310.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 102837,
+            "reviewSeq": 89179,
+            "url": "https://m.thankqcamping.com/file/2026/08/31/2026083154537.561.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 102838,
+            "reviewSeq": 89179,
+            "url": "https://m.thankqcamping.com/file/2026/08/31/2026083154537.822.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 102839,
+            "reviewSeq": 89179,
+            "url": "https://m.thankqcamping.com/file/2026/08/31/2026083154538.013.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 102840,
+            "reviewSeq": 89179,
+            "url": "https://m.thankqcamping.com/file/2026/08/31/2026083154538.344.jpg",
+            "sort": 4
+          },
+          {
+            "imgSeq": 102841,
+            "reviewSeq": 89179,
+            "url": "https://m.thankqcamping.com/file/2026/08/31/2026083154538.645.jpg",
+            "sort": 5
+          }
+        ],
+        "viewCount": 1269,
+        "viewLikeCount": 1,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14348,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20260901111730",
+            "content": "기선쿠 캠퍼님, 우선 저희 더선셋 캠핑장 시범운영 기간에 방문해 주셔서 감사드립니다.  정식 오픈 전이라 부족한 부분이 많았을 텐데, 너른 마음으로 찾아주시고 이렇게 소중한 후기까지 남겨주셔서 큰 힘이 됩니다. 다음번에 다시 찾아주실 때는 더욱 편안하고 쾌적한 캠핑을 즐기실 수 있도록 준비하겠습니다.  환절기 건강 유의하시고, 앞으로도 저희 더선셋 캠핑장에 지속적인 관심과 방문 부탁드립니다. 감사합니다!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "G",
+        "statusName": "베스트후기",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 89570,
+        "reviewWriteUser": {
+          "memSeq": 1170939,
+          "nickName": "하이현맘",
+          "memImgUrl": "",
+          "reviewWriteCount": 0,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9650935,
+          "checkInDate": "20260904",
+          "checkOutDate": "20260906",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135930,
+          "campSiteName": "C사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/09/03/2026090357445.88.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112249,
+          "siteNoName": "C-1",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": true
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": true
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": true
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 0,
+        "content": "남당리 대하축제에 가려고 근처 캠핑장 알아보다 새로 생긴 곳이 있어서 예약하고 다녀왔어요~ 결론은 대만족이였습니다! 바다 바로 앞에 있고 또 지대가 높아 완전 가슴이 뻥 뚫리는 뷰 맛집이였어요! 가만히 앉아서 바다만 보고 있어도 넘 힐링되더라구요~ 제가 예약했던 C사이트가 엄청 넓어서 텐트 치고도 공간이 많이 남아 타프까지 쳤는데도 여유있었어요~ 무엇보다도 캠핑장에 앉아서 본 노을은 평생 기억에 남을 정도로 정말 멋졌습니다!! 새로 생긴 캠핑장이라 후기가 없어 고민하다 간거였는데 가족 모두 대 만족하여 다시 갈 날을 잡고 있어요~  아! 그리고 샤워실과 화장실은 그동안 수많은 캠핑장을 다녀봤지만 제일 좋았어요! 쾌적 그 자체였습니다 ㅎㅎ 샴프랑, 린스, 비누도 기본으로 세팅이 되어 있어서 너무 편했어요! 개수대도 개별 음식물 쓰레기통도 있어 훨씬 깔끔해 보였고 화장실, 개수대, 샤워실 등 모두 에어컨이 켜져 있어서 정말 쾌적했어요~ 저희 둘째가 6살인데 아침 일찍 일어나 산책하고 싶어해서 같이 산책을 했는데 캠핑장 앞 바다 산책하기 너무 좋아서 아이와 정말 좋은시간 갖었어요ㅎㅎ 잠옷바람이여서 사진이 아쉽지만 다음에 가면 예쁘게 입히고 찍으면 인생샷 나올 것 같더라구요 ㅋㅋ 캠핑장 밑에 갤러리 무인카페가 있는데 이른시간이라 사장님께서 막 오픈하고 계셔서 들어가도 되는지 여쭤보고 아이와 들어갔는데 너무 친절하게 대해주셔서 정말 감사했어요^^ 캠핑장 예약하니 카페 무료 쿠폰을 주셨는데 그걸 사용하려 했는데 사장님께서 커피 한잔 드리고 싶다고 하시며 커피를 선물해주셨어요!!! 아침부터 감동이였습니다! 캠핑장 불편한게 없으셨는지 어떠신지 물어보시며 캠핑장에 굉장히 많이 신경쓰시는게 느껴지더라구요~ 사장님도 친절하셨지만 캠핑장에서 일하시는 직원 모두 너무 친절하셔서 최고였습니다! 원래 후기를 잘 안쓰는데 여기는 꼭 써드리고 싶어서 후기 남겨요^^ 힐링하러 모두 다녀오세요^^ 사장님 번창하시고 다음에 또 뷰맛집 놀러갈께요!!",
+        "createDate": "20260910131426",
+        "reviewImages": [
+          {
+            "imgSeq": 103454,
+            "reviewSeq": 89570,
+            "url": "https://m.thankqcamping.com/file/2026/09/10/2026091046554.570.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 103455,
+            "reviewSeq": 89570,
+            "url": "https://m.thankqcamping.com/file/2026/09/10/2026091046554.81.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 103456,
+            "reviewSeq": 89570,
+            "url": "https://m.thankqcamping.com/file/2026/09/10/2026091046555.042.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 103457,
+            "reviewSeq": 89570,
+            "url": "https://m.thankqcamping.com/file/2026/09/10/2026091046555.293.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 103458,
+            "reviewSeq": 89570,
+            "url": "https://m.thankqcamping.com/file/2026/09/10/2026091046555.554.jpg",
+            "sort": 4
+          },
+          {
+            "imgSeq": 103459,
+            "reviewSeq": 89570,
+            "url": "https://m.thankqcamping.com/file/2026/09/10/2026091046576.690.jpg",
+            "sort": 5
+          }
+        ],
+        "viewCount": 464,
+        "viewLikeCount": 1,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14456,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20260911121819",
+            "content": "하이현맘 캠퍼님, 남당리 대하축제와 함께 저희 캠핑장에서 가족분들과 완벽한 힐링 시간을 보내셨다니 정말 다행입니다 :) 좋은 기억을 안고 가셔서 저희 또한 기쁜마음이며, 보내주신 따뜻한 말씀 간직하겠습니다. 다음에 다시 찾아주실 때도 변함없이 최고의 추억을 선물해 드리겠습니다. 늘 건강하시고 또 뵙겠습니다!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "G",
+        "statusName": "베스트후기",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93228,
+        "reviewWriteUser": {
+          "memSeq": 1180725,
+          "nickName": "곰돌이봄",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9714756,
+          "checkInDate": "20261025",
+          "checkOutDate": "20261027",
+          "resDays": "2,2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135928,
+          "campSiteName": "A사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/18/2026081861475.23.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112293,
+          "siteNoName": "A-6",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": true
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": true
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": true
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "화장실 샤워실 개수대 \n냉장고까지 다 너무 만족합니다\n직원분들도 너무 친절하시고\n매점도 있어서 너무 편리하고 좋았어요\n\n바다뷰 캠핑장은 처음 예약해봤는데\n노을도 너무이쁘도 낮술도 아주 잘들어갑니다 굿\n날씨도 너무너무 좋아서 행복했어요??",
+        "createDate": "20261027230957",
+        "reviewImages": [
+          {
+            "imgSeq": 109445,
+            "reviewSeq": 93228,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102783402.130.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109446,
+            "reviewSeq": 93228,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102783402.381.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 109447,
+            "reviewSeq": 93228,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102783402.622.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 109448,
+            "reviewSeq": 93228,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102783402.843.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 109449,
+            "reviewSeq": 93228,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102783403.14.jpg",
+            "sort": 4
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15213,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261028105842",
+            "content": "안녕하세요 곰돌이봄 캠퍼님, 첫 바다뷰 캠핑으로 저희 캠핑장을 찾아주시고 행복한 시간을 보내셨다니 정말 기쁩니다!\n좋은 날씨 속에 예쁜 노을과 함께 즐기신 낮술 한 잔이 유난히 달콤하셨을 것 같네요:)\n정성스러운 후기 감사드리며, 다음에도 탁 트인 바다 보며 행복하게 쉬다 가실 수 있도록 정성껏 준비하고 기다리겠습니다!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93171,
+        "reviewWriteUser": {
+          "memSeq": 817989,
+          "nickName": "꼬숙이",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9780462,
+          "checkInDate": "20261024",
+          "checkOutDate": "20261025",
+          "resDays": "1"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138693,
+          "campSiteName": "D사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/21/2026082149457.84.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112276,
+          "siteNoName": "D-2",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": true
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": true
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": true
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": true
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "여기 정말 너무 좋아요!새로생긴곳이라서 그런지 \n정말 깨끗하고 시설도 정말 잘되있어요~뷰도 정말 환상적이고,근처에 편의점이나 횟집 다 5분거리이며,사이트 옆으로 야자매트가 깔려 있어서 왔다갔다 할때 새벽에 화장실갈때 소리 안나게 일부러 배려하신거 같은 섬세함!!그리고 캠지기분들도 다 친절하시고 골프카트로 짐도 옮겨주실수 있게 해주시고 정말 최고의 캠핑장이예요! 가까우면 정말 매주 가고 싶은곳입니다??",
+        "createDate": "20261026183940",
+        "reviewImages": [
+          {
+            "imgSeq": 109359,
+            "reviewSeq": 93171,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102666964.280.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109360,
+            "reviewSeq": 93171,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102666964.360.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 109361,
+            "reviewSeq": 93171,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102666964.30.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 109362,
+            "reviewSeq": 93171,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102666964.270.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 109363,
+            "reviewSeq": 93171,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102666964.340.jpg",
+            "sort": 4
+          },
+          {
+            "imgSeq": 109364,
+            "reviewSeq": 93171,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102666964.80.jpg",
+            "sort": 5
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15173,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261027100215",
+            "content": "안녕하세요 꼬숙이 캠퍼님, 정성 가득한 후기 남겨주셔서 정말 감사합니다!\n야자매트에 담긴 작은 배려까지 알아봐 주셔서 감동입니다. 짐 옮겨드리는 작은 수고도 기쁘게 느껴질 만큼 저희도 덕분에 큰 보람을 얻었습니다.\n매주 오고 싶다는 말씀이 저희에겐 가장 큰 칭찬이네요:) 언제든 마음 편히 또 쉬러 와주세요!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93069,
+        "reviewWriteUser": {
+          "memSeq": 1162387,
+          "nickName": "꽃띠",
+          "memImgUrl": "",
+          "reviewWriteCount": 2,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9791876,
+          "checkInDate": "20261024",
+          "checkOutDate": "20261025",
+          "resDays": "1"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135928,
+          "campSiteName": "A사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/18/2026081861475.23.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112237,
+          "siteNoName": "A-3",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": true
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": true
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": true
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "사이트 간격 넓어서 좋았고 할로윈캠핑 처음이였는데 1등하고 와서 기쁨이 두배 ♡ 엄마는 힘들었지만 아이들이 너무 재밌게 즐겨서 좋았어요 캠장님 이벤트도 좋았구요 친절해요 무엇보다 뷰맛집♡ 3시간넘게 걸려갔지만 너무 재밌었오요~~",
+        "createDate": "20261026104631",
+        "reviewImages": [
+          {
+            "imgSeq": 109190,
+            "reviewSeq": 93069,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638804.860.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109191,
+            "reviewSeq": 93069,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638805.131.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 109192,
+            "reviewSeq": 93069,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638939.570.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 109193,
+            "reviewSeq": 93069,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638939.811.jpg",
+            "sort": 3
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15155,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261026143534",
+            "content": "꽃띠 캠퍼님, 3시간이 넘는 먼 길을 달려와 주시고, 즐거운 할로윈 추억까지 만들어 가셨다니 진심으로 감사드립니다!\n꽃띠 캠퍼님의 수고 덕분에 사랑스런 아이들에게 더욱 잊지 못할 행복한 할로윈이 되었을 것 같아요. 콘테스트 1등도 다시 한번 축하드립니다 :) \n아이들과 함께 선사해 주신 밝은 에너지 덕분에 저희도 정말 즐거웠습니다. 다음에도 탁 트인 뷰와 함께 편안히 쉬어가실 수 있도록 따뜻하게 맞아드리겠습니다!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93021,
+        "reviewWriteUser": {
+          "memSeq": 592988,
+          "nickName": "굷은치킨",
+          "memImgUrl": "",
+          "reviewWriteCount": 3,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9797781,
+          "checkInDate": "20261024",
+          "checkOutDate": "20261025",
+          "resDays": "1"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138694,
+          "campSiteName": "E사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082436963.9.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112283,
+          "siteNoName": "E-4",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": true
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": true
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": true
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "친절한 사장님에 시설은  정말 새것에 깨끗히,관리 되어있어요\n특히 언덕위사이트 짐 옮겨주기서비스, 화롯대 세척장등은 캠핑을 해보신분만이 알수있는 캠핑장 서비스 였어요\n\n시설너무 깨끗하고 사장님 친절하고 경치좋고 사이트,넓고.   어느것하나 흠잡을게 없는 훌륭한 캠핑장입니다",
+        "createDate": "20261026103608",
+        "reviewImages": [
+          {
+            "imgSeq": 109109,
+            "reviewSeq": 93021,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638137.460.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109110,
+            "reviewSeq": 93021,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638137.791.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 109111,
+            "reviewSeq": 93021,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638138.092.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 109112,
+            "reviewSeq": 93021,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102638169.010.jpg",
+            "sort": 3
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15154,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261026143421",
+            "content": "안녕하세요 굷은치킨 캠퍼님, 시설부터 서비스까지 세심하게 알아봐 주시고 좋게 봐주셔서 진심으로 감사드립니다!\n짐 이동 서비스와 화롯대 세척장, 넓은 사이트까지 만족스러우셨다니 정말 보람차고 기쁩니다.\n앞으로도 변함없이 깨끗하고 편안한 공간으로 지켜나가겠습니다. 언제든 마음 편히 쉬러 또 놀러 오세요!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 92987,
+        "reviewWriteUser": {
+          "memSeq": 1032729,
+          "nickName": "캠퍼유민혁",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9778103,
+          "checkInDate": "20261023",
+          "checkOutDate": "20261024",
+          "resDays": "1"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138693,
+          "campSiteName": "D사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/21/2026082149457.84.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112275,
+          "siteNoName": "D-1",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": true
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": true
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "캠핑장이 노을 맛집으로 기억될 곳,\n탁 트인 바다 전망에 붉게 물드는 하늘까지?\n해가 질수록 분위기는 더 깊어지고,\n하나둘 켜지는 조명 아래 앉아 바라보는 노을은 그야말로 힐링 그 자체?\n낮에는 푸른 하늘과 소나무가 만들어주는 여유를 즐기고 저녁에는 황금빛으로 물든 바다를 바라보며\n아무 생각 없이 쉬어가기 좋은 시간이였던거 같아요~? 다음에는 부모님 모시고 다시 재방문하겠습니다~??",
+        "createDate": "20261025200323",
+        "reviewImages": [
+          {
+            "imgSeq": 109049,
+            "reviewSeq": 92987,
+            "url": "https://m.thankqcamping.com/file/2026/10/25/2026102571912.030.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109050,
+            "reviewSeq": 92987,
+            "url": "https://m.thankqcamping.com/file/2026/10/25/2026102571912.330.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 109051,
+            "reviewSeq": 92987,
+            "url": "https://m.thankqcamping.com/file/2026/10/25/2026102571912.650.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 109052,
+            "reviewSeq": 92987,
+            "url": "https://m.thankqcamping.com/file/2026/10/25/2026102571912.850.jpg",
+            "sort": 3
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15153,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261026133313",
+            "content": "안녕하세요 캠퍼유민혁 캠퍼님! \n\nN번째 방문과 아름다운 사진후기 정말 감사드립니다 : )\n푸른 소나무와 황금빛 노을 속에서 오롯이 힐링하고 가셨다니 정말 기쁩니다.\n다음에는 사랑하는 부모님과 함께 오셔서 더욱 따뜻하고 좋은 추억 만들어가실 수 있도록 정성껏 준비해 두고 기다리겠습니다. 이번주도 행복한 한 주 보내세요!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93206,
+        "reviewWriteUser": {
+          "memSeq": 1181165,
+          "nickName": "모카포트장인",
+          "memImgUrl": "",
+          "reviewWriteCount": 2,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9756175,
+          "checkInDate": "20261025",
+          "checkOutDate": "20261026",
+          "resDays": "1"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135928,
+          "campSiteName": "A사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/18/2026081861475.23.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112295,
+          "siteNoName": "A-8",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": true
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": true
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "저번 방문때 너무 좋아서 다시한번 방문했습니다. 오늘도 역시나 뷰 맛집이였고 시설도 전 보다 좋아져서 캠핑하기 좋았습니다!! 그리고 화로대 세척 공간이 따로 마련되어있는 것 또한 좋았습니다! 재방문 무조건 입니다",
+        "createDate": "20261027124313",
+        "reviewImages": [
+          {
+            "imgSeq": 109405,
+            "reviewSeq": 93206,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102745761.340.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109406,
+            "reviewSeq": 93206,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102745761.611.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 109407,
+            "reviewSeq": 93206,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102745761.812.jpg",
+            "sort": 2
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15196,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261027143729",
+            "content": "안녕하세요 모카포트장인 캠퍼님, 우선, 잊지 않고 또 찾아주셔서 진심으로 감사합니다 :)\n새로 정비한 공용시설들을 기분 좋게 이용해 주셔서 정말 감사드리며, 오실 때마다 더 편안하게 쉬다 가실 수 있도록 계속해서 세심하게 가꿔 나가겠습니다.\n다음 번 다시 방문 하실때까지 늘 기쁜 마음으로 기다리고 있겠습니다! 환절기 감기 조심하시오 오늘도 행복한 하루 보내세요 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93202,
+        "reviewWriteUser": {
+          "memSeq": 866176,
+          "nickName": "두리도리",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9723312,
+          "checkInDate": "20261023",
+          "checkOutDate": "20261025",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138697,
+          "campSiteName": "F2 두가족 사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/21/2026082149892.72.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112292,
+          "siteNoName": "F2",
+          "campSitePersonCount": 4,
+          "campSiteMaxPersonCount": 8,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": true
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "태풍이 오기 전 감탄밖에 안나온던 뷰를 가진 캠핑장입니다.\n피칭 중 사장님께서 오시더니 오늘 노을이 정말 멋질거같으니 산책을 다녀오시면 좋을거같다 안내도 해주셨는데 말씀대로 황홀한 노을이었습니다.  전반적은 모든시설이 깔끔하게 유지되고 개인적으로 부탁드렸던 사항까지 까먹지않고 신경써주셔서 너무 감사했습니다. 캠핑장앞 운영중인 카페에는 사장님께서 직접 촬영하긴 전세계의 사진들이 있는데 우연한 기회로 사진별 설명까지 해주셔서 값진 시간을 가졌습니다.",
+        "createDate": "20261027110846",
+        "reviewImages": [
+          {
+            "imgSeq": 109399,
+            "reviewSeq": 93202,
+            "url": "https://m.thankqcamping.com/file/2026/10/27/2026102740020.650.jpg",
+            "sort": 0
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15176,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261027113256",
+            "content": "안녕하세요 두리도리 캠퍼님, 안내해 드린 노을 풍경을 황홀하게 감상하셨다니 뿌듯하고, 카페에서 함께 나눈 사진 이야기까지 의미 있는 시간으로 기억해 주셔서 저희 역시 정말 기쁘고 보람찹니다. 세심하게 챙겨드리려 했던 마음이 잘 전달된 것 같아 다행입니다. 앞으로도 깨끗한 시설과 따뜻한 마음으로 정성껏 맞아드리겠습니다. 언제든 편안하게 또 쉬러 오세요 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93126,
+        "reviewWriteUser": {
+          "memSeq": 1182345,
+          "nickName": "선공주",
+          "memImgUrl": "",
+          "reviewWriteCount": 2,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9778031,
+          "checkInDate": "20261024",
+          "checkOutDate": "20261025",
+          "resDays": "1"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138695,
+          "campSiteName": "F사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082437046.23.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112285,
+          "siteNoName": "F-1",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": true
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": true
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "벌써 두 번째 방문인데 할로윈 파티도 진행하고 너무 재밌는 주말 보냈네요?\n\n방문할 때마다 정말 만족하고 있지만\n날씨가 추워진터라 난방기구 대여하기가 어렵더라고요\n다른 캠핑장처럼 몇 대 보유하면서 이용객에게 대여해주셔도 좋을 것 같아요ㅎㅎ",
+        "createDate": "20261026113433",
+        "reviewImages": [
+          {
+            "imgSeq": 109287,
+            "reviewSeq": 93126,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102641500.320.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109288,
+            "reviewSeq": 93126,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102641500.491.jpg",
+            "sort": 1
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15157,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261026144748",
+            "content": "선공주 캠퍼님, 벌써 두 번째로 찾아주시고, 할로윈 파티까지 즐겁게 즐겨주셔서 진심으로 감사드립니다! 재방문해 주신 것만으로도 감사한 마음인데, 캠퍼분들을 위해 꼭 필요한 건의 사항까지 세심하게 남겨주셔서 큰 도움이 됩니다. 말씀해 주신 난방기구 대여 서비스는 날씨가 추워지는 만큼 이용하시는 데 불편함이 없도록 긍정적으로 검토해 보겠습니다. 점점 날씨가 쌀쌀해지는데 감기 조심하시고, 다음 방문 때도 따뜻하고 행복한 추억 만들어가실 수 있도록 준비하고 기다리겠습니다 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 93174,
+        "reviewWriteUser": {
+          "memSeq": 1185310,
+          "nickName": "예레에에에",
+          "memImgUrl": "",
+          "reviewWriteCount": 2,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9747065,
+          "checkInDate": "20261024",
+          "checkOutDate": "20261026",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135930,
+          "campSiteName": "C사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/09/03/2026090357445.88.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112251,
+          "siteNoName": "C-3",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": true
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": true
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": true
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "일몰이 정말 아름다워요 \n항에서도 걸어서 15분 정도라 놀러다녀오기도 좋고, 사이트도 깨끗합니다 \n캠지기분들께서 차량 주차 불가한곳에 짐도 가져다 주셔서 편리했어요",
+        "createDate": "20261026203225",
+        "reviewImages": [
+          {
+            "imgSeq": 109368,
+            "reviewSeq": 93174,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102674014.050.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 109369,
+            "reviewSeq": 93174,
+            "url": "https://m.thankqcamping.com/file/2026/10/26/2026102674014.271.jpg",
+            "sort": 1
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15174,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261027100406",
+            "content": "안녕하세요 예레에에에 캠퍼님, 소중한 후기 남겨주셔서 진심으로 감사드립니다!\n탁 트인 일몰 풍경부터 항구 산책, 짐 이동 서비스까지 기분 좋게 즐기다 가셨다니 정말 다행입니다. 깨끗하게 이용해 주신 덕분에 저희 더선셋 캠지기들도 기분 좋게 관리할 수 있었습니다.\n다음에도 아름다운 일몰 보시며 편안하게 쉬어가실 수 있도록 정성껏 준비하고 있겠습니다. 또 놀러 오세요 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 92170,
+        "reviewWriteUser": {
+          "memSeq": 453681,
+          "nickName": "쌍우",
+          "memImgUrl": "",
+          "reviewWriteCount": 2,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9754563,
+          "checkInDate": "20261009",
+          "checkOutDate": "20261011",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135929,
+          "campSiteName": "B사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082436740.67.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112240,
+          "siteNoName": "B-1",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": true
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": true
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": true
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "잘쉬다 갑니다. 공용냉장고 있어서 좋았고 뷰 맛집에다가 쿠폰으로 주신 커피숍 이용도 좋았습니다\n특히나 캠핑장을 둘러보면 사장님이 이것저것 세심하게 신경많이 쓰셨구나 한걸 느낄수 있었습니다.\n기회 되면 다시 한번 갈께요~",
+        "createDate": "20261012105910",
+        "reviewImages": [
+          {
+            "imgSeq": 107638,
+            "reviewSeq": 92170,
+            "url": "https://m.thankqcamping.com/file/2026/10/12/20261012395800.jpg",
+            "sort": 0
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 4,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14918,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261012164920",
+            "content": "쌍우 캠퍼님, 소중한 후기 남겨주셔서 진심으로 감사합니다!\n저희가 정성껏 준비한 시설 하나하나까지 알아봐 주시고 기분 좋게 휴식하고 가셨다니 큰 보람을 느낍니다.\n다음에도 언제든 편안한 휴식이 생각나실 때 찾아주세요. 늘 건강하고 행복하세요 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 91519,
+        "reviewWriteUser": {
+          "memSeq": 1173575,
+          "nickName": "통글스",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9668597,
+          "checkInDate": "20261003",
+          "checkOutDate": "20261005",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138693,
+          "campSiteName": "D사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/21/2026082149457.84.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112279,
+          "siteNoName": "D-5",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": false
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "한달 전 부터 예약했던 곳이고 사진상으로도 깨끗해 보여 방문하게 됐습니다.\nD5사이트였고 뷰는 D1이 더 좋습니다\n저희는 공용시설을 가깝게 쓰려고 5번 예약했는데 위아래로 시설사용을 할 수 있어서 좋으나 언덕을 올라갔다해야합니다.\n모든게 다 깨끗하고 차량 진입이 안되는곳은 관리자님께서 카트로 이동해 주시구요\n데크는 나사팩이 있어야 하는데  빌려도 주십니다.\n길건너 가면 간단한 해루질 가능하고\n남당항도 가까긴하나 축제때는 너무 밀리네요\n반대쪽에도 작은 가게들이 있는데 가격이 비싼듯 합니다.\n대표님께서 사이트마다 돌아다니면서 불편한점 확인도 해주시고 사진도 찍어주시는데 \n대표님이신걸 모르는 식구들은 종교인으로 알았네요ㅎ\n저는 밑에서 부터 확인하시는걸 봐서 대표님 같다고 했는데ㅎ\n아이들이 놀 거리만 추가되면 가족단위로 오기 너무 좋을 것 같고 매너타임도 23시나 24시면 좋겠어요\n도착해서 텐트치고 밥 먹고 치우면 9시인데..너무 짧은것 같아요.\n주차당도 새로 만들어서 시멘트 가루가 묻어나 짐 내려놓으면 다 묻고 차 발판도 장난 아니네요\n그래도 이름 처럼 노을은 끝내주게 이쁩니다.",
+        "createDate": "20261006123803",
+        "reviewImages": [
+          {
+            "imgSeq": 106553,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644877.520.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 106554,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644877.841.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 106555,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644878.092.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 106556,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644878.33.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 106557,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644878.544.jpg",
+            "sort": 4
+          },
+          {
+            "imgSeq": 106558,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644878.845.jpg",
+            "sort": 5
+          },
+          {
+            "imgSeq": 106559,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644879.136.jpg",
+            "sort": 6
+          },
+          {
+            "imgSeq": 106560,
+            "reviewSeq": 91519,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100644879.367.jpg",
+            "sort": 7
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14824,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261006154310",
+            "content": "통글스 캠퍼님, 정성 어린 후기와 조언 남겨주셔서 감사합니다!\n청결한 시설과 노을 뷰는 좋게 평가해 주셔서 기쁘며, 대표님 관련 유쾌한 에피소드도 웃음 지으며 보았습니다. 😊\n주차장 시멘트 가루로 인한 불편과 매너타임, 아이들 놀시설에 대한 의견은 적극 반영해 개선해 나가겠습니다. 언제든 멋진 노을 보러 편히 쉬러 오세요!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 92781,
+        "reviewWriteUser": {
+          "memSeq": 1012504,
+          "nickName": "레모나",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9776002,
+          "checkInDate": "20261017",
+          "checkOutDate": "20261019",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138694,
+          "campSiteName": "E사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082436963.9.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112284,
+          "siteNoName": "E-5",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": true
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": true
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": true
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "사이트가 넓고 시설관리가 깨끗하게 잘되어있습니다.\n주변 풍경도 좋아서 가봤던데중 1순위로 뽑을만한거같에요.",
+        "createDate": "20261020103344",
+        "reviewImages": [
+          {
+            "imgSeq": 108696,
+            "reviewSeq": 92781,
+            "url": "https://m.thankqcamping.com/file/2026/10/20/2026102040129.630.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 108697,
+            "reviewSeq": 92781,
+            "url": "https://m.thankqcamping.com/file/2026/10/20/2026102040129.861.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 108698,
+            "reviewSeq": 92781,
+            "url": "https://m.thankqcamping.com/file/2026/10/20/2026102040130.162.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 108699,
+            "reviewSeq": 92781,
+            "url": "https://m.thankqcamping.com/file/2026/10/20/2026102040130.463.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 108700,
+            "reviewSeq": 92781,
+            "url": "https://m.thankqcamping.com/file/2026/10/20/2026102040130.694.jpg",
+            "sort": 4
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15022,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261020130608",
+            "content": "레모나 캠퍼님, 아름다운 사진 후기 남겨주셔서 감사합니다. \n보내주신 따뜻한 칭찬에 보답할 수 있도록 앞으로도 쾌적하고 아름다운 공간을 잘 유지하겠습니다.\n다음에도 언제든 편안히 쉬어가실 수 있도록 반갑게 맞이하겠습니다!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 91390,
+        "reviewWriteUser": {
+          "memSeq": 1173376,
+          "nickName": "JJWW",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9667137,
+          "checkInDate": "20261003",
+          "checkOutDate": "20261005",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135929,
+          "campSiteName": "B사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082436740.67.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112241,
+          "siteNoName": "B-2",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": false
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "다녀본 중 손꼽히는 만족스런 캠핑장이에요.\n인천, 김포에서 2시간 거리라 부담스럽지 않아 더 좋았어요\n쾌적하고 정돈된 조경이 힐링하기 좋아요\n기분 좋게 쉬고 오기 좋은곳이라 생각되어서\n또 가고 싶은곳이에요",
+        "createDate": "20261006104537",
+        "reviewImages": [
+          {
+            "imgSeq": 106345,
+            "reviewSeq": 91390,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100638455.210.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 106346,
+            "reviewSeq": 91390,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100638478.390.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 106347,
+            "reviewSeq": 91390,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100638478.691.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 106348,
+            "reviewSeq": 91390,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100638478.992.jpg",
+            "sort": 3
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14814,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261006113207",
+            "content": "JJWW 캠퍼님, '손꼽히는 캠핑장'이라는 과분한 칭찬과 소중한 후기 감사드립니다! 만족스러운 힐링 시간이 되셨다니 정말 기쁩니다. 언제든 기분 좋게 쉬어가실 수 있도록 쾌적하게 준비해 두겠습니다. 다음에 또 반갑게 뵙겠습니다 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 91261,
+        "reviewWriteUser": {
+          "memSeq": 1173695,
+          "nickName": "유농",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9739123,
+          "checkInDate": "20261003",
+          "checkOutDate": "20261005",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135929,
+          "campSiteName": "B사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082436740.67.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112248,
+          "siteNoName": "B-9",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": false
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "1. 사이트가  넓어 텐트 피칭하기가 너무 좋다\n2. 웰컴 드링크로 캠핑장에서 함께 운영되는 무인카페\n     음료쿠폰을 받았다\n3. 시설이 깨끗하고 무엇보다 체계적인 운영시스템이\n     굉장히 인상깊었다\n4. 바다가 바로 앞이고 수산시장도 가까워 좋았고\n    해루질하기도 좋다  지형이 진흙뻘 지형이라 장화\n     나 해루질 복장은 필수이고 소라, 박하지, 바지락이\n     나온다\n5. 매너타임이 잘 준수되어 조용하니 좋고 해질녁 노을이 정말 멋있고 좋다\n6. 지금까지 가본 캠핑장 중에서 최고였다",
+        "createDate": "20261006074023",
+        "reviewImages": [
+          {
+            "imgSeq": 106194,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627365.440.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 106195,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627365.711.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 106196,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627366.012.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 106197,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627366.273.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 106198,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627366.554.jpg",
+            "sort": 4
+          },
+          {
+            "imgSeq": 106199,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627366.825.jpg",
+            "sort": 5
+          },
+          {
+            "imgSeq": 106200,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627367.126.jpg",
+            "sort": 6
+          },
+          {
+            "imgSeq": 106201,
+            "reviewSeq": 91261,
+            "url": "https://m.thankqcamping.com/file/2026/10/06/2026100627367.377.jpg",
+            "sort": 7
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14812,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261006113029",
+            "content": "유농 캠퍼님, 소중하고 상세한 후기 작성해 주셔서 감사합니다! 넓은 사이트부터 해루질, 노을 풍경까지 캠핑장의 매력을 알차게 즐겨주신 것 같아 뿌듯합니다. '최고의 캠핑장'이라는 말씀 마음에 새기고, 언제 방문하셔도 편안히 쉬어가실 수 있도록 최선을 다하겠습니다. 또 놀러 오세요 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 91217,
+        "reviewWriteUser": {
+          "memSeq": 1055784,
+          "nickName": "엔젤마로",
+          "memImgUrl": "",
+          "reviewWriteCount": 7,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9656860,
+          "checkInDate": "20261003",
+          "checkOutDate": "20261005",
+          "resDays": "2,2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138695,
+          "campSiteName": "F사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082437046.23.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112287,
+          "siteNoName": "F-3",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": false
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": false
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "바다뷰가 정말 멋지고 석양이 너무 이쁘니 사진은 저절로 잘 나올수 밖에 없어요.\n바다뷰도 좋고 캠핑장도 나무마다 정성스럽게 위치해 있고 사이트 마다 특징이 다르고 저희 사이트 F3 F4는 뷰좋고 공용시설 가까워 편해요. 친절하신 캠지기분들도 모두 굿. 별점5입니다.",
+        "createDate": "20261005191724",
+        "reviewImages": [
+          {
+            "imgSeq": 106122,
+            "reviewSeq": 91217,
+            "url": "https://m.thankqcamping.com/file/2026/10/05/2026100569371.650.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 106123,
+            "reviewSeq": 91217,
+            "url": "https://m.thankqcamping.com/file/2026/10/05/2026100569371.911.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 106124,
+            "reviewSeq": 91217,
+            "url": "https://m.thankqcamping.com/file/2026/10/05/2026100569372.262.jpg",
+            "sort": 2
+          },
+          {
+            "imgSeq": 106125,
+            "reviewSeq": 91217,
+            "url": "https://m.thankqcamping.com/file/2026/10/05/2026100569372.653.jpg",
+            "sort": 3
+          },
+          {
+            "imgSeq": 106126,
+            "reviewSeq": 91217,
+            "url": "https://m.thankqcamping.com/file/2026/10/05/2026100569372.934.jpg",
+            "sort": 4
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14811,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261006112927",
+            "content": "엔젤마로 캠퍼님, 정성스러운 후기와 멋진 사진 공유 감사합니다! 아름다운 석양과 함께 만족스러운 시간을 보내신 것 같아 저희도 뿌듯합니다. 다음에 오실 때도 편히 쉬어가실 수 있도록 늘 다정하게 맞이하겠습니다. 오늘도 좋은 하루 보내시고, 감사합니다 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 92830,
+        "reviewWriteUser": {
+          "memSeq": 1029658,
+          "nickName": "오요미",
+          "memImgUrl": "",
+          "reviewWriteCount": 2,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9780040,
+          "checkInDate": "20261016",
+          "checkOutDate": "20261018",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 135928,
+          "campSiteName": "A사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/18/2026081861475.23.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112296,
+          "siteNoName": "A-9",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": false
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": true
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": true
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": true
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": false
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": false
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "신상 캠핑장이라 시설이 전반적으로 깨끗하고 깔끔합니다. 화장실과 샤워실은 깨끗해서 좋았고, 샤워실에 수건 거치대가 있어서 올려둘수 있어서 좋았어요. 사이트가 커서 좋았어요. 전망이 좋아서 뷰가 너무 좋고 일몰 명소입니다. 근처가 위아래 항구가 있어서 접근성이 너무 좋아요. 걸어서 왕복해도 다닐만 합니다. 친구들 모두 만족하여서 또오자고 했어요. 같이 있는 갤러리 카페도 무료로 주신 커피로 카페인이 떨어지지 않게 이용 잘했어요. 조만간 또 가야겠어요.",
+        "createDate": "20261021101524",
+        "reviewImages": [
+          {
+            "imgSeq": 108775,
+            "reviewSeq": 92830,
+            "url": "https://m.thankqcamping.com/file/2026/10/21/2026102136449.550.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 108776,
+            "reviewSeq": 92830,
+            "url": "https://m.thankqcamping.com/file/2026/10/21/2026102136449.710.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 108777,
+            "reviewSeq": 92830,
+            "url": "https://m.thankqcamping.com/file/2026/10/21/2026102136449.910.jpg",
+            "sort": 2
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15073,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261021104956",
+            "content": "오요미 캠퍼님, 소중한 후기 감사드립니다.\n저희 더선셋 캠핑장을 친구분들과 함께 만족스럽게 즐기셨다니 정말 기쁩니다. 세심하게 준비한 편의시설과 갤러리 카페 이용도 마음에 드셨다니 다행입니다.\n앞으로도 늘 쾌적한 공간으로 보답하겠습니다. 조만간 또 방문해 주실 때 반갑게 모시겠습니다 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 92686,
+        "reviewWriteUser": {
+          "memSeq": 1180785,
+          "nickName": "신디워니",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9754829,
+          "checkInDate": "20261016",
+          "checkOutDate": "20261018",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 139832,
+          "campSiteName": "P-1 두가족 사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/09/29/2026092949541.47.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112987,
+          "siteNoName": "P-1",
+          "campSitePersonCount": 4,
+          "campSiteMaxPersonCount": 8,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": true
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": false
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": false
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": true
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": false
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": true
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": true
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": true
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": true
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": true
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "오랜만에 자연 속에서 힐링하고 여유로운 시간 보내고 왔어요?\n시설도 좋고 분위기도 좋아서 편안하게 쉬다 가네요!좋은 추억 만들고 갑니다. 다음에 또 방문하고 싶어요???? 캠핑장 밑에 한미수산 사장님 좋아요! 캠지기님도 친절하시고 좋아요! #뷰맛집 #힐링 #한미수산 #선셋 #바다뷰 #",
+        "createDate": "20261019104029",
+        "reviewImages": [
+          {
+            "imgSeq": 108505,
+            "reviewSeq": 92686,
+            "url": "https://m.thankqcamping.com/file/2026/10/19/2026101938473.110.jpg",
+            "sort": 0
+          },
+          {
+            "imgSeq": 108506,
+            "reviewSeq": 92686,
+            "url": "https://m.thankqcamping.com/file/2026/10/19/2026101938482.980.jpg",
+            "sort": 1
+          },
+          {
+            "imgSeq": 108507,
+            "reviewSeq": 92686,
+            "url": "https://m.thankqcamping.com/file/2026/10/19/2026101938492.160.jpg",
+            "sort": 2
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 15017,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261019145912",
+            "content": "신디워니 캠퍼님, 소중한 후기 남겨주셔서 진심으로 감사드립니다.\n자연 속에서 편안하게 힐링하고 좋은 추억을 만들고 가셨다니 정말 기쁩니다. \n따뜻한 말씀에 힘입어 앞으로도 들르실 때마다 여유롭고 쾌적하게 쉬어가실 수 있도록 정성껏 준비하겠습니다.\n다음에 또 반갑게 다시 모시겠습니다. 칭찬 감사드립니다 :)"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      },
+      {
+        "reviewSeq": 92073,
+        "reviewWriteUser": {
+          "memSeq": 591683,
+          "nickName": "김마마",
+          "memImgUrl": "",
+          "reviewWriteCount": 1,
+          "campReserveCount": 0
+        },
+        "reviewReserve": {
+          "reserveSeq": 9699380,
+          "checkInDate": "20261009",
+          "checkOutDate": "20261011",
+          "resDays": "2"
+        },
+        "reviewReserveOptions": [],
+        "reviewCamp": {
+          "campSeq": 20430,
+          "campName": "더선셋 캠핑장",
+          "campAddress": "충남 홍성군 서부면 남당항로213번길 126 (남당리)",
+          "campImgUrl": "https://image.thankqcamping.com/file/2026/08/19/e73df56f-8795-4890-a36e-34c00f176bd7.jpg",
+          "campSiteSeq": 138694,
+          "campSiteName": "E사이트",
+          "campSiteImgUrl": "https://m.thankqcamping.com/file/2026/08/24/2026082436963.9.jpg",
+          "campSiteTypeName": "오토캠핑",
+          "siteNoSeq": 112282,
+          "siteNoName": "E-3",
+          "campSitePersonCount": 2,
+          "campSiteMaxPersonCount": 4,
+          "isCampOpen": "Y",
+          "isCampSiteOpen": "Y"
+        },
+        "reviewTags": [
+          {
+            "code": "RT000",
+            "value": "뷰맛집",
+            "checked": true
+          },
+          {
+            "code": "RT001",
+            "value": "힐링스팟",
+            "checked": true
+          },
+          {
+            "code": "RT002",
+            "value": "조용한분위기",
+            "checked": false
+          },
+          {
+            "code": "RT003",
+            "value": "인생사진",
+            "checked": true
+          },
+          {
+            "code": "RT004",
+            "value": "그늘가득",
+            "checked": false
+          },
+          {
+            "code": "RT005",
+            "value": "럭셔리",
+            "checked": false
+          },
+          {
+            "code": "RT006",
+            "value": "넓은사이트간격",
+            "checked": true
+          },
+          {
+            "code": "RT007",
+            "value": "놀이시설다양",
+            "checked": false
+          },
+          {
+            "code": "RT008",
+            "value": "친절한캠지기",
+            "checked": false
+          },
+          {
+            "code": "RT009",
+            "value": "매너타임엄수",
+            "checked": true
+          },
+          {
+            "code": "RT010",
+            "value": "가성비짱",
+            "checked": false
+          },
+          {
+            "code": "RT011",
+            "value": "전기빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT012",
+            "value": "독특한컨셉",
+            "checked": false
+          },
+          {
+            "code": "RT013",
+            "value": "인테리어굿",
+            "checked": false
+          },
+          {
+            "code": "RT014",
+            "value": "온수콸콸",
+            "checked": false
+          },
+          {
+            "code": "RT015",
+            "value": "벌레제로",
+            "checked": false
+          },
+          {
+            "code": "RT016",
+            "value": "냉난방빵빵",
+            "checked": false
+          },
+          {
+            "code": "RT017",
+            "value": "대중교통편리",
+            "checked": false
+          },
+          {
+            "code": "RT018",
+            "value": "주차장최고",
+            "checked": false
+          },
+          {
+            "code": "RT019",
+            "value": "픽업서비스굿",
+            "checked": false
+          },
+          {
+            "code": "RT020",
+            "value": "깔끔깨끗",
+            "checked": false
+          },
+          {
+            "code": "RT021",
+            "value": "개수대굿",
+            "checked": false
+          },
+          {
+            "code": "RT022",
+            "value": "개별시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT023",
+            "value": "공용시설굿",
+            "checked": false
+          },
+          {
+            "code": "RT024",
+            "value": "BBQ최고",
+            "checked": false
+          },
+          {
+            "code": "RT025",
+            "value": "가까운마트",
+            "checked": false
+          }
+        ],
+        "reviewCompanions": [
+          {
+            "code": "RC000",
+            "value": "연인/배우자",
+            "checked": false
+          },
+          {
+            "code": "RC001",
+            "value": "친구",
+            "checked": true
+          },
+          {
+            "code": "RC002",
+            "value": "아이",
+            "checked": true
+          },
+          {
+            "code": "RC003",
+            "value": "지인",
+            "checked": true
+          },
+          {
+            "code": "RC004",
+            "value": "친척/형제",
+            "checked": false
+          },
+          {
+            "code": "RC005",
+            "value": "부모님",
+            "checked": false
+          },
+          {
+            "code": "RC006",
+            "value": "혼자",
+            "checked": false
+          },
+          {
+            "code": "RC007",
+            "value": "크루",
+            "checked": false
+          },
+          {
+            "code": "RC008",
+            "value": "반려동물",
+            "checked": false
+          }
+        ],
+        "score": 5,
+        "content": "노을질때 정말 예뻐서 사진 가득이에요.\n카페 쿠폰도 주셔서 2층 카페에서 먹음 분위기 좋아요.\n남당항 가까워서 포장 해와서 회, 대하, 매운탕 먹었어요. . 사이트크기 크고 좋네요.",
+        "createDate": "20261012104046",
+        "reviewImages": [
+          {
+            "imgSeq": 107499,
+            "reviewSeq": 92073,
+            "url": "https://m.thankqcamping.com/file/2026/10/12/2026101238512.690.jpg",
+            "sort": 0
+          }
+        ],
+        "viewCount": 0,
+        "viewLikeCount": 0,
+        "viewLikeCheck": false,
+        "replyList": [
+          {
+            "replySeq": 14915,
+            "memSeq": 1169289,
+            "memName": "캠지기",
+            "createDate": "20261012161056",
+            "content": "김마마 캠퍼님, 소중한 후기와 예쁜 사진 남겨주셔서 진심으로 감사합니다! \n아름다운 노을 풍경과 함께 카페에서의 여유, 그리고 남당항의 맛있는 해산물까지 제대로 즐기고 가신 것 같아 다행입니다. \n언제든 멋진 뷰와 휴식이 그리우실 때 다시 찾아주시면 감사하겠습니다. 늘 건강하시고 행복하세요!"
+          }
+        ],
+        "blindList": {
+          "blindSeq": null,
+          "memSeq": null,
+          "memName": null,
+          "title": null,
+          "content": null,
+          "createDate": null,
+          "status": null,
+          "resultContent": null
+        },
+        "status": "Y",
+        "statusName": "노출",
+        "loginCheck": true
+      }
+    ],
+    "pageable": {
+      "sort": {
+        "empty": false,
+        "unsorted": false,
+        "sorted": true
+      },
+      "offset": 0,
+      "pageNumber": 0,
+      "pageSize": 20,
+      "paged": true,
+      "unpaged": false
+    },
+    "totalElements": 60,
+    "totalPages": 3,
+    "last": false,
+    "size": 20,
+    "number": 0,
+    "sort": {
+      "empty": false,
+      "unsorted": false,
+      "sorted": true
+    },
+    "numberOfElements": 20,
+    "first": true,
+    "empty": false
+  }
+}

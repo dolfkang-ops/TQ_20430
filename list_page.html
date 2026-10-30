@@ -1,0 +1,4214 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/appleicon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/appleicon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/appleicon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/appleicon-180x180.png">
+		<link rel="icon" href="/favicon.ico" sizes="any">
+		<link rel="icon" type="image/png" sizes="192x192" href="/androidicon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+    <link href="/css/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/css/fontawesome/css/regular.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css?version=20261001-1">
+    <link rel="stylesheet" href="/js/swiper/swiper.min.css?version=20261001-1"/>
+    <link rel="stylesheet" href="/js/mCustomScrollbar/jquery.mCustomScrollbar.css?version=20261001-1"/>
+    <link rel="stylesheet" href="/css/tqc.css?version=20261001-1"/>
+    <script type="text/javascript" src="/js/jquery-1.12.4.min.js?version=20261001-1"></script>
+    <script src="/js/jquery-ui.min.js?version=20261001-1"></script>
+    <script type="text/javascript" src="/js/swiper/swiper.min.js?version=20261001-1"></script>
+    <script type="text/javascript" src="/js/mCustomScrollbar/jquery.mCustomScrollbar.js?version=20261001-1"></script>
+    <!--link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css?version=20261001-1" /-->
+    <script type="text/javascript" src="/js/common.js?version=20261001-1"></script>
+		<title>땡큐캠핑 | 예약</title>
+		<meta name="description" content="땡큐캠핑에서 전국 캠핑장 실시간 예약, 잔여석 확인, 리뷰 확인까지 한 번에 이용하세요.">
+		<meta name="keywords" content="땡큐캠핑, 캠핑장 예약, 캠핑 예약, 캠핑장 추천, 캠핑 플랫폼">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		
+        <meta name="robots" content="index, follow">
+        <meta name="NaverBot" content="index, follow"/>
+        <meta name="Yeti" content="index, follow"/>
+        
+		
+		<meta name="author" content="habb communication Co., Ltd." />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta property="al:android:url" content="https://play.google.com/store/apps/details?id=com.habb.thankq">
+		<meta property="al:android:app_name" content="캠핑 1등 플랫폼 땡큐캠핑">
+		<meta property="al:android:package" content="com.habb.thankq">
+		<meta property="al:web:url" content="https://m.thankqcamping.com/">
+		<meta property="al:ios:url" content="https://itunes.apple.com/kr/app/id1527733782?mt=8">
+		<meta property="al:ios:app_store_id" content="1527733782">
+		<meta property="al:ios:app_name" content="캠핑 1등 플랫폼 땡큐캠핑">
+		
+		<meta name="naver-site-verification" content="523728cff4137740c25d193223588981ab353b03" />
+		
+		<link rel="canonical" href="https://m.thankqcamping.com/">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="캠핑 1등 플랫폼 땡큐캠핑">
+		<meta name="twitter:description" content="국내 오토캠핑 글램핑 카라반 등 이벤트 캠핑여행상품을 지금 바로 실시간으로 예약하세요.">
+		<meta name="twitter:image" content="https://m.thankqcamping.com/images/thankq_main.png">
+		<meta name="twitter:domain" content="https://m.thankqcamping.com/">		
+		<script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=27aa85bb599bbd835014e7a7dd9b7207&libraries=services"></script>
+		<script type="text/javascript" src="/js/lazyload.js?version=20261001-1"></script>
+		<script type="text/javascript" src="/js/jquery.mCustomScrollbar.js"></script>
+		<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+		<!--script type="text/javascript" src="/js/fontawesome/all.min.js"></script-->
+		<script language="JavaScript">
+	// HTTP프로토콜 HTTPS로 변경
+	
+	if (document.location.protocol == 'http:') {
+		if (document.location.href.search("/talk/write") < 0 && document.location.href.search("/used/write") < 0) {
+			document.location.href = document.location.href.replace('http:', 'https:');
+		}
+	}
+	
+	var app_yn	= ""
+	var app_os	= ""
+	var app_ver	= "0"
+	var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+	var mobileApp = varUA.indexOf("/app/") > -1 ? true : false;
+  if (mobileApp==true && varUA.indexOf('android') > -1) {
+		app_yn = "Y"
+		app_os = "android"
+		app_ver = window.Android.getAppVer()
+  } else if (mobileApp==true && (varUA.indexOf("ios") > -1||varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 )) {
+  	app_yn = "Y"
+		app_os = "ios";
+		if (varUA.indexOf("appver") > -1) {
+			app_ver = varUA.split('appver')[1].substr(0,5).replaceAll('.','')
+		}
+  }
+ 	/*
+ 	if (app_yn=="Y" && app_ver!="0" && ("/resv/list.hbb"=="/main.hbb" || "/resv/list.hbb"=="/my/main.hbb")) {
+		$.ajax({
+			type: "POST",
+	    url: "/app/ver_sav.hbb",
+	    data:{app_ver:app_ver},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {}
+	  function onError() {}	  	
+  }
+  */
+  
+	var app_mem	= ""
+    function goUrl(url,pop_yn,pop_loc) {
+        //if(url.indexOf('https://m.thankqcamping.com')>-1) url=replace(url,'https://m.thankqcamping.com','')
+      
+        var fullUrl = ((url.indexOf('http') > -1) ? '' : $('#site_url').html()) + url;
+        var isInstagramUrl =
+            fullUrl.indexOf('instagram.com') > -1 ||
+            fullUrl.indexOf('www.instagram.com') > -1 ||
+            fullUrl.indexOf('instagr.am') > -1;
+      
+        if(app_yn=='Y') {
+      
+            // 인스타 URL이면 네이티브 앱 호출
+            if (isInstagramUrl) {
+                if (app_os == "android") {
+                    if (typeof Android !== "undefined" && typeof Android.openInstagram === "function") {
+                        Android.openInstagram(fullUrl);
+                        return;
+                    }
+                } else {
+                    goIosAp('openInstagram', fullUrl);
+                    return;
+                }
+            }
+      
+            if(app_ver!="") {
+                //if(parseInt(app_ver) > 18) {
+                    if (pop_yn=='N') {
+                        location.href = fullUrl;
+                    } else {
+                        if (app_os == "android" && parseInt(app_ver) < 49) {
+                            location.href = ((pop_loc!='') ? pop_loc+'://' : '') + fullUrl;
+                        } else {
+                            winOpen(fullUrl,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.');
+                        }
+                    }
+                    /*
+                    if (app_os == "android") {
+                        location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#site_url').html()) + url
+                    } else {
+                        winOpen($('#site_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+                    }
+                    */
+                //} else {
+                //	if(confirm('신규 어플 업데이트를 해주시기 바랍니다.\n이전 버전 사용시 서비스 이용에 오류가 발생할 수 있습니다.\n만약, 업데이트후에도 이 메시지가 나오신다면 폰설정 > 애플리케이션 > 땡큐캠핑 > 저장공간에서 데이터 및 캐시를 삭제후 다시 이용해 보시기 바랍니다.')) {
+                //		location.href = 'market://details?id=com.habb.thankq'
+                //	} else {
+                //		if(pop_yn=='Y') {
+                //			winOpen($('#site_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+                //		} else {
+                //			location.href = $('#site_url').html() + url
+                //		}
+                //	}
+                //}
+            } else {
+                location.href = fullUrl;
+                /*
+                if (app_os == "android") {
+                    location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#site_url').html()) + url
+                } else {
+                    winOpen($('#site_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+                }
+                */
+            }
+        } else {
+            if(pop_yn=='Y') {
+                //if(pop_loc=="pop") {
+                    winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.');
+                //} else {
+                //	location.href = url
+                //}
+            } else {
+                location.href = url;
+            }
+        }
+    }
+	function goShopUrl(url,pop_yn,pop_loc) {
+		if(app_yn=='Y') {
+			if(app_ver!="") {
+				//if(parseInt(app_ver) > 18) {
+					if (app_os == "android" && parseInt(app_ver) < 49) {
+						location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+					} else {
+						winOpen(((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+					}
+				//} else {
+				//	if(confirm('신규 어플 업데이트를 해주시기 바랍니다.\n이전 버전 사용시 서비스 이용에 오류가 발생할 수 있습니다.\n만약, 업데이트후에도 이 메시지가 나오신다면 폰설정 > 애플리케이션 > 땡큐캠핑 > 저장공간에서 데이터 및 캐시를 삭제후 다시 이용해 보시기 바랍니다.')) {
+				//		location.href = 'market://details?id=com.habb.thankq'
+				//	} else {
+				//		if(pop_yn=='Y') {
+				//			winOpen(((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+				//		} else {
+				//			location.href = ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+				//		}
+				//	}
+				//}
+			} else {
+				if (app_os == "android" && parseInt(app_ver) < 49) {
+					location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+				} else {
+					winOpen($('#shop_url').html() + url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+				}
+			}
+		} else {
+			url = ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+			if(pop_yn=='Y') {
+				//if(pop_loc=="pop") {
+					winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+				//} else {
+				//	location.href = url
+				//}
+			} else {
+				location.href = url
+			}
+		}
+	}
+	function goResAppUrl(url,app_yn,app_os) {
+		if (app_yn=="Y") {
+			if (app_os=="android" && parseInt(app_ver) < 49) {
+				location.href = url
+			} else {
+				winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+			}
+		} else {
+			winOpen(url,1,'팝업차단기능이 설정되어 있습니다.\n차단해제후 다시 이용해 주십시오.')
+		}	
+	}	
+	function appPopReload(pop_loc) {
+		if(parseInt(app_ver) >= 23 && pop_loc!='') {
+			appPopReloadAp()
+			//window.Android.popReload(pop_loc);
+		} else {
+			appPopReloadAp()
+		}
+	}
+	
+	//앱리로드
+	function appPopReloadAp() {
+		if(app_os=="android") {
+			window.Android.pop_reload();
+		} else {
+			goIosAp('pop_reload','')
+		}
+	}
+
+	//캠핑장 상세보기
+	function cback(cseq) {
+		goUrl('/resv/view.hbb?cseq='+cseq,'Y','pop')
+	}
+	//캠핑장 상세보기
+	function goCampView(cseq,res_dt) {
+		goUrl('/resv/view.hbb?cseq='+cseq+'&res_dt='+res_dt,'N','pop')
+	}
+
+	//캠핑장 실시간예약
+	function goRes() {
+		var frm = document.campForm
+		var campseq = frm.cseq.value
+		var res_dt	= frm.res_dt.value
+		var res_edt	= frm.res_edt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var couponId = frm.couponId.value
+		var ser_res_days = frm.res_days.value
+
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&res_edt="+res_edt+"&ser_res_days="+ser_res_days+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq+"&partnseq=&partnmemseq=&site_tp="+site_tp+"&couponId="+couponId;
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 실시간예약
+	function goResStep(campseq, campsiteseq, res_dt) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&campsiteseq="+campsiteseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 실시간예약
+	function goResStepDays(campseq, campsiteseq, res_dt, res_edt, res_days) {
+		//캠핑장 실시간예약
+		var frm = document.form
+		var temporary_yn = frm.temporary_yn.value
+		var wg_pass = frm.wg_pass.value
+		if (frm.betatest_yn.value=='Y') {
+			var rfrm = document.resform
+			$.ajax({
+				type: "POST",
+		    url: "/booking/axCampResUrl.hbb",
+			data:{campseq:campseq,campsiteseq:campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        $('#resform').empty()
+				$('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+				$('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+				$('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+				$('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+				$('#resform').append("<input type='hidden' name='res_days' value='"+res_days+"'>")
+				$('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+				$('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+				$('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+				$('#resform').append("<input type='hidden' name='wg_pass' value='"+wg_pass+"'>")
+				//goUrl(url+'?campseq='+campseq+'&campsiteseq='+campsiteseq+'&res_dt='+res_dt+'&res_edt='+res_edt+'&res_days='+res_days+'&res_path='+res_path+'&enter_path='+enter_path+'&temporary_yn='+temporary_yn+'&wg_pass='+wg_pass,'Y','pop3');
+				document.resform.action = url
+				document.resform.submit()
+		  }
+		  function onError() {}	
+		} else {
+			//캠핑장 실시간예약
+			var frm = document.form
+			$.ajax({
+				type: "POST",
+		    url: "/resv/axCampResUrl.hbb",
+		    data:{campseq:campseq,campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				// var url = dataobj + '&temporary_yn='+temporary_yn
+				// if (app_yn!="Y" && url.indexOf('res_path') < 0) url += "&res_path=HM"
+				// goResAppUrl(url,app_yn,app_os)
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        var access_token = dataobj.split('?')[3]
+        var imseq = ""
+        if (access_token=="") imseq = dataobj.split('?')[4]
+        $('#resform').empty()
+        $('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+        $('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+        $('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+        $('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+        $('#resform').append("<input type='hidden' name='ser_res_days' value='"+res_days+"'>")
+        $('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+        $('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+        $('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+        $('#resform').append("<input type='hidden' name='access_token' value='"+access_token+"'>")
+        $('#resform').append("<input type='hidden' name='imseq' value='"+imseq+"'>")
+        $('#resform').append("<input type='hidden' name='thankq_yn' value='Y'>")
+        goUrl(url+'?campseq='+campseq+'&campsiteseq='+campsiteseq+'&res_dt='+res_dt+'&res_edt='+res_edt+'&ser_res_days='+res_days+'&res_path='+res_path+'&enter_path='+enter_path+'&temporary_yn='+temporary_yn+'&access_token='+access_token+'&imseq='+imseq+'&thankq_yn=Y','Y','pop3');
+        //document.resform.action = url
+        //document.resform.submit()
+		  }
+		  function onError() {}	
+		}
+	}
+
+	//캠핑장 실시간예약
+	function goResStepDaysNoti(campseq, campsiteseq, res_dt, res_edt, res_days) {
+		//캠핑장 실시간예약
+		var frm = document.form
+		var temporary_yn = frm.temporary_yn.value
+		if (frm.betatest_yn.value=='Y') {
+		    $('#loading').show();
+			var rfrm = document.resform
+			$.ajax({
+				type: "POST",
+		    url: "/booking/axCampResUrl.hbb",
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				var url = dataobj.split('?')[0]
+                var res_path = dataobj.split('?')[1]
+                if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+                var enter_path = dataobj.split('?')[2]
+                $('#resform').empty()
+				$('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+				$('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+				$('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+				$('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+				$('#resform').append("<input type='hidden' name='res_days' value='"+res_days+"'>")
+				$('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+				$('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+				$('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+				document.resform.action = url
+				document.resform.submit()
+		  }
+		  function onError() { $('#loading').hide(); }	
+		} else {
+			//캠핑장 실시간예약
+			var frm = document.form
+			$.ajax({
+				type: "POST",
+		    url: "/resv/axCampResUrl.hbb",
+		    data:{campseq:campseq,campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				// var url = dataobj + '&temporary_yn='+temporary_yn
+				// if (app_yn!="Y" && url.indexOf('res_path') < 0) url += "&res_path=HM"
+				// goResAppUrl(url,app_yn,app_os)
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        var access_token = dataobj.split('?')[3]
+        var imseq = ""
+        if (access_token=="") imseq = dataobj.split('?')[4]
+        $('#resform').empty()
+        $('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+        $('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+        $('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+        $('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+        $('#resform').append("<input type='hidden' name='ser_res_days' value='"+res_days+"'>")
+        $('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+        $('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+        $('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+        $('#resform').append("<input type='hidden' name='access_token' value='"+access_token+"'>")
+        $('#resform').append("<input type='hidden' name='imseq' value='"+imseq+"'>")
+        $('#resform').append("<input type='hidden' name='thankq_yn' value='Y'>")
+        document.resform.action = url
+        document.resform.submit()
+		  }
+		  function onError() {}	
+		}
+		window.addEventListener('pageshow', function(e) {
+            $('#loading').hide();
+        });
+        window.addEventListener('popstate', function() {
+            $('#loading').hide();
+        });
+	}
+	
+	//캠핑장 예약바로가기
+	function goResDirect(seq,dt,days) {
+		var url = '/resv/view.hbb?cseq='+seq+(dt!=''&&typeof dt!='undefined'?'&res_dt='+dt:'')+(days!=''&&typeof days!='undefined'?'&ser_res_days='+days:'')+(dt!=''&&typeof dt!='undefined'?'#booking_dt':'')
+		location.href = url
+		/*
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	  */
+	}
+
+	//캠핑장 예약바로가기
+	function goResDirectDt(seq,dt,edt) {
+		var url = '/resv/view.hbb?cseq='+seq+(dt!=''&&typeof dt!='undefined'?'&res_dt='+dt:'')+(edt!=''&&typeof edt!='undefined'?'&res_edt='+edt:'')+(dt!=''&&typeof dt!='undefined'?'#booking_dt':'')
+		location.href = url
+		/*
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	  */
+	}
+
+	//캠핑장 예약바로가기
+	function goMemResDirect(seq) {
+		
+	  	alert('회원로그인후 예약하실 수 있습니다.');	
+	  
+	}
+
+	//캠핑장 예약바로가기
+	function goResEmpty(seq,emptyseq) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&emptyseq="+emptyseq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	}
+	
+	//캠핑장 실시간예약
+	function goResStep2(campseq, campsiteseq) {
+		var frm = document.form
+		var res_dt	= frm.res_dt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var couponId = frm.couponId.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&campsiteseq="+campsiteseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq+"&partnseq=&partnmemseq=&site_tp="+site_tp+"&couponId="+couponId;
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	
+	//캠핑장 이벤트예약
+	function goResEvent(cseq) {
+		var frm = document.form
+		var campseq = cseq
+		var res_dt	= frm.res_dt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 실시간예약
+	function goResPop(cseq) {
+		var campseq = cseq
+		var res_dt	= document.form.res_dt.value
+		var region 	= document.form.region.value
+		var site_tp	= document.form.site_tp.value
+		var tema	= document.form.tema.value
+		var keyword	= document.form.keyword.value
+		var disc_yn	= document.form.disc_yn.value
+		var camp_tp	= document.form.camp_tp.value
+		var page	= document.form.page_num.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//캠핑장 예약확인
+	function goResView(campseq,reserveseq,status,page,page_k) {
+		var res_url = "myResList$"+status+"$"+page+"$"+page_k
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reserveseq="+reserveseq+"&thankq_app="+app_yn+"&thankq_rurl="+res_url+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	//캠핑장 예약확인
+	function goResCertView(campseq,reserveseq,status,rnd_num) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reserveseq="+reserveseq+"&thankq_app="+app_yn+"&rnd_num="+rnd_num+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	//캠핑장 장박예약확인
+	function goResLongView(campseq,reslongseq,status,page,page_k) {
+		var res_url = "myResList$"+status+"$"+page+"$"+page_k
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reslongseq="+reslongseq+"&thankq_app="+app_yn+"&thankq_rurl="+res_url+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+		
+	//이벤트 쇼핑몰 호출
+	function goShopPop(gseq) {
+		location.href= 'https://m.shop.thankqcamping.com/shopMain.hbb?ser_good_id='+gseq
+
+	}
+          
+	//하단메뉴 검색
+	function Bmenu(url) {
+		$("#Lmnu").html('<div class="modal-dialog"><div class="modal-content"><div id="spinner_pop"></div></div></div>');
+		//$("#spinner_pop").show();
+		location.href = url
+	}
+	
+	//모달창 닫기
+	function modalClose() {
+		$(".close").click();
+	}
+
+	//파트너 회원로그인
+	function partnLoginAp() {	
+			var frm = document.loginForm
+			
+			if(frm.h_telno.value=="") {
+				alert("휴대폰번호를 입력해주세요.")
+				frm.h_telno.focus()
+				return
+			} else
+			if(frm.pwd.value=="") {
+				alert("비밀번호를 입력해주세요.")
+				frm.pwd.focus()
+				return
+			} else {
+				//frm.ret_url.value = encodeURIComponent(frm.ret_url.value)
+				frm.action = "https://m.thankqcamping.com/join/login_ok.hbb"
+				frm.target = "job"
+				frm.submit();		
+			}	   
+	}
+	
+	//배너노출
+	function axBannerViewCount(c) {
+		if ($("#BN"+c)) {
+			if($("#BN"+c).html().indexOf("B") > -1 && $("#Lmnu").attr('class').indexOf('in') < 0) {
+				$.ajax({
+					type: "POST",
+			    url: "/inc/axBannerViewCount.hbb",
+			    data:{ seq:$("#BN"+c).html().replace("B","") },
+			    success: onSuccess,
+			    error: onError
+				});		
+				function onSuccess(dataobj) {}
+			  function onError() {}				
+			}
+		}
+	}
+	//모달 페이지 이동
+	function goModalReUrl(url) {
+		goUrl(url,'Y','pop')
+	}
+
+	//먹거리구매 상세확인
+	function goResGoodView(campseq,resgoodseq) {
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&resgoodseq="+resgoodseq+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+//메인알람
+function mainNoti(id,tit,msg,url) {
+	if(get_cookie("mainNoti_"+id)==null) { 
+		setCookie("mainNoti_"+id, "Y", false)
+		txt = "<div class=\"pop_conts\">"
+		txt += "	<p class=\"txt1\">"+tit+"</p>"
+		txt += "	<p class=\"txt2\">"+msg+"</p>"
+		txt += "</div>"
+		txt += "<span href=\"#\" class=\"sprite btn_layerClose2\" onclick=\"ly_close()\"></span>"
+		txt += "<button type=\"button\" class=\"btn\" onClick=\"ly_close();"+url+"\">바로가기</button>"
+		$('#divMainNoti').html(txt);
+		ly_open();
+	}
+}
+//외부오픈창열기
+function outOpen(url) {
+	if(app_yn=='Y') {
+		if ((app_os=='android' && parseInt(app_ver) < 51) || (app_os=='ios' && parseInt(app_ver) < 38)) {
+			open(url,'_blank','')
+		} else {
+			if(app_os=='ios') {
+				goIosAp('openBrowser',url)
+			} else {
+				try {
+		    	location.href = "blank://" + url
+		    } catch(e) {
+		      open(url,'_blank','')
+		    }
+		  }
+		}
+	} else {
+		open(url,'','')
+	}
+}
+
+</script>
+		<script src="/js/m_com.js?version=20261001-1"></script>
+		<script src="/js/m_map.js?version=20261001-1"></script>
+		<script src="/js/m_sns.js?version=20261001-1"></script>
+		<script src="/js/join.js?version=20261001-1"></script>
+		<script src="/js/resv.js?version=20261001-1"></script>
+		<script src="/js/talk.js?version=20261001-1"></script>
+		<script src="/js/cs.js?version=20261001-1"></script>
+		<script src="/js/coupon.js?version=20261001-1"></script>
+		<script src="/js/iscroll.js?version=20261001-1"></script>
+		<script src="/js/my.js?version=20261001-1"></script>
+		<script src="/js/trans.js?version=20261001-1"></script>
+		
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-64792179-1', 'auto');
+		ga('send', 'pageview');
+		//document.ondragstart = new Function('return false');     // 드래그 방지
+		//document.onselectstart = new Function('return false');   // 선택 방지
+		//document.oncontextmenu = new Function('return false');   // 선택 방지
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZH75RFPSZ"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-EZH75RFPSZ');
+		</script>
+	  <!-- Google tag (gtag.js) -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5WNWZSZ"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+	    gtag('config', 'GTM-5WNWZSZ');
+	  </script>		
+      <!-- 봇 매니저 -->
+      <script src="https://cdn-botmanager.stclab.com/agents/client/javascript/botmanager-browser-agent.js" async></script>
+    <script>
+        (function (cfg) {
+            cfg.tenantId = 'TN251104-8C1A44EC';
+            cfg.domainName = 'thankqcamping.com';
+            cfg.customId = '';
+            cfg.serverUrl = 'https://botmanager.stclab.com/api/v1/macro';
+        })(window['BotManager-config'] || (window['BotManager-config'] = {}));
+    </script>
+		<style>
+		body { background: #f9f9f9; }
+		</style>
+</head>
+<div id="loading"><img id="loading-image" src="/images/loading.svg" alt="Loading..." /></div>
+<div id="site_url" style="display:none;">https://m.thankqcamping.com</div>
+<div id="shop_url" style="display:none;">https://m.thankqcamping.com</div>
+<iframe name="job" width="0" height="0" style="display:none;"></iframe>
+<form name="logoutForm" method="post">
+<input type="hidden" name="reurl" value="https://m.thankqcamping.com/join/logout.hbb">
+</form>
+<form name="nearbyform" method="post">
+<input type="hidden" name="mem_lat">
+<input type="hidden" name="mem_lng">
+<input type="hidden" name="nearby" value="Y">
+</form>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    if(app_yn != "Y"){
+        // 앱 유도 QR 코드 추가
+        const newDiv = document.createElement("div");
+        newDiv.classList.add("background_content");
+        
+        newDiv.innerHTML = `
+            <div class="content_group">
+                <a href="#">
+                    <img src="/images/deep_qr.svg" alt="딥링크 QR" class="img_qr">
+                    <img src="/images/deep_logo.png" alt="LOGO" class="img_logo">
+                </a>
+                <div class="text_box">
+                    <p>앱을 설치하면<br>더 많은 혜택을<br>받아 볼 수 있어요!</p>
+                    <span>카메라로 QR코드를 스캔해보세요</span>
+                </div>
+            </div>
+        `;
+        
+        const firstChild = document.getElementById("wrap").firstChild;
+        document.getElementById("wrap").insertBefore(newDiv, firstChild);
+    }
+})
+</script>
+<!-- poplayer -->
+<div id="popup_alert" class="modal_wrap wd_auto">
+  <div class="modal_center">
+    <div class="md_cont"><p></p></div>
+    <!-- 버튼2개일때 md_button에 클래스 type2 추가 -->
+    <div class="md_button">
+      <button class="btn_ok" type="button" onclick="action_popup.close('#popup_alert')">확인</button>
+    </div>
+  </div>
+</div>
+<div id="popup_succ_alert" class="modal_wrap wd_auto type2">
+  <!-- 룰렛 당첨시 modal_center bg_fire 추가-->
+  <div id="succ_modal_center" class="modal_center">
+    <div class="md_cont">
+      <p id="succ_alert_tit" class="title fwb"></p>
+      <p id="succ_alert_cont" class="box">
+      </p>
+    </div>
+    <!-- 버튼2개일때 md_button에 클래스 type2 추가 -->
+    <div class="md_button">
+      <button class="btn_succ_ok" type="button" onclick="action_popup.close('#popup_succ_alert')">확인</button>
+    </div>
+  </div>
+</div>
+<div id="popup_confirm" class="modal_wrap wd_auto">
+  <div class="modal_center">
+    <div class="md_cont"><p></p></div>
+    <!-- 버튼2개일때 md_button에 클래스 type2 추가 -->
+    <div class="md_button type2">
+      <button class="btn_cancel rounded" type="button" onclick="action_popup.close('#popup_confirm')">취소</button>
+      <button class="btn_confirm_ok rounded" type="button" onclick="action_popup.close('#popup_confirm')">확인</button>
+    </div>
+  </div>
+</div>
+<!-- poplayer -->
+<div class="pop_noti_set pop_txt_set modal_wrap" id="pop_ad_notice">
+  <div class="modal_center">
+    <div class="pop_noti on">
+      <p class="tit fwb pt0"></p>
+      <p class="btm_border"></p>
+    </div>
+    <div class="md_button">
+      <button type="button" class="btn_gray" onClick="action_popup.close('#pop_ad_notice')">확인</button>
+    </div>
+  </div>
+  <!-- <div class="modal"></div> -->
+</div>
+<div id="popup_modal" class="modal_wrap wd_auto">
+  <div class="modal_center">
+    <div class="md_cont"><p></p></div>
+    <!-- 버튼2개일때 md_button에 클래스 type2 추가 -->
+    <div class="md_button">
+      <button class="btn_confirm_ok rounded" type="button" onclick="action_popup.close('#popup_modal')">확인</button>
+    </div>
+  </div>
+</div>
+<div class="pop_layer_set" id="pop_toast_noti">
+  <div class="pop_layer recent_layer incart_layer" style="z-index: 800">
+    <p class="inmycart" id="toast_txt"></p>
+  </div>
+</div>
+<div class="pop_layer_set" id="pop_floating_noti">
+  <div class="pop_layer recent_layer incart_layer" style="z-index: 800">
+    <p class="floating-button" id="floating_txt"></p>
+  </div>
+</div>
+<!-- 기본 모달 popup -->
+<div class="pop_wp" id="pop_modal">
+  <div class="pop_layer_set pop_noti_set on">
+    <div id="modal_detail" class="pop_layer recent_layer dome_layer"></div>
+    <div class="modal" style="display: block"></div>
+  </div>
+</div>
+<!-- //기본 모달 popup -->
+
+<script>
+function getResList(){
+	
+}
+function clkSerKeyCd(cd) {
+	$("li[id^='LiKeySub']").hide()
+	$("li[id^='LiKeySubALL']").hide()
+	$("li[id^='LiKeySub"+cd+"']").show()
+	$("input:checkbox[id^='chk_ser_sub_key']").prop('checked',false)
+}
+function showSortMent(tp) {
+	$("span[id^='sort_ment_']").hide()
+	$("span[id^='sort_ment_"+tp+"']").show()
+}
+</script>
+
+<body ioncontextmenu="if (!window.__cfRLUnblockHandlers) return false; return!1" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return!1" onselectstart="if (!window.__cfRLUnblockHandlers) return false; return!1">
+<header>
+  <section class="seo-text">
+    <h1>예약</h1>
+  </section>
+</header>
+<form name="form" method="post">
+<input type="hidden" id="res_dt" name="res_dt" value="">
+<input type="hidden" name="res_edt" value="">
+<input type="hidden" name="region" value="">
+<input type="hidden" name="region_all" value="">
+<input type="hidden" name="sub_region" value="">
+<input type="hidden" name="disp_site_tp" value="">
+<input type="hidden" name="tema" value="">
+<input type="hidden" name="camp_tp" value="">
+<input type="hidden" name="partnseq" value="">
+<input type="hidden" name="page_num" value="1">
+<input type="hidden" name="res_url">
+<input type="hidden" name="res_back" value="">
+<input type="hidden" name="tq_push_yn" value="">
+<input type="hidden" name="tq_loc_yn" value="">
+<input type="hidden" name="thankq_app" value="">
+<input type="hidden" name="reseventseq" value="">
+<input type="hidden" name="login_loc" value="">
+<input type="hidden" name="couponId" value="">
+<input type="hidden" name="pre_url" value="list.hbb">    
+<input type="hidden" name="ser_st" value="N">
+<input type="hidden" name="mem_lat" value="">
+<input type="hidden" name="mem_lng" value="">
+<input type="hidden" name="nearby" value="">
+<input type="hidden" name="ser_res_dt" value="">
+<input type="hidden" name="ser_res_edt" value="">
+<input type="hidden" name="ser_res_days" value="">
+<input type="hidden" name="ser_keyword" value="">
+<input type="hidden" name="ser_festa_gbn" value="">
+<input type="hidden" name="ser_camp_spec_list" value="">
+<input type="hidden" name="ser_list_title" value="">
+
+    <div class="wrap pdb0" id="wrap">
+        <div class="wrap_in">
+						
+			
+            <div class="head">
+                <div class="head_in">
+					
+                    <a href="javascript:popClose('');" class="btn_back">back</a>
+                    
+					<div class="search_div" id="top_search_input">
+						<span class="icon_search"></span>
+						<div class="text_g"><span class="text">지역ㆍ날짜ㆍ인원으로 숙소 검색</span></div>
+						<!-- <div class="text_g"><span class="text">검색어ㆍmm.dd~mm.dd (n박)ㆍ성인2/소인1</span></div> -->
+					</div>
+					
+
+					<!-- 메인에서만 노출 -->
+					
+                    <a class="btn_menu" onClick="r_menu('');" style="display:none;">menu</a>
+                    <script>
+                    	$(document).ready(function(){
+                    	    const close = ''
+							if(!opener && close != 'True') {
+								$('.btn_menu').show()
+							}
+						});
+                    </script>
+                    
+
+					<!-- 캠톡상세에서만 노출 -->
+					
+                </div>
+            </div><!--// head -->
+            
+            
+<div class="tot_menu">
+  <div class="tot_menu_in mCscroll">
+    <div class="log_box">
+      
+      <div class="pf_set clear">
+        <div class="pic"></div>
+        <div class="txt_box">
+          <p class="tit1">
+            <a
+              href="javascript:location.replace('/join/login.hbb?reurl=%2Fresv%2Flist%2Ehbb%3Fcseq%3D20430');$('.tot_menu .clo').click();">로그인</a>이
+            필요합니다.
+          </p>
+          <p class="txt">Welcome to Q</p>
+        </div>
+      </div>
+      <div class="point_box">
+        <a href="/join/login.hbb" class="p_div">
+          <div class="p_div_list">
+            <div class="p_div_list_value">0</div>
+            <div class="p_div_list_title">Q-Point</div>
+          </div>
+        </a>
+        <!--a href="/join/login.hbb" class="p_div">
+          <div class="p_div_list">
+            <div class="p_div_list_value">0</div>
+            <div class="p_div_list_title">업체적립금</div>
+          </div>
+        </a-->
+        <a href="/join/login.hbb" class="p_div">
+          <div class="p_div_list">
+            <div class="p_div_list_value">0</div>
+            <div class="p_div_list_title">쿠폰</div>
+          </div>
+        </a>
+        <a href="/join/login.hbb" class="p_div">
+          <div class="p_div_list">
+            <div class="p_div_list_value">0</div>
+            <div class="p_div_list_title">행운룰렛</div>
+          </div>
+        </a>
+      </div>
+      
+      <button type="button" class="clo"></button>
+    </div>
+    <!-- //log_box -->
+
+    <!-- rolling_banner -->
+    <div class="rolling_banner" onClick="location.href='/roulette/intro.hbb';">
+      <p class="event_name">새로워진 행운룰렛 이벤트</p>
+      <div class="rolling_wrap">
+        <ul>
+          <li>방문후기 작성하고</li>
+          <li>출석 체크하고</li>
+          <li>캠핑장 방문하고</li>
+          <li>상품 구매하고</li>
+        </ul>
+      </div>
+      <p class="dp_ib"><span class="strong">무료 행운룰렛 이용권</span> 받기</p>
+    </div>
+    <!-- //rolling_banner -->
+    <div class="aside">
+      <ul class="aside_ul">
+        <li class="res">
+          <a href="#n">예약<span class="arr"></span></a>
+          <div class="m_div" style="display: none">
+            <ul>
+              <li><a href="/resv/list.hbb?site_tp=BB000">오토캠핑</a></li>
+              <li><a href="/resv/list.hbb?site_tp=BB001">글램핑</a></li>
+              <li><a href="/resv/list.hbb?site_tp=BB002">카라반</a></li>
+              <li><a href="/resv/list.hbb?site_tp=BB003">펜션</a></li>
+              <li><a href="/resv/list.hbb?site_tp=BB006&res_dt=20261031&res_edt=20261031">피크닉</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="shop">
+          <a href="#n">쇼핑<span class="arr"></span></a>
+          <div class="m_div" style="display: none">
+            <ul>
+              <li><a href="/shop/index.hbb">쇼핑홈</a></li>
+              <li><a href="/shop/event.hbb">화요특가</a></li>
+              <li><a href="/shop/list.hbb?cate=010">캠핑용품</a></li>
+              <li><a href="/shop/list.hbb?cate=020">먹거리</a></li>
+              <li style="display: none;"><a href="/shop/brand_list.hbb">브랜드</a></li>
+              <li><a href="/shop/review_list.hbb">리뷰존</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="plan">
+          <a href="#n">기획전<span class="arr"></span></a>
+          <div class="m_div" style="display: none">
+            <ul>
+              <li><a href="/cs/event.hbb?bbs_gb=AB008">메인기획전</a></li>
+              <li><a href="/cs/collect.hbb?tp=S">쇼핑기획전</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="event">
+          <a href="/cs/co_event.hbb?bbs_gb=AB017">이벤트</a>
+        </li>
+        <li class="camt">
+          <a href="/talk/list.hbb">캠톡</a>
+        </li>
+        
+        <li class="camt">
+          <a href="javascript:$('.clo').click();goUrl('/join/non/ser_reservation.hbb','N','');">비회원예약조회</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!-- //aside -->
+
+    <div class="banner_div" id="banner_HD">
+      
+      <!--a href="#n"><img src="/images/banner01.png" alt=""></a-->
+    </div>
+
+    <div class="aside type2">
+      <ul class="aside_ul">
+        <li class="cus on">
+          <div class="m_div">
+            <ul>
+              <li><a href="/cs/notice.hbb">공지사항</a></li>
+              <li><a href="/cs/faq.hbb">자주묻는질문</a></li>
+              <li><a href="javascript:outOpen('http://about.thankqcamping.com/contact.html');">제휴문의</a></li>
+              <li><a href="tel:02-6959-5622" id="com_tel">상담원연결</a></li>
+              
+            </ul>
+            <p><span>상담시간 : </span>평일 9:30~18:00 (점심시간 12:30~13:30)</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    
+
+    <div class="aside_btns">
+      <ul>
+        
+        <li class="log">
+          <a
+            onClick="javascript:location.replace('/join/login.hbb?reurl=%2Fresv%2Flist%2Ehbb%3Fcseq%3D20430');$('.tot_menu .clo').click();">로그인</a>
+        </li>
+        <li class="my"><a onClick="javascript:location.href='/join/join.hbb';$('.tot_menu .clo').click();">회원가입</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <!-- //tot_menu_in -->
+</div>
+<!-- //tot_menu -->
+
+            <div class="container" style="margin-top: 115px;">
+                 <!--↓↓↓↓↓↓ 컨텐츠 시작 ↓↓↓↓↓↓-->
+
+                 <div class="sear_result_con con">
+				 			
+<div class="sr_top" id="headFilter">
+
+	<div class="sr_condi">
+		<div style="display: flex;">
+			<div class="region" id="region_txt" onclick="javascript:goRegionSearch('','','');"  style="display:none; margin-left: 24px; border-radius: 19px; background-color: #f7f7f7;height: 38px; padding: 0 15px; letter-spacing: -0.58px; font-size: 12px; color: #1f1f1f; font-weight: 500; line-height: 37px; text-align: center; width: 90px;">지역선택</div>
+			<div class="date" id="spnResDtInfo" onClick="javascript:openLayer('pop_date_sel')" style="display:none;margin-left: 8px; border-radius: 19px; background-color: #f7f7f7;height: 38px; padding: 0 15px; letter-spacing: -0.58px; font-size: 12px; color: #1f1f1f; font-weight: 500; line-height: 37px; text-align: center;">
+				
+				날짜선택
+				
+			</div>
+
+			<div>
+				<div class="swiper-container sr_condi_swiper">
+					<ul class="swiper-wrapper">
+					
+				<li class="swiper-slide " >
+					<button type="button" class="festa_button tag_name " name="ser_festa_gbn" value="DL008">#가평군 숙박세일 페스타</button>
+				</li>
+            
+				<li class="swiper-slide " >
+					<button type="button" class="festa_button tag_name " name="ser_festa_gbn" value="DL013">#가평만원캠핑</button>
+				</li>
+            
+				<li class="swiper-slide " >
+					<button type="button" class="festa_button tag_name " name="ser_festa_gbn" value="DL012">#양평숙박할인쿠폰</button>
+				</li>
+            
+				<li class="swiper-slide festa-last" style="display:none;">
+					<button type="button" class="festa_button tag_name " name="ser_festa_gbn" value="DL007">#국방가족 할인쿠폰</button>
+				</li>
+            		
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_get_coupon_yn" value="Y">즉시할인</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_disc_yn" value="Y">할인특가</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_new_yn" value="Y">신규입점</button>
+                        </li>		
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_kid" value="Y">아이들 놀이시설 구비</button>
+                        </li>
+						<li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_camp_spec" value="BP000">반려동물 동반</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_camp_spec" value="BO006">수목원/휴양림 주변</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_long_yn" value="Y">장박</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button type="button" class="keyword_button tag_name" name="ser_camp_spec" value="BO003">유유자적 낚시장 주변</button>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="filter_cont ">
+		<div class="swiper-container filter_cont_swiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<button type="button" class="btn_filter" id="popFilterButton"></button>
+				</li>
+				<li class="swiper-slide">
+					<div class="filter_name" id="group1_txt" data-value="filter_item1">숙소구분</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="filter_name" id="group2_txt" data-value="filter_item2">검색구분</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="filter_name" id="group3_txt" data-value="filter_item3">숙소환경</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="filter_name" id="group4_txt" data-value="filter_item4">주변환경</div>
+				</li>
+				
+				<li class="swiper-slide">
+					<div class="filter_name" id="group5_txt" data-value="filter_item5">한줄후기</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<!-- 필터에 아이콘 XX -->
+<!-- popup(modal) start -->
+<div class="pop_layer_set" id="filter_pop">
+    <!-- 필터 눌렀을 때 나오는 창 -->
+    <div class="pop_layer filter_pop">
+        <div class="pop_title">
+            <p class="tit">필터</p>
+            <button type="button" class="clo2" id="popFilterCloseButton"></button>
+        </div>
+        <div class="pop_con">
+            <div class="filter_top_fixed swiper-container">
+                <div class="swiper-wrapper tabs">
+                    <div id="tab_filter_item1" class="filter_item swiper-slide active" data-target="filter_item1">숙소구분
+                    </div>
+                    <div id="tab_filter_item2" class="filter_item swiper-slide" data-target="filter_item2">검색구분</div>
+                    <div id="tab_filter_item3" class="filter_item swiper-slide" data-target="filter_item3">숙소환경</div>
+                    <div id="tab_filter_item4" class="filter_item swiper-slide" data-target="filter_item4">주변환경</div>
+					
+                    <div id="tab_filter_item5" class="filter_item swiper-slide" data-target="filter_item5">한줄후기</div>
+					
+                </div>
+            </div>
+
+            <!-- item_list div 각 item 선택시 클래스 active 추가 -->
+            <ul class="filter_pop_ul">
+                <li id="filter_item1">
+                    <p class="title">숙소구분</p>
+                    <div class="item_list">
+                        <button type="button" name="ser_site_tp" value="BB000" id="chk_lodg1">오토캠핑</button>
+                        <button type="button" name="ser_site_tp" value="BB001" id="chk_lodg2">글램핑</button>
+                        <button type="button" name="ser_site_tp" value="BB002" id="chk_lodg3">카라반</button>
+                        <button type="button" name="ser_site_tp" value="BB003" id="chk_lodg4">펜션</button>
+                    </div>
+                </li>
+
+                <li id="filter_item2">
+                    <p class="title">검색구분</p>
+                    <!-- <div class="tooltip">
+                      <p class="tooltip_txt">정확한 예약을 위하여 업체가 추가로 제공 및 요청하는 정보입니다.</p>
+                    </div> -->
+                    <div class="item_list">
+                        <button type="button" name="ser_camp_spec" value="BP000">반려견동반</button>
+                        <button type="button" name="ser_kid" value="Y">키즈캠핑</button>
+                        <button type="button" name="ser_pg_tp" value="C">신용카드</button>
+                        <button type="button" name="ser_pg_tp" value="V">무통장입금</button>
+                        <button type="button" name="ser_2peopleOnly" value="Y">2인전용</button>
+                        <button type="button" name="ser_camp_spec" value="BP001">트레일러 진입</button>
+                        <button type="button" name="ser_camp_spec" value="BP002">카라반 진입</button>
+                        <button type="button" name="ser_camp_spec" value="BP003">차박캠핑</button>
+                        <button type="button" name="ser_q_point" value="Y">Q-Point적립</button>
+                        
+                        <button type="button" name="ser_disc_yn" value="Y">할인중</button>
+                        <button type="button" name="ser_new_yn" value="Y">신규입점</button>
+                        <button type="button" name="ser_long_yn" value="Y">장박</button>
+                        <button type="button" name="ser_get_coupon_yn" value="Y">업체할인쿠폰</button>
+                    </div>
+                </li>
+                <li id="filter_item3">
+                    <p class="title">숙소환경</p>
+                    <div class="item_list">
+                        <button type="button" name="ser_camp_spec" value="BM000" />개별화장실</button>
+                        <button type="button" name="ser_camp_spec" value="BM001">개별사워실</button>
+                        <button type="button" name="ser_camp_spec" value="BL004">매점</button>
+                        <button type="button" name="ser_camp_spec" value="BL003">와이파이</button>
+                        <button type="button" name="ser_camp_spec" value="BM007">놀이터</button>
+                        <button type="button" name="ser_camp_spec" value="BM013">수영장</button>
+                        <button type="button" name="ser_camp_spec" value="BN000">장비대여</button>
+                        <button type="button" name="ser_camp_spec" value="BM020">체험활동</button>
+                    </div>
+                </li>
+                <li id="filter_item4">
+                    <p class="title">주변환경</p>
+                    <div class="item_list">
+                        <button type="button" name="ser_camp_position" value="A">바다</button>
+                        <button type="button" name="ser_camp_position" value="B">산</button>
+                        <button type="button" name="ser_camp_position" value="C">강</button>
+                        <button type="button" name="ser_camp_position" value="D">호수</button>
+                        <button type="button" name="ser_camp_position" value="E">계곡</button>
+                        <button type="button" name="ser_camp_position" value="F">섬</button>
+                        <button type="button" name="ser_camp_spec" value="BO005">등산</button>
+                        <button type="button" name="ser_camp_spec" value="BO000">해수욕장</button>
+                        <button type="button" name="ser_camp_spec" value="BO002">수상레져</button>
+                        <button type="button" name="ser_camp_spec" value="BO003">낚시</button>
+                        <button type="button" name="ser_camp_spec" value="BO007">스키장</button>
+                        <button type="button" name="ser_camp_spec" value="BO006">수목원/휴양림</button>
+                    </div>
+                </li>
+				
+                <li id="filter_item5">
+                    <p class="title">한줄후기</p>
+                    <div class="item_list">
+                        <button type="button" name="ser_key_sub_cd2" value="EA000">뷰 맛집</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EA001">조용한 힐링 맛집</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EA002">사진 맛집</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EA003">시원한 그늘 맛집</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EB000">반려견과 함께</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EB001">아이들과 함께</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EB002">연인과 함께</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EB003">친구들과 함께</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EC000">깨끗한 시설</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EC001">럭셔리 시설</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EC002">넓은 사이트 간격</button>
+                        <button type="button" name="ser_key_sub_cd2" value="EC003">다양한 놀이시설</button>
+                        <button type="button" name="ser_key_sub_cd2" value="ED000">친절한 사장님</button>
+                        <button type="button" name="ser_key_sub_cd2" value="ED001">매너타임</button>
+                    </div>
+                </li>
+				
+            </ul>
+        </div>
+        <div class="btm search_filter">
+            <!-- 초기화 on 으로 제어 -->
+            <a id="popFilterResetButton" class="btn_refresh">초기화</a>
+            <button type="button" class="btn_orange" id="searchSubmitButton">필터 검색</button>
+        </div>
+    </div>
+</div>
+
+<script>
+	const headFilterManager = {
+		init: function(){
+			this.swiperKeywordFilter();
+			this.swiperBadgeFilter();
+			this.isHeadFilterCheck();
+
+			let lastScrollTop = 0;
+			const headFilter = document.getElementById("headFilter");
+
+			window.addEventListener("scroll", () => {
+				let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+				if (scrollTop < 170) {
+					// 최상단에서는 항상 보이게 설정
+					headFilter.style.transform = "translate(-50%)";
+					headFilter.style.opacity = "1";
+				} else if (scrollTop > lastScrollTop) {
+					// 아래로 스크롤 시 숨김
+					headFilter.style.transform = "translate(-50%,-100%)";
+					headFilter.style.opacity = "0";
+				} else {
+					// 위로 스크롤 시 노출
+					headFilter.style.transform = "translate(-50%)";
+					headFilter.style.opacity = "1";
+				}
+
+				lastScrollTop = scrollTop;
+			});
+		},
+		swiperKeywordFilter: function(){
+			const sr_condi_swiper = new Swiper('.sr_condi_swiper', {
+				pagination: false,
+				slidesPerView: 'auto',
+				paginationClickable: true,
+				spaceBetween: 8,
+				freeMode: true,
+				lazyLoading: true,
+				observer: true,
+				observeParents: true,
+				loop: false
+			});
+
+			return sr_condi_swiper;
+		},
+		swiperBadgeFilter: function(){
+			const filter_cont_swiper = new Swiper('.filter_cont_swiper', {
+				pagination: false,
+				slidesPerView: 'auto',
+				paginationClickable: true,
+				spaceBetween: 8,
+				freeMode: true,
+				lazyLoading: true,
+				observer: true,
+				observeParents: true,
+				loop: false,
+            });
+
+			return filter_cont_swiper;
+		},
+		// 구분 필터 버튼 active 업데이트 이벤트
+		updateActiveFilters: function() {
+			const selectedFilters = filterManager._selectedFilters;
+
+			// 기존 active 클래스 제거
+			document.querySelectorAll(".filter_cont_swiper .swiper-slide").forEach(slide => {
+				slide.classList.remove("active");
+			});
+			
+			// 태그 페스타 버튼 active
+            if (selectedFilters.ser_festa_gbn != ""){
+                const buttonEl = document.querySelector(`.tag_name[value='${selectedFilters.ser_festa_gbn}']`);
+                if(buttonEl){
+                    buttonEl.classList.add("active");
+                }
+            }
+            
+			// 태그 할인 버튼 active
+			if (selectedFilters.ser_disc_yn == "Y"){
+				const buttonEl = document.querySelector(`.tag_name[name='ser_disc_yn']`);
+				buttonEl.classList.add("active");
+			}
+            
+            // 태그 반려동물 버튼 active
+            if (selectedFilters.ser_camp_spec.some(value => ["BP000"].includes(value))){
+                const buttonEl = document.querySelector(`.tag_name[value='${selectedFilters.ser_camp_spec}']`);
+                buttonEl.classList.add("active");
+            }
+            
+            // 태그 아이들 버튼 active
+            if (selectedFilters.ser_kid == "Y"){
+                const buttonEl = document.querySelector(`.tag_name[name='ser_kid']`);
+                buttonEl.classList.add("active");
+            }
+            
+            // 태그 업체할인 버튼 active
+            if (selectedFilters.ser_get_coupon_yn == "Y"){
+                const buttonEl = document.querySelector(`.tag_name[name='ser_get_coupon_yn']`);
+                buttonEl.classList.add("active");
+            }
+
+			// 숙소구분 버튼 active
+			if (selectedFilters.ser_site_tp.length > 0) {
+				document.getElementById("group1_txt")?.closest(".swiper-slide")?.classList.add("active");
+			}
+
+			// 검색구분 버튼 active
+			if (
+				selectedFilters.ser_camp_spec.some(value => ["BP000", "BP001", "BP002", "BP003"].includes(value)) ||
+				selectedFilters.ser_pg_tp.some(value => ["C", "V"].includes(value)) ||
+				selectedFilters.ser_2peopleOnly === "Y" || selectedFilters.ser_q_point === "Y" || selectedFilters.ser_deposit_yn === "Y" ||
+				selectedFilters.ser_disc_yn === "Y" || selectedFilters.ser_new_yn === "Y" || selectedFilters.ser_long_yn === "Y" || selectedFilters.ser_kid === "Y" || selectedFilters.ser_get_coupon_yn === "Y"
+			) {
+				document.getElementById("group2_txt")?.closest(".swiper-slide")?.classList.add("active");
+			}
+
+			// 숙소환경 버튼 active
+			if (selectedFilters.ser_camp_spec.some(value => ["BM000", "BM001", "BL004", "BL003", "BM007", "BM013", "BN000", "BM020"].includes(value))) {
+				document.getElementById("group3_txt")?.closest(".swiper-slide")?.classList.add("active");
+			}
+
+			// 주변환경 버튼 active
+			if (selectedFilters.ser_camp_position.length > 0 || selectedFilters.ser_camp_spec.some(value => ["BO005", "BO000", "BO002", "BO003", "BO007"].includes(value))) {
+				document.getElementById("group4_txt")?.closest(".swiper-slide")?.classList.add("active");
+			}
+			
+			// 한줄후기 버튼 active
+            if (selectedFilters.ser_key_sub_cd2.length > 0) {
+                document.getElementById("group5_txt")?.closest(".swiper-slide")?.classList.add("active");
+            }
+		},
+		// 구분 필터 미노출 여부 체크
+		isHeadFilterCheck: function() {
+			if(searchFilterManager._filter.res_date == searchFilterManager._filter.res_end_date || (searchFilterManager._filter.res_date != "" && searchFilterManager._filter.res_end_date == "")){
+				document.querySelector('.filter_name[data-value="filter_item1"]').closest(".swiper-slide").style.display = "none";
+				document.getElementById("tab_filter_item1").style.display = "none";
+				document.getElementById("filter_item1").style.display = "none"
+			}else{
+				document.querySelector('.filter_name[data-value="filter_item1"]').closest(".swiper-slide").style.display = "block";
+				document.getElementById("tab_filter_item1").style.display = "block";
+                document.getElementById("filter_item1").style.display = "block"
+			}
+		}
+	}
+
+    /* 검색 관련 함수 */
+    const filterUrlParams = new URLSearchParams(window.location.search);
+    const filterManager = {
+		_selectedFilters: {
+			ser_site_tp: [],
+			ser_pg_tp: [],
+			ser_camp_spec: [],
+			ser_camp_position: [],
+			ser_key_sub_cd2: [],
+			ser_kid: "",
+			ser_2peopleOnly: "",
+			isPg: "",
+			ser_q_point: "",
+			ser_deposit_yn: "",
+			ser_disc_yn: "",
+			ser_new_yn: "",
+			ser_long_yn: "",
+			ser_key_cd: "",
+			ser_sort: "",
+			ser_key_cd: "",
+			ser_key_sub_cd: "",
+			ser_keyword: "",
+			ser_only_able: "",
+			ser_empty_yn: "",
+			ser_festa_gbn: "",
+			ser_get_coupon_yn: "",
+			page: 0
+		},
+        init: function () {
+            const popFilterButtonEl = document.getElementById("popFilterButton");
+            const popFilterCloseButtonEl = document.getElementById("popFilterCloseButton");
+            const popFilterResetButtonEl = document.getElementById("popFilterResetButton");
+            const filterNameEl = document.querySelectorAll('.filter_name');
+
+            popFilterButtonEl.addEventListener("click", () => {
+                this.open()
+            });
+            popFilterCloseButtonEl.addEventListener("click", () => {
+                this.close()
+            });
+            popFilterResetButtonEl.addEventListener("click", () => {
+                this.resetFilters()
+            });
+
+            filterNameEl.forEach(el => {
+                console.log(el.textContent);
+
+                el.addEventListener("click", () => {
+                    this.open(el.dataset.value)
+                });
+            });
+
+            // 필터 항목 클릭 이벤트 등록
+            document.querySelectorAll(".item_list button").forEach(item => {
+                item.addEventListener("click", (event) => this.toggleFilter(event));
+            });
+
+            //this.sortSelect();
+			this.setting();
+            this.popFilter();
+        },
+		// 태그 필터 이벤트 생성
+		createTagClickEvent: function(func){
+			// 태그 필터 항목 클릭 이벤트 등록
+            document.querySelectorAll(".tag_name").forEach(item => {
+                item.addEventListener("click", (event) => {
+					this.toggleFilter(event);
+					func();
+                });
+            });
+		},
+		// 초기 세팅 함수
+		setting: function(){
+
+			const siteTpValue = filterUrlParams.get("site_tp") ? filterUrlParams.get("site_tp").split(",").filter(Boolean) : [];
+			const serPgTpValue = filterUrlParams.get("ser_pg_tp") ? filterUrlParams.get("ser_pg_tp").split(",").filter(Boolean) : [];
+			const serCampSpecValue = filterUrlParams.get("ser_camp_spec") ? filterUrlParams.get("ser_camp_spec").split(",").filter(Boolean) : [];
+			const serCampPositionValue = filterUrlParams.get("ser_camp_position") ? filterUrlParams.get("ser_camp_position").split(",").filter(Boolean) : [];
+			const serKeySubCd2Value = filterUrlParams.get("ser_key_sub_cd2") ? filterUrlParams.get("ser_key_sub_cd2").split(",").filter(Boolean) : [];
+
+			filterManager._selectedFilters = {
+				ser_site_tp: siteTpValue,
+				ser_pg_tp: serPgTpValue,
+				ser_camp_spec: serCampSpecValue,
+				ser_camp_position: serCampPositionValue,
+				ser_key_sub_cd2: serKeySubCd2Value,
+				ser_kid: filterUrlParams.get("ser_kid") || "",
+				ser_2peopleOnly: filterUrlParams.get("ser_2peopleOnly") || "",
+				isPg: filterUrlParams.get("isPg") || "",
+				ser_q_point: filterUrlParams.get("ser_q_point") || "",
+				ser_deposit_yn: filterUrlParams.get("ser_deposit_yn") || "",
+				ser_disc_yn:  filterUrlParams.get("ser_disc_yn") || "",
+				ser_new_yn: filterUrlParams.get("ser_new_yn") || "",
+				ser_long_yn: filterUrlParams.get("ser_long_yn") || "",
+				ser_key_cd: filterUrlParams.get("ser_key_cd") || "",
+				ser_sort: filterUrlParams.get("ser_sort") || "",
+				ser_key_cd: filterUrlParams.get("ser_key_cd") || "",
+				ser_key_sub_cd: filterUrlParams.get("ser_key_sub_cd") || "",
+				ser_keyword: filterUrlParams.get("ser_keyword") || "",
+				ser_only_able: filterUrlParams.get("ser_only_able") || "",
+				ser_empty_yn:  filterUrlParams.get("ser_empty_yn") || "",
+				ser_festa_gbn: filterUrlParams.get("ser_festa_gbn") || "",
+				ser_get_coupon_yn: filterUrlParams.get("ser_get_coupon_yn") || "",
+				page: 0
+			}
+
+			// 해당 필터값이 존재하면 active 클래스 추가
+			Object.keys(filterManager._selectedFilters).forEach(key => {
+				const value = filterManager._selectedFilters[key];
+
+				if (Array.isArray(value)) {
+					value.forEach(val => {
+						document.querySelectorAll(`.item_list button[name='${key}'][value='${val}']`).forEach(btn => btn.classList.add("active"));
+					});
+				} else if (value === "Y") {
+					document.querySelectorAll(`.item_list button[name='${key}']`).forEach(btn => btn.classList.add("active"));
+				}
+			});
+			
+			// 페스타 검색 시 sort 값 E 세팅
+			if(filterManager._selectedFilters.ser_festa_gbn != ""){
+			    //filterManager._selectedFilters.ser_sort = "E";
+			}
+			
+			// 리스트 순서 버튼 초기 이벤트
+			filterManager.sortChangeEvent();
+			headFilterManager.updateActiveFilters();
+		},
+        // 필터 팝업 열기
+        open: function (filterType) {
+            const scrollPosition = window.scrollY;
+            const headInElement = document.querySelector('.head_in');
+			const containerElement = document.querySelector('.container');
+            const top = scrollPosition - 60; // head 높이 값 제외
+
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${top}px`;
+
+			containerElement.style.marginTop = '175px';
+
+            headInElement.style.position = 'fixed';
+            headInElement.style.top = `0px`;
+            headInElement.style.left = '50%';
+            headInElement.style.width = '100%';
+            headInElement.style.transform = 'translateX(-50%)';
+            headInElement.style.maxWidth = '640px';
+			
+			if(filterType){
+				document.querySelector(`.filter_item[data-target='${filterType}']`)?.click();
+			}
+			
+            openLayer('filter_pop');
+        },
+        // 필터 팝업 닫기
+        close: function () {
+            const headInElement = document.querySelector('.head_in');
+			const containerElement = document.querySelector('.container');
+            const scrollY = document.body.style.top;
+
+			containerElement.style.marginTop = '115px';
+
+            document.body.style.position = '';
+            document.body.style.top = '';
+            headInElement.style.position = 'relative';
+            headInElement.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+            closeLayer('filter_pop');
+        },
+        // 팝업 필터 페이지 이벤트
+        popFilter: function () {
+            const swiper = this.popFilterSwiper();
+
+            const fixedTop = document.querySelector('.filter_top_fixed');
+            let initialTopPosition = fixedTop.offsetTop; // 초기 위치 파악
+
+            const updateFixedTop = () => {
+                if (window.scrollY >= initialTopPosition) {
+                    fixedTop.classList.add('fixed');
+                } else {
+                    fixedTop.classList.remove('fixed');
+                }
+            };
+
+            // 탭 스크롤 이벤트 설정
+            const popupContainer = document.querySelector('.filter_pop_ul');
+            let isManualScroll = false;
+
+            popupContainer.addEventListener('scroll', () => {
+                if (isManualScroll) return; // 수동 스크롤 시 스크롤 이벤트 무시
+                updateFixedTop();
+
+                const allTabs = document.querySelectorAll('.filter_item');
+                let activeTabFound = false; // 활성화된 탭을 한 번만 찾아내도록 플래그 설정
+
+                if (popupContainer.scrollTop === 0) {
+                    allTabs.forEach(tab => tab.classList.remove('active'));
+                    allTabs[0].classList.add('active');
+
+                    // 모바일에서는 Swiper도 첫 번째 탭으로 이동
+                    if (window.innerWidth <= 640) {
+                        swiper.slideTo(0);
+                    }
+                    return;
+                }
+
+                allTabs.forEach((tab, index) => {
+                    const targetId = tab.getAttribute('data-target');
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement && !activeTabFound) {
+                        const rect = targetElement.getBoundingClientRect();
+
+                        if (rect.top <= 128 && rect.bottom >= 128) {
+                            // 섹션이 화면 내 128px 위에서 보일 때 활성화
+                            tab.classList.add('active');
+                            activeTabFound = true; // 첫 번째로 보이는 섹션에 해당하는 탭을 active로 설정
+
+                            // Swiper를 해당 탭 위치로 이동 (모바일일 경우만 적용)
+                            if (window.innerWidth <= 640) { // 모바일 체크
+                                swiper.slideTo(index); // active 탭으로 swiper 이동
+                            }
+                        } else {
+                            tab.classList.remove('active');
+                        }
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+            });
+
+
+            // 탭 클릭 시 수동으로 활성화 설정
+            document.querySelectorAll('.filter_item').forEach((tab, index) => {
+                tab.addEventListener('click', function () {
+                    if (tab.style.display === 'none') return; // display: none 상태의 탭은 무시
+
+                    isManualScroll = true; // 스크롤 이벤트 일시 중지
+
+                    // 모든 탭에서 active 제거 후 현재 클릭한 탭에 active 추가
+                    document.querySelectorAll('.filter_item').forEach(item => item.classList
+                        .remove('active'));
+                    this.classList.add('active');
+
+                    // 해당 섹션으로 팝업 내부 스크롤 이동
+                    const targetId = this.getAttribute('data-target');
+                    const targetElement = document.getElementById(targetId);
+                    const popupContainer = document.querySelector('.filter_pop_ul');
+
+                    if (targetElement && popupContainer) {
+                        popupContainer.scrollTo({
+                            top: targetElement.offsetTop - popupContainer.offsetTop,
+                            behavior: 'smooth'
+                        });
+
+                        if (window.innerWidth <= 640) {
+                            swiper.slideTo(index); // Swiper 탭 이동
+                        }
+
+                        // 스크롤이 끝난 후 다시 스크롤 이벤트 활성화
+                        setTimeout(() => {
+                            isManualScroll = false;
+                        }, 500);
+                    }
+                });
+            });
+
+
+            // 초기 위치 업데이트를 위한 리사이즈 이벤트 처리
+            window.addEventListener('resize', () => {
+                initialTopPosition = fixedTop.offsetTop;
+                updateFixedTop();
+            });
+
+            updateFixedTop();
+        },
+        // 필터 팝업 페이지 탭
+        popFilterSwiper: function () {
+            const swiper = new Swiper('.filter_top_fixed', {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                freeMode: true
+            });
+
+            return swiper;
+        },
+        // 정렬 기준 팝업 이벤트
+        sortSelect: function (fun) {
+            const eventBtnEl = document.getElementById('sortChoiceButton');
+            const options = document.querySelectorAll(".opt");
+            const parentEl = eventBtnEl.parentNode;
+        
+            // 클릭한 옵션의 텍스트를 라벨 안에 넣음
+            const handleSelect = (item) => {
+                parentEl.classList.remove("on");
+                eventBtnEl.innerHTML = item.textContent;
+        
+                filterManager._selectedFilters.ser_sort = item.dataset.value;
+                fun();
+            };
+        
+            // 옵션 클릭 시 클릭한 옵션을 넘김
+            options.forEach((option) => {
+                option.addEventListener("click", (event) => {
+                    event.stopPropagation(); // 이벤트 버블링 방지
+                    handleSelect(option);
+                });
+            });
+        
+            // 라벨을 클릭 시 옵션 목록이 열림/닫힘
+            eventBtnEl.addEventListener("click", (event) => {
+                event.stopPropagation(); // 이벤트 버블링 방지
+                parentEl.classList.toggle("on");
+            });
+        
+            // **이외 영역 클릭 시 닫기**
+            const closeDropdown = (event) => {
+                if (!parentEl.contains(event.target)) {
+                    parentEl.classList.remove("on");
+                }
+            };
+        
+            document.addEventListener("click", closeDropdown);
+        
+            // **스크롤 시 닫기**
+            document.addEventListener("scroll", () => {
+                parentEl.classList.remove("on");
+            });
+        },
+        // 정렬기준 변경
+        sortChangeEvent: function(){
+            // 리스트 순서 버튼 초기 이벤트
+            const sortChoiceButtonEl = document.getElementById("sortChoiceButton");
+            if(sortChoiceButtonEl != null){
+                let buttonText;
+            
+                switch (filterManager._selectedFilters.ser_sort) {
+                    case "R": 
+                        buttonText = "추천순"; 
+                        break;
+                    case "P": 
+                        buttonText = "조회순"; 
+                        break;
+                    case "E": 
+                        buttonText = "빈자리순"; 
+                        break;
+                    case "F": 
+                        buttonText = "가격순"; 
+                        break;
+                    case "S": 
+                        buttonText = "후기많은순"; 
+                        break;
+                    case "N": 
+                        buttonText = "최근후기순"; 
+                        break;
+                    default: 
+                        buttonText = "추천순"; // 기본값
+                }
+            
+                sortChoiceButtonEl.innerHTML = buttonText;
+            }
+        },
+		// 예약가능 데이터만
+		toggleEmpty: function(){
+			const isEmpty = filterManager._selectedFilters.ser_only_able;
+			const emptyButtonEl = document.getElementById("empty_y");
+
+			if(isEmpty == "on"){
+				filterManager._selectedFilters.ser_only_able = "";
+				filterManager._selectedFilters.ser_empty_yn = "N";
+			}else{
+				filterManager._selectedFilters.ser_only_able = "on";
+				filterManager._selectedFilters.ser_empty_yn = "Y";
+			}
+
+			this.updateEmptyState();
+		},
+		// 예약가능 버튼 이벤트
+		updateEmptyState: function(){
+			const emptyButtonEl = document.getElementById("empty_y");
+
+			if (filterManager._selectedFilters.ser_only_able == "on") {
+				emptyButtonEl.classList.add("active");
+			} else {
+				emptyButtonEl.classList.remove("active");
+			}
+		},
+        // 필터 항목 클릭 시 활성화/비활성화
+		toggleFilter: function (event) {
+			const searchPageType = 'LIST';
+			const target = event.target;
+			const name = target.getAttribute("name");
+			const value = target.getAttribute("value");
+
+			// 페스타 버튼일 때
+			if(name == "ser_festa_gbn"){
+			
+				//만만한캠핑인 경우 입실일자 기본값 set
+				if (value == "DL002") {
+					searchFilterManager._filter.res_date = "20251001";
+					searchFilterManager._filter.res_end_date = "20251002";
+				}
+			
+				document.querySelectorAll(".tag_name.festa_button").forEach(item => item.classList.remove("active"));
+
+				if(filterManager._selectedFilters[name] == value){
+					document.querySelector(`.tag_name.festa_button[value='${value}']`).classList.remove("active");
+					filterManager._selectedFilters[name] = "";
+				}else{
+					document.querySelector(`.tag_name.festa_button[value='${value}']`).classList.add("active");
+					filterManager._selectedFilters[name] = value;
+					
+					//filterManager._selectedFilters.ser_sort = "E";
+                    filterManager.sortChangeEvent();
+				}
+				
+				return;
+			}
+
+			// _selectedFilters[name]이 존재하지 않으면 기본값 설정
+			if (this._selectedFilters[name] === undefined) {
+				this._selectedFilters[name] = [];
+			}
+
+			// 배열인 경우 (ex: ser_site_tp, ser_pg_tp 등)
+            if (Array.isArray(this._selectedFilters[name])) {
+
+                // value에 콤마가 있으면 배열로 분리
+                const valueList = String(value)
+                    .split(",")
+                    .map(item => item.trim())
+                    .filter(item => item !== "");
+
+                // valueList 값들이 전부 선택되어 있으면 해제, 아니면 선택
+                const isSelected = valueList.every(item => this._selectedFilters[name].includes(item));
+
+                if (isSelected) {
+                    // 선택 해제
+                    this._selectedFilters[name] = this._selectedFilters[name].filter(item => !valueList.includes(item));
+
+                    // 원본 value 버튼 비활성화 ex) value="A,B"
+                    document.querySelectorAll(`.item_list button[name='${name}'][value='${value}']`).forEach(item => item.classList.remove("active"));
+                    document.querySelectorAll(`.tag_name[name='${name}'][value='${value}']`).forEach(item => item.classList.remove("active"));
+
+                    // 분리된 value 버튼들도 비활성화 ex) value="A", value="B"
+                    valueList.forEach(filterValue => {
+                        document.querySelectorAll(`.item_list button[name='${name}'][value='${filterValue}']`).forEach(item => item.classList.remove("active"));
+                        document.querySelectorAll(`.tag_name[name='${name}'][value='${filterValue}']`).forEach(item => item.classList.remove("active"));
+                    });
+
+                    if (searchPageType == "LIST" && name == "ser_site_tp") {
+                        searchFilterManager._filter['site_type'] = searchFilterManager._filter['site_type'].filter(item => !valueList.includes(item));
+                        searchFilterManager.getSiteType();
+                    }
+
+                } else {
+                    // 선택 추가 - 중복 방지
+                    valueList.forEach(filterValue => {
+                        if (!this._selectedFilters[name].includes(filterValue)) {
+                            this._selectedFilters[name].push(filterValue);
+                        }
+                    });
+
+                    // 원본 value 버튼 활성화 ex) value="A,B"
+                    document.querySelectorAll(`.item_list button[name='${name}'][value='${value}']`).forEach(item => item.classList.add("active"));
+                    document.querySelectorAll(`.tag_name[name='${name}'][value='${value}']`).forEach(item => item.classList.add("active"));
+
+                    // 분리된 value 버튼들도 활성화 ex) value="A", value="B"
+                    valueList.forEach(filterValue => {
+                        document.querySelectorAll(`.item_list button[name='${name}'][value='${filterValue}']`).forEach(item => item.classList.add("active"));
+                        document.querySelectorAll(`.tag_name[name='${name}'][value='${filterValue}']`).forEach(item => item.classList.add("active"));
+                    });
+
+                    if (searchPageType == "LIST" && name == "ser_site_tp") {
+                        valueList.forEach(filterValue => {
+                            if (!searchFilterManager._filter['site_type'].includes(filterValue)) {
+                                searchFilterManager._filter['site_type'].push(filterValue);
+                            }
+                        });
+
+                        searchFilterManager.getSiteType();
+                    }
+                }
+            }
+			// 배열이 아닌 경우 (ex: ser_kid, ser_2peopleOnly 등)
+			else {
+				if(this._selectedFilters[name] == ""){
+					this._selectedFilters[name] = value;
+				}else{
+					this._selectedFilters[name] = "";
+				}
+				
+				document.querySelectorAll(`.item_list button[name='${name}']`).forEach(item => item.classList.toggle("active", this._selectedFilters[name] === "Y")); // 필터 활성화 여부 설정
+				document.querySelectorAll(`.tag_name[name='${name}'][value='${value}']`).forEach(item => item.classList.toggle("active", this._selectedFilters[name] === "Y")); // 태그 활성화 여부 설정
+			}
+
+			headFilterManager.updateActiveFilters();
+		},
+        // 필터 적용 (검색 실행)
+        applyFilters: function (dataFatch) {
+            
+        },
+        // 필터 초기화
+        resetFilters: function () {
+            this._selectedFilters = {
+				resStartDate: '20261030',
+				resEndDate: '20261030',
+				ser_site_tp: [],
+				ser_pg_tp: [],
+				ser_camp_spec: [],
+				ser_camp_position: [],
+				ser_key_sub_cd2: [],
+				ser_kid: "N",
+				ser_2peopleOnly: "N",
+				isPg: "N",
+				ser_q_point: "N",
+				ser_deposit_yn: "N",
+				ser_disc_yn: "N",
+				ser_new_yn: "N",
+				ser_long_yn: "N",
+				ser_get_coupon_yn: "N",
+				ser_sort: "R",
+                ser_key_cd: "",
+                ser_key_sub_cd: "",
+                ser_keyword: "",
+                ser_only_able: "",
+                ser_empty_yn: "",
+                ser_festa_gbn: "",
+				page: 0
+            };
+
+            searchFilterManager.syncFilters();
+			headFilterManager.updateActiveFilters();
+
+            // 모든 필터 항목 비활성화
+            document.querySelectorAll(".item_list button").forEach(item => {
+                item.classList.remove("active");
+            });
+        },
+
+    };
+
+	document.addEventListener("DOMContentLoaded", function() {
+        headFilterManager.init();
+		filterManager.init();
+    });
+</script>
+
+					<div class="view_filter">
+					  <!-- sel_ok - 날짜 선택됐을 때만 노출 -->
+					  <div>
+					    <div class="sel_ok" id="empty_y" style="display: none">예약가능</div>
+					  </div>
+					  <div class="right_div">
+						<div class="sel_div">
+						  <button type="button" id="sortChoiceButton" class="label">추천순</button>
+						  <ul class="opt_ul">
+							<li class="opt" data-value="R">추천순</li>
+							<li class="opt" data-value="P">조회순</li>
+							<li class="opt" data-value="E">빈자리순</li>
+							<li class="opt" data-value="F">가격순</li>
+							<li class="opt" data-value="S">후기많은순</li>
+							<li class="opt" data-value="N">최근후기순</li>
+						  </ul>
+						</div>
+						<div class="sel_view main-info-box">
+                            <img src="../images/thumb.png" alt="리스트로 보기" />
+                            <div class="balloon-badge bottom right" id="viewInfoBox">한눈에 모아보기</div>
+						</div>
+					  </div>
+					</div>
+
+					<!-- 목록형일때만 view_type_info 추가 -->
+                    <div id="DivResvPrList" class="camp_list view_type"></div><!--// camp_list -->
+					
+                    <div id="DivResvList" class="camp_list view_type" style="min-height: 50px;"></div><!--// camp_list -->
+                    <div id="loading_image" style="display:none;width:100%;text-align:center;padding:10px;border:1px;"><img src="/images/loading.svg" alt="Loading..." style="width:25px;"/></div>
+
+                 </div><!--// sear_result_con -->
+                 <!--↑↑↑↑↑↑ 컨텐츠 끝 *******************↑↑↑↑↑↑↑↑↑ -->
+            </div> <!--// container -->
+
+			
+<style>
+    .search_marker{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        background: #fff;
+        z-index: 1;
+    }
+	.now_marker{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 16px;
+		height: 16px;
+		border-radius: 16px;
+		background: #fff;
+		z-index: 1;
+	}
+	.now_marker:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		background: #F27226;
+		opacity: .5;
+		z-index: -1;
+	}
+	.now_marker:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 10px;
+		height: 10px;
+		border-radius: 10px;
+		border: 2px solid #fff;
+		background: #F27226;
+	}
+	.ui-state-active, .ui-state-active a:hover {
+	    position:relative;
+	    border-radius: 100rem;
+	}
+	.ui-state-active a{
+	    position: relative;
+	    border-radius: 100rem;
+	    background: #f47206 !important;
+	}
+	td.ui-state-active.left:before{
+	    content: "";
+	    position: absolute;
+	    top:0;
+	    left: 0;
+	    display: block;
+	    width: 50%;
+	    height: 100%;
+	    transform: translateX(100%);
+	    background: #FFCCAD;
+	}
+	td.ui-state-active.right:before{
+        content: "";
+        position: absolute;
+        top:0;
+        right: 0;
+        display: block;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-100%);
+        background: #FFCCAD;
+    }
+	.ui-state-active-a{
+	    background: #FFCCAD !important;
+	}
+	.stay_btn_swiper .swiper-slide{ width: auto; }
+
+</style>
+
+<div class="pop_layer_set2" id="search_pop">
+    <!-- 필터 눌렀을 때 나오는 창 -->
+    <div class="filter_pop">
+		<div class="search head">
+		  <div class="head_in" style="overflow: initial">
+			<button type="button" class="btn_close" id="popSearchCloseButton"></button>
+			<ul class="search_tab">
+				<li class="main-info-box active" id="listTab">숙소검색</li>
+				<li class="main-info-box" id="mapTab">
+				    지도검색
+				    <div class="balloon-badge bottom center" id="mapInfoBox">가까운 숙소찾기</div>
+                </li>
+			</ul>
+		  </div>
+		</div>
+   
+		<div>
+		  <!--↓↓↓↓↓↓ 컨텐츠 시작 ↓↓↓↓↓↓-->
+			<div class="search_content" id="list-search-content" style="display: none;">
+				<div class="search_form_box">
+					<div class="search_form_input search">
+						<input type="text" id="ser_keyword_" list="sear_list" value="" placeholder="숙소명을 입력하세요" style="width: 100%; font-size: 14px; outline: 0; border: 0;"  />
+						<span class="ico_del" id="deleteKeyword" style="display:none;"></span>
+						<div id="search_result_info_box" class="search_result_info_box">
+						    <p class="info">업체명 클릭시, 상세페이지로 이동합니다.</p>
+						    <p class="info">다른 조건으로 검색하려면, 타 검색항목을 바로 클릭하세요.</p>
+						</div>
+						<ul id="search_result_box" class="search_result_box"></ul>
+					</div>
+					<div class="search_form_input place">
+						<span class="placeholder">지역을 선택 하세요.</span>
+						<div class="search_choice_box">
+							<div style="display: flex;justify-content: space-between;align-items:center;">
+								<h3 class="title">지역을 선택해 주세요.</h3>
+								<p style="color:#8E8E8E;font-size: 12px;">최대 3개 선택</p>
+							</div>
+							<div class="content">
+								<div class="swiper-container place_tab_swiper">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide place_button" data-value="" data-region="" data-arr="-1">지역전체</li>
+										<!--li class="swiper-slide place_button" data-value="강원권" data-region="" data-arr="0">강원</li>
+										<li class="swiper-slide place_button" data-value="경상권" data-region="" data-arr="1">경상</li>
+										<li class="swiper-slide place_button" data-value="경기권" data-region="" data-arr="2">경기</li>
+										<li class="swiper-slide place_button" data-value="충청권" data-region="" data-arr="3">충청</li>
+										<li class="swiper-slide place_button" data-value="전라권" data-region="" data-arr="4">전라</li>
+										<li class="swiper-slide place_button" data-value="제주권" data-region="" data-arr="5">제주</li>
+										<li class="swiper-slide place_button" data-value="인천" data-region="" data-arr="6">인천</li-->
+										<li class="swiper-slide place_button" data-value="강원" data-region="" data-arr="0">강원</li><li class="swiper-slide place_button" data-value="경기" data-region="" data-arr="1">경기</li><li class="swiper-slide place_button" data-value="경남" data-region="" data-arr="4">경남</li><li class="swiper-slide place_button" data-value="경북" data-region="" data-arr="5">경북</li><li class="swiper-slide place_button" data-value="전남" data-region="" data-arr="14">전남</li><li class="swiper-slide place_button" data-value="전북" data-region="" data-arr="15">전북</li><li class="swiper-slide place_button" data-value="충남" data-region="" data-arr="11">충남</li><li class="swiper-slide place_button" data-value="충북" data-region="" data-arr="12">충북</li><li class="swiper-slide place_button" data-value="인천" data-region="" data-arr="2">인천</li><li class="swiper-slide place_button" data-value="제주" data-region="" data-arr="16">제주</li><li class="swiper-slide place_button" data-value="서울" data-region="" data-arr="3">서울</li><li class="swiper-slide place_button" data-value="대전" data-region="" data-arr="9">대전</li><li class="swiper-slide place_button" data-value="세종" data-region="" data-arr="10">세종</li><li class="swiper-slide place_button" data-value="대구" data-region="" data-arr="6">대구</li><li class="swiper-slide place_button" data-value="부산" data-region="" data-arr="8">부산</li><li class="swiper-slide place_button" data-value="울산" data-region="" data-arr="7">울산</li>
+									</ul>
+								</div>
+								<div id="place_result_box" class="place_result_box"></div>
+								<div id="place_choice_box" class="place_choice_box">
+									<ul></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search_form_input calendar">
+						<span class="placeholder">날짜를 선택해 주세요.</span>
+						<div class="search_choice_box">
+							<h3 class="title">날짜를 선택해 주세요.</h3>
+							<div class="content">
+								<div class="datepicker-list"></div>
+								<div style="display:flex;align-items:center;justify-content:space-between;margin-top:16px;">
+								    <button type="button" id="calendarResetButton" style="background: #fff url(../images/re-search.png) 1rem center no-repeat;border: 0;padding: 0 1rem 0 3rem;">일정 초기화</button>
+								    <button type="button" class="twonight" >2박 선택</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search_form_button stay" id="search_site_type_box" >
+                        <div class="swiper-container stay_btn_swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <button type="button" class="stay_button active" id="site_tp_all">전체</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <button type="button" class="stay_button" name="site_tp" value="BB000">오토캠핑</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <button type="button" class="stay_button" name="site_tp" value="BB001">글램핑</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <button type="button" class="stay_button" name="site_tp" value="BB002">카라반</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <button type="button" class="stay_button" name="site_tp" value="BB003">펜션</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="search_form_input people">
+						<span class="placeholder">성인0, 소인0</span>
+						<div class="search_choice_box">
+							<h3 class="title">인원을 선택해 주세요.</h3>
+							<p class="text">소인에 대한 나이기준 및 추가요금 정책은 업체별로 상이하니 예약전 안내사항을 반드시 확인하시기 바랍니다.</p>
+							<div class="content">
+								<div class="people_count">
+									<span class="people_count_text">성인</span>
+									<div class="count_box adult">
+										<!-- 0일때 - 버튼에 클래스 disabled 추가 -->
+										<button type="button" class="count_box_decrease disabled"></button>
+										<span class="count_box_num">0</span>
+										<button type="button" class="count_box_increase"></button>
+									</div>
+								</div>
+								<div class="people_count">
+									<span class="people_count_text">소인</span>
+									<div class="count_box child">
+										<button type="button" class="count_box_decrease disabled"></button>
+										<span class="count_box_num">0</span>
+										<button type="button" class="count_box_increase disabled"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <button type="button" class="find_nearby_btn">내 주변에서 검색</button> -->
+
+                <!-- 최근 검색 조건 노출 페이지 SearchTypePage TYPE: "LIST" | "MAP" | "MAIN" -->
+                
+				<!-- 최근 검색 조건 노출 페이지 END -->
+				
+				<!-- 검색 광고 영역 -->
+				
+				<div class="recent_searches">
+				    <div class="title">
+                        <strong>이달의 땡큐 추천 캠핑장</strong>
+                    </div>
+                    <div class="content">
+                        <div class="swiper-container ad_camp_swiper" style="padding: 0;">
+                            <ul class="swiper-wrapper" id="adContent">
+                                                    	
+                                <li class="swiper-slide swiper-slide-active">
+                                    <a href="javascript:clkCampPr(2073,15408,'SEARCH');">
+                                        <div class="pic">
+                                            <div class="top_bat" style="position: absolute; padding: 6px; margin: 0; justify-content: end;">
+                                                <p class="bat_ad">AD</p>
+                                            </div>
+                                            <img src="/file/2024/06/27/thumbM_2024062758286.46.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p class="tit">매월대폭포캠핑장</p>
+                                            <p class="txt">강원 철원군</p>
+                                            <div class="price_g">
+                                                
+                                                <p class="price">60,000원~</p>
+                                            </div>
+                                        </div>
+                                    </a>       
+                                </li>
+                                                    	
+                                <li class="swiper-slide swiper-slide-active">
+                                    <a href="javascript:clkCampPr(1886,17326,'SEARCH');">
+                                        <div class="pic">
+                                            <div class="top_bat" style="position: absolute; padding: 6px; margin: 0; justify-content: end;">
+                                                <p class="bat_ad">AD</p>
+                                            </div>
+                                            <img src="/file/2025/09/26/thumbM_2025092641771.81.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p class="tit">홈사리캠핑장</p>
+                                            <p class="txt">강원 화천군</p>
+                                            <div class="price_g">
+                                                
+                                                <p class="price">60,000원~</p>
+                                            </div>
+                                        </div>
+                                    </a>       
+                                </li>
+                                                    	
+                                <li class="swiper-slide swiper-slide-active">
+                                    <a href="javascript:clkCampPr(2013,15397,'SEARCH');">
+                                        <div class="pic">
+                                            <div class="top_bat" style="position: absolute; padding: 6px; margin: 0; justify-content: end;">
+                                                <p class="bat_ad">AD</p>
+                                            </div>
+                                            <img src="/file/2024/07/03/thumbM_2024070379848.67.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p class="tit">단양 도담캠핑장</p>
+                                            <p class="txt">충북 단양군</p>
+                                            <div class="price_g">
+                                                
+                                                <p class="price">60,000원~</p>
+                                            </div>
+                                        </div>
+                                    </a>       
+                                </li>
+                                                    	
+                                <li class="swiper-slide swiper-slide-active">
+                                    <a href="javascript:clkCampPr(2075,2082,'SEARCH');">
+                                        <div class="pic">
+                                            <div class="top_bat" style="position: absolute; padding: 6px; margin: 0; justify-content: end;">
+                                                <p class="bat_ad">AD</p>
+                                            </div>
+                                            <img src="/file/2019/04/09/thumbM_2019040970331.45.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p class="tit">큰마당캠핑장</p>
+                                            <p class="txt">경기 포천시</p>
+                                            <div class="price_g">
+                                                
+                                                <p class="price">50,000원~</p>
+                                            </div>
+                                        </div>
+                                    </a>       
+                                </li>
+                                                    	
+                                <li class="swiper-slide swiper-slide-active">
+                                    <a href="javascript:clkCampPr(2107,13572,'SEARCH');">
+                                        <div class="pic">
+                                            <div class="top_bat" style="position: absolute; padding: 6px; margin: 0; justify-content: end;">
+                                                <p class="bat_ad">AD</p>
+                                            </div>
+                                            <img src="/file/2025/03/21/thumbM_2025032148463.93.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p class="tit">가평뷰캠핑장</p>
+                                            <p class="txt">경기 가평군</p>
+                                            <div class="price_g">
+                                                
+                                                <p class="price">50,000원~</p>
+                                            </div>
+                                        </div>
+                                    </a>       
+                                </li>
+                                                    	
+                                <li class="swiper-slide swiper-slide-active">
+                                    <a href="javascript:clkCampPr(2105,14424,'SEARCH');">
+                                        <div class="pic">
+                                            <div class="top_bat" style="position: absolute; padding: 6px; margin: 0; justify-content: end;">
+                                                <p class="bat_ad">AD</p>
+                                            </div>
+                                            <img src="/file/2024/09/20/thumbM_2024092057779.07.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p class="tit">우니메이카 청주점</p>
+                                            <p class="txt">충북 청주시</p>
+                                            <div class="price_g">
+                                                
+                                                <p class="price">55,000원~</p>
+                                            </div>
+                                        </div>
+                                    </a>       
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+				
+				<!-- 검색 광고 영역 END -->
+			</div>
+
+			<div id="map-search-content">
+				<div id="map_search_wrap" style="position: relative; width:100%; height: calc(100dvh - 61px - 75px);">
+					<div class="search_form_box" style="padding: 16px;position: absolute; top:0; left;0; width: 100%; z-index: 3;">
+						<div class="search_form_input calendar">
+							<span class="placeholder">날짜를 선택해 주세요.</span>
+							<div class="search_choice_box">
+								<h3 class="title">날짜를 선택해 주세요.</h3>
+								<div class="content">
+									<div class="datepicker-map"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="search_form_input people">
+							<span class="placeholder">성인0, 소인0</span>
+							<div class="search_choice_box">
+								<h3 class="title">인원을 선택해 주세요.</h3>
+								<p class="text">소인에 대한 나이기준 및 추가요금 정책은 업체별로 상이하니 예약전 안내사항을 반드시 확인하시기 바랍니다.</p>
+								<div class="content">
+									<div class="people_count">
+										<span class="people_count_text">성인</span>
+										<div class="count_box adult">
+											<!-- 0일때 - 버튼에 클래스 disabled 추가 -->
+											<button type="button" class="count_box_decrease disabled"></button>
+											<span class="count_box_num">0</span>
+											<button type="button" class="count_box_increase"></button>
+										</div>
+									</div>
+									<div class="people_count">
+										<span class="people_count_text">소인</span>
+										<div class="count_box child">
+											<button type="button" class="count_box_decrease disabled"></button>
+											<span class="count_box_num">0</span>
+											<button type="button" class="count_box_increase disabled"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
+
+					<div class="search_marker">
+					    <img width="20" src="/images/search/search-place.png" alt="검색 위치" />
+					</div>
+					
+					<div id="search_map" style="width:100%; height: calc(100dvh - 61px);"></div>
+
+					<div style="position: absolute; bottom: 25px; right: 1rem;">	
+						<button type="button" class="find_nearby_btn" id="map_nearby_button">내 주변 검색</button>
+					</div>
+				</div>
+			</div>
+
+		  <!--↑↑↑↑↑↑↑↑↑ 컨텐츠 끝 ↑↑↑↑↑↑↑↑↑ -->
+		</div>
+
+		<div class="btm_foot">
+			<div class="btn_set type2">
+				<ul>
+					<li class="btn_wp">				
+						<button type="button" class="btn_res" id="submitSearch"><span id="btn_res_txt">검색</span></button>					
+					</li>
+				</ul>
+			</div>
+		</div>
+
+    </div>
+</div>
+
+<!-- camp Search (숙소 검색) -->
+<div class="pop_layer_set" id="filter_pop">
+	<div class="pop_layer filter_pop">
+
+		<div class="pop_title">
+			<p class="tit">숙소검색</p>
+			<button type="button" class="clo2" id="popFilterCloseButton"></button>
+		</div>
+
+		<div class="pop_con">
+			<div class="search_box">
+				<div class="sear_set" style="max-width:100%;">
+					<input type="text" id="ser_camp_keyword" list="sear_list" value="" placeholder="숙소명 또는 추천 키워드로 검색해보세요"  />
+				</div>
+			</div>
+
+			<ul id="search_result_box" class="search_result_box">
+				<li>
+					<div class="title">
+						<strong>강원 곰배령에버그린</strong>
+					</div>
+					<p>펜션, 강원 인제군</p>
+				</li>
+				<li>
+					<div class="title">
+						<strong>강원 곰배령에버그린</strong>
+					</div>
+					<p>펜션, 강원 인제군</p>
+				</li>
+				<li>
+					<div class="title">
+						<strong>강원 곰배령에버그린</strong>
+					</div>
+					<p>펜션, 강원 인제군</p>
+				</li>
+				<li>
+					<div class="title">
+						<strong>강원 곰배령에버그린</strong>
+					</div>
+					<p>펜션, 강원 인제군</p>
+				</li>
+			</ul>
+		
+
+			<div class="recent_searches">
+				<div class="title">
+					<strong>최근검색어</strong>
+					<button type="button">전체삭제</button>
+				</div>
+				<div class="content">
+					<div class="swiper-container pop_recent_keyword_swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="box">
+									<span>키워드 1</span>
+									<button class="deleted_button" type="button"><img src="/images/tot_clo.png" alt="" /></button>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="box">
+									<span>키워드 2</span>
+									<button class="deleted_button" type="button"><img src="/images/tot_clo.png" alt="" /></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="recent_searches">
+				<div class="title">
+					<strong>땡큐 검색 키워드 추천</strong>
+				</div>
+				<div class="content">
+					<div class="swiper-container pop_recent_keyword_swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="box keyword">숙박 세일 페스타</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="box keyword">댕댕이랑 태안가는 달</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="box keyword">신규입점</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="recent_searches">
+				<div class="title">
+					<strong>이용객 후기에서 찾은 검색 키워드 추천</strong>
+				</div>
+				<div class="content">
+					<div class="none_slide_box">
+						<div class="box keyword2">놀이시설이 많아 아이들과 함께하기 좋은 캠핑장</div>
+						<div class="box keyword2">사진이 잘나오는 뷰가 멋진 캠핑장</div>
+						<div class="box keyword2">사장님이 친절하고 시설관리가 잘되어있는 캠핑장</div>
+						<div class="box keyword2">조용하고 매너타임이 잘지켜지는 캠핑장</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="recent_searches">
+				<div class="title" style="display: block">
+					<strong>실시간 급상승 검색 숙소</strong>
+					<p class="description">지역별 실시간 검색 순위를 보고싶으시면 <span>여기</span>를 눌러 선호지역을 선택해주세요. (최대3개지역 등록 가능)</p>
+				</div>
+				<div class="content">
+					<ul class="rank">
+						<li><span class="rank-number">1</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">2</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">3</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">4</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">5</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">6</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">7</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">8</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">9</span> <span class="company-name">업체명</span></li>
+						<li><span class="rank-number">10</span> <span class="company-name">업체명</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="btm_foot">
+				<div class="btn_set type2">
+					<ul>
+						<li class="btn_wp">				
+							<button type="button" class="btn_res"><span id="btn_res_txt">검색</span></button>					
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<!-- script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9qnra9njt9"></script -->
+<script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=7pi6a4tp01"></script>
+<script>
+	// SearchTypePage 값: "MAIN" | "MAP" | "LIST" | "COLLECT" 
+
+	/* 팝업 관련 함수 */
+	const popSearchManager = {
+		scrollPosition: 0,
+		init: function(){
+			const popFilterButtonEl = document.getElementById("top_search_input");
+            const popFilterCloseButtonEl = document.getElementById("popSearchCloseButton");
+
+			popFilterButtonEl.addEventListener("click", () => {
+                this.open();
+				tabManager.init();
+				
+				this.createInfoBox();
+            });
+
+            popFilterCloseButtonEl.addEventListener("click", () => {
+                this.deleteInfoBox();
+                this.close();
+            });
+
+			this.pageSet();
+		},
+		// 타입별 페이지 세팅
+		pageSet: function(){
+			const listType = "LIST";
+			
+			if(listType == "COLLECT" || listType == "CAMPCOUPON"){
+				// 리스트 검색 버튼명 변경
+				const listTabButtonEl = document.getElementById("listTab")
+				const searchKeywordInputEl = document.querySelector(".search_form_input.search")
+				listTabButtonEl.innerText = "필터 검색"
+				searchKeywordInputEl.style.display = "none"
+				
+				// 지도 검색 버튼 미노출
+				const mapTabButtonEl = document.getElementById("mapTab")
+				mapTabButtonEl.style.display = "none"
+			}
+		},
+		// 필터 팝업 열기
+        open: function (filterType) {
+            this.scrollPosition = window.scrollY; // 현재 스크롤 위치 저장
+			document.getElementById("search_pop").classList.add("on");
+			document.body.style.overflow = "hidden"; 
+			document.body.style.top = `-${this.scrollPosition}px`; // 현재 위치 유지
+        },
+		// 필터 팝업 닫기
+        close: function () {
+            document.getElementById("search_pop").classList.remove("on");
+			document.body.style.overflow = "visible"; 
+			document.body.style.top = ""; // 원래 상태로 복구
+			window.scrollTo(0, this.scrollPosition); // 스크롤 위치 복원
+        },
+        // 팝업 오픈 시 말풍선 노출
+        createInfoBox: function(){
+            document.getElementById("mapInfoBox").classList.add("active");
+            setTimeout(() => {
+                mapInfoBox.classList.remove("active");
+            }, 5000);
+        },
+        // 팝업 닫을 시 말풍선 제거
+        deleteInfoBox: function(){
+            document.getElementById("mapInfoBox").classList.remove("active");
+        },
+
+		// 검색 페이지 타입이 MAP, LIST, COLLECT 일 때 search input placeholder 업데이트
+		updateSearchInput: function(){
+		    const listType = "LIST";
+			const popFilterInputEl = document.querySelector(".search_div .text");
+			let filterTexts = [];
+
+			// 검색 키워드 추가
+			if (searchFilterManager._inputFieldEl.value) {
+				filterTexts.push(searchFilterManager._inputFieldEl.value);
+			}
+
+			// 지역 정보 추가
+			if (searchFilterManager._filter.region || searchFilterManager._filter.sub_region.length > 0) {
+				let regionText = "";
+				if (searchFilterManager._filter.sub_region.length > 0) {
+					regionText += " " + searchFilterManager._filter.sub_region.join(", ").replace(/ㆍ/g, ", "); // 서브 지역 여러 개일 경우 콤마로 연결
+				}else{
+				    regionText += searchFilterManager._filter.region;
+				}
+				filterTexts.push(regionText);
+			}else{
+			    if(listType == "LIST" || listType == "COLLECT" || listType == "CAMPCOUPON"){
+			        filterTexts.push("지역 전체");
+			    }
+			}
+
+			// 날짜 추가
+			const dateStr = searchFilterManager.choiceDateStr();
+			if (dateStr) {
+				filterTexts.push(dateStr);
+			}
+			
+			// COLLECT 일때, 숙소구분 타입
+			if (listType == "COLLECT" || listType == "CAMPCOUPON") {
+                let siteTypeText = "";
+                
+                if (searchFilterManager._filter.site_type.length > 0) {
+                    const siteTypeMap = {
+                        "BB000": "오토캠핑",
+                        "BB001": "글램핑",
+                        "BB002": "카라반",
+                        "BB003": "펜션"
+                    };
+            
+                    // 코드 값을 한글로 변환
+                    siteTypeText += " " + searchFilterManager._filter.site_type
+                        .map(code => siteTypeMap[code] || code) // 매핑된 값이 없으면 원래 코드 유지
+                        .join(", ");
+                    
+                    filterTexts.push(siteTypeText);
+                } else {
+                    filterTexts.push("숙소구분 전체");
+                }
+            }
+
+
+			// 인원 추가
+			let peopleText = [];
+			if (searchFilterManager._filter.adultCount > 0) {
+				peopleText.push(`성인 ${searchFilterManager._filter.adultCount}`);
+			}
+			if (searchFilterManager._filter.childCount > 0) {
+				peopleText.push(`소인 ${searchFilterManager._filter.childCount}`);
+			}
+			if (peopleText.length > 0) {
+				filterTexts.push(peopleText.join("/"));
+			}
+
+			popFilterInputEl.innerHTML = filterTexts.join("ㆍ");
+		}
+
+	}
+
+	/* 탭 관련 함수 */
+	const tabManager = {
+		init: function(){
+			const tabs = document.querySelectorAll(".search_tab li");
+			const listType = "LIST";
+			const listTypeNum = listType == "MAP" ? 1 : 0;
+
+			 // 초기에 숙소 검색 활성화
+			this.setActiveTab(listTypeNum);
+
+			// 탭 클릭 이벤트
+			tabs.forEach((tab, index) => {
+				tab.addEventListener("click", () => tabManager.setActiveTab(index));
+			});
+		},
+		isListActive: function() {
+			return this.currentTab === 'list'; // 'list' 탭이 활성화되었으면 true
+		},
+		setActiveTab: function(index){
+			const listType = "LIST";
+			const tabs = document.querySelectorAll(".search_tab li");
+			const listSearchContent = document.getElementById("list-search-content");
+			const mapSearchContent = document.getElementById("map-search-content");
+			const mapBoxContent = document.getElementById("map_search_wrap");
+
+			// 모든 탭에서 active 제거
+			tabs.forEach(tab => tab.classList.remove("active"));
+			// 클릭한 탭에 active 추가
+			tabs[index].classList.add("active");
+
+			if (index === 0) {
+				// 숙소검색 활성화
+				listSearchContent.style.display = "block";
+				mapSearchContent.style.display = "none";
+				
+				this.updateSearchButton(() => searchFilterManager.submitSearch());
+			} else {
+				// 지도검색 활성화
+				listSearchContent.style.display = "none";
+				mapSearchContent.style.display = "block";
+
+				const width = mapBoxContent.clientWidth;  // 가로값
+				const height = mapBoxContent.clientHeight; // 세로값
+
+				console.log("가로:", width, "세로:", height);
+
+				if(searchMapManager._MAP == null){
+					// 지도 관련 이벤트
+					searchMapManager.init();
+				}
+				
+				if(listType == "MAP"){
+					// 지도 페이지에 있는 메인 지도 가운데 좌표 가져오기
+					if(typeof _MAP != "undefined"){
+						const mainMapCenter = _MAP.getCenter();
+						searchMapManager._MAP.setCenter(new naver.maps.LatLng(mainMapCenter._lat, mainMapCenter._lng));
+						searchMapManager._MAP.setSize(new naver.maps.Size(width, height));
+					}
+				} else{
+					searchMapManager._MAP.setSize(new naver.maps.Size(width, height));
+				}
+				
+				this.updateSearchButton(() => searchFilterManager.submitMapSearch());
+			}
+		},
+		updateSearchButton: function(eventHandler){
+			const searchButton = document.getElementById("submitSearch");
+            
+            // 기존 이벤트 제거 후 새로운 이벤트 추가
+            searchButton.replaceWith(searchButton.cloneNode(true));
+            const newSearchButton = document.getElementById("submitSearch");
+        
+            newSearchButton.addEventListener("click", eventHandler);
+		}
+	}
+
+	/* 스와이퍼 관련 함수 */
+	const swiperManager = {
+		init: function(){
+			this.listFilter();
+			this.popRecentKeyword();
+			this.placeTab();
+			this.stayBtn();
+			this.adCampList();
+		},
+		// 리스트 페이지 필터 선택 구분
+		listFilter: function(){
+			const recent_swiper = new Swiper('.recent_swiper', {
+				pagination: false,
+				slidesPerView: 'auto',
+				paginationClickable: true,
+				spaceBetween: 8,
+				freeMode: true,
+				lazyLoading: true,
+				observer: true,
+				observeParents: true,
+				loop: false,
+            });
+
+			return recent_swiper;
+		},
+		// 숙박구분분 선택 탭
+		stayBtn: function(){
+			const recent_swiper = new Swiper('.stay_btn_swiper', {
+				pagination: false,
+				slidesPerView: 'auto',
+				paginationClickable: true,
+				spaceBetween: 6,
+				freeMode: true,
+				lazyLoading: true,
+				observer: true,
+				observeParents: true,
+				loop: false,
+            });
+
+			return recent_swiper;
+		},
+		// 지역 선택 탭
+		placeTab: function(){
+			const recent_swiper = new Swiper('.place_tab_swiper', {
+				pagination: false,
+				slidesPerView: 'auto',
+				paginationClickable: true,
+				spaceBetween: 8,
+				freeMode: true,
+				lazyLoading: true,
+				observer: true,
+				observeParents: true,
+				loop: false,
+            });
+
+			return recent_swiper;
+		},
+		// 팝업 최근 검색어
+		popRecentKeyword: function(){
+			const recent_swiper = new Swiper('.pop_recent_keyword_swiper', {
+				pagination: false,
+				slidesPerView: 'auto',
+				paginationClickable: true,
+				spaceBetween: 8,
+				freeMode: true,
+				lazyLoading: true,
+				observer: true,
+				observeParents: true,
+				loop: false,
+            });
+
+			return recent_swiper;
+		},
+		// 검색 광고 영역
+		adCampList: function(){
+            const ad_camp_swiper = new Swiper('.ad_camp_swiper', {
+                pagination: false,
+                slidesPerView: 'auto',
+                paginationClickable: true,
+                spaceBetween: 8,
+                freeMode: true,
+                lazyLoading: true,
+                observer: true,
+                observeParents: true,
+                loop: false,
+            });
+
+            return ad_camp_swiper;
+        },
+	};
+
+
+	/* 검색어 입력 관련 함수 */
+	const searchUrlParams = new URLSearchParams(window.location.search);
+	const searchFilterManager = {
+	    _searchType: "LIST",
+		_searchFormEl: document.querySelectorAll('.search_form_input'),
+		_inputFieldEl: document.getElementById("ser_keyword_"),
+		_placeCategoryButtonEl: document.querySelectorAll(".place_button"), 
+		_filter: {
+			site_type: searchUrlParams.get("site_tp") ? searchUrlParams.get("site_tp").split(",") : [],
+			res_date: searchUrlParams.get("res_dt") || "",
+			res_end_date: searchUrlParams.get("res_edt") || "",
+			ser_res_date: searchUrlParams.get("res_dt") || "",
+			ser_res_end_date: searchUrlParams.get("res_edt") || "",
+			region: searchUrlParams.get("region") || "",
+			sub_region: searchUrlParams.get("sub_region")  ? searchUrlParams.get("sub_region").split(",") : [],
+			adultCount: searchUrlParams.get("ser_adult_count") || 0,
+			childCount: searchUrlParams.get("ser_child_count") || 0,
+			lat: null,
+			lng: null
+		},
+		init: function(){
+			// 기존 날짜 세팅
+			this.getResDate();
+			// 기존 인원 세팅
+			this.getPersonCount();
+			// 키워드 검색 이벤트
+            this._inputFieldEl.value = searchUrlParams.get("ser_keyword");
+            this._inputFieldEl.addEventListener("keyup", this.getKeywordCampName);
+            if(this._inputFieldEl.value != ""){
+                document.getElementById("deleteKeyword").style.display = "inline";
+            }
+			// 기존 숙소구분 세팅
+			this.getSiteType();
+			this.choiceSiteType();
+
+			// 팝업 오픈 input 텍스트 세팅
+			if(searchFilterManager._searchType == "MAP" || searchFilterManager._searchType == "LIST" || searchFilterManager._searchType == "COLLECT" || searchFilterManager._searchType == "CAMPCOUPON"){
+			    popSearchManager.updateSearchInput();
+			}
+			
+			if(searchFilterManager._searchType == "LIST" && !(searchFilterManager._filter.ser_res_date == "" && searchFilterManager._filter.ser_res_end_date == "" )){
+			    const emptyButtonEl = document.getElementById("empty_y");
+			    emptyButtonEl.style.display = "block";
+			}
+
+			// 검색하기 버튼 이벤트
+			document.getElementById("submitSearch").addEventListener("click", this.submitSearch);
+
+			// 검색 인풋 초기화 버튼 이벤트
+			document.getElementById("deleteKeyword").addEventListener("click", function(){
+				document.getElementById("search_result_box").style.display = "none";
+				document.getElementById("search_result_info_box").style.display = "none";
+				document.getElementById("deleteKeyword").style.display = "none";
+				searchFilterManager._inputFieldEl.value = ""
+			});
+
+			// 달력 일정 초기화 버튼
+			document.getElementById("calendarResetButton").addEventListener("click", function(){
+				searchFilterManager.getResDate(true);
+			});
+			
+
+			// 필터 인풋 버튼 이벤트
+			this._searchFormEl.forEach(input => {
+				input.addEventListener('click', function(event) {
+					document.querySelectorAll('.search_form_input').forEach(el => {
+						document.getElementById("search_result_box").style.display = "none";
+						document.getElementById("search_result_info_box").style.disply = "none";
+						el.classList.remove("active");
+					});
+
+					this.classList.add("active");
+					document.querySelectorAll('.search_choice_box').forEach(box => {
+						box.style.display = 'none';
+					});
+
+					const choiceBox = this.querySelector('.search_choice_box');
+					if (choiceBox) {
+						choiceBox.style.display = 'block';
+					}
+
+					event.stopPropagation();
+				});
+			});
+
+			document.addEventListener('click', function() {
+				document.querySelectorAll('.search_choice_box').forEach(box => {
+					box.style.display = 'none';
+					if(searchFilterManager._filter.res_date != "" && searchFilterManager._filter.res_end_date == ""){
+						searchFilterManager._filter.res_end_date = searchFilterManager._filter.res_date;
+						searchFilterManager.updateDatePlaceholder();
+					}
+				});
+				document.querySelectorAll('.search_form_input').forEach(el => {
+					document.getElementById("search_result_box").style.display = "none";
+					document.getElementById("search_result_info_box").style.display = "none";
+					el.classList.remove("active");
+				});
+			});
+
+			this.updateRegionPlaceholder();
+			this._placeCategoryButtonEl.forEach((button, index) => {
+				button.addEventListener('click', function () {
+					searchFilterManager._placeCategoryButtonEl.forEach(btn => btn.classList.remove("active"));
+
+					const region_grp = button.getAttribute('data-value');
+					const region = button.getAttribute('data-region');
+					const region_arr = button.getAttribute('data-arr');
+					const placeChoiceBox = document.getElementById('place_choice_box');
+					const placeChoiceUl = placeChoiceBox.querySelector('ul');
+                  
+					button.classList.add("active");
+					searchFilterManager._filter.region = region_grp;
+					searchFilterManager._filter.sub_region = [];
+                    placeChoiceUl.innerHTML = '';
+					searchFilterManager.updateRegionPlaceholder();
+					
+
+					searchFilterManager.getRegionList(region_grp, region, region_arr);
+				});
+			});
+			
+			
+
+			// 내 주변에서 검색 버튼
+			document.getElementById("map_nearby_button").addEventListener("click", function(){ 
+			    location.href="/search/mapSearch.hbb";
+			})
+			
+		},
+
+		// 싱크 맞춰야할 데이터 관리 searchFilterManager.syncFilters();
+		syncFilters: function () {
+			
+			// LIST 페이지 동기화
+			if (searchFilterManager._searchType == "LIST") {
+			    filterManager._selectedFilters.ser_site_tp = [...searchFilterManager._filter.site_type];
+				filterManager._selectedFilters['ser_site_tp'] = [...searchFilterManager._filter.site_type];
+
+				// UI 반영
+				document.querySelectorAll(`.item_list button[name='ser_site_tp']`).forEach(item => {
+					const value = item.getAttribute('value');
+					if (searchFilterManager._filter.site_type.includes(value)) {
+						item.classList.add("active");
+					} else {
+						item.classList.remove("active");
+					}
+				});
+				
+				document.querySelectorAll(`.stay_button[name='site_tp']`).forEach(item => {
+                    const value = item.getAttribute('value');
+                    if (searchFilterManager._filter.site_type.includes(value)) {
+                        item.classList.add("active");
+                    } else {
+                        item.classList.remove("active");
+                    }
+                });
+
+				headFilterManager.updateActiveFilters();
+			}
+
+			// site_type이 비어 있으면 '전체' 버튼 활성화, 아니면 비활성화
+			const allButtonEl = document.getElementById("site_tp_all");
+			if (searchFilterManager._filter.site_type.length === 0) {
+				allButtonEl.classList.add("active");
+			} else {
+				allButtonEl.classList.remove("active");
+			}
+		},
+
+		// 키워드 검색
+		getKeywordCampName: function(){
+			const resultBoxEl = document.getElementById("search_result_box");
+			const resultInfoBoxEl = document.getElementById("search_result_info_box");
+
+			if(searchFilterManager._inputFieldEl.value.length > 0) {
+				document.getElementById("deleteKeyword").style.display = "inline";
+			}else{
+				document.getElementById("deleteKeyword").style.display = "none";
+			}
+			
+			if(searchFilterManager._inputFieldEl.value.length > 1) {
+				console.log(searchFilterManager._inputFieldEl.value);
+				
+				$.ajax({
+					type: "POST",
+					url: "/resv/ax_camp_name.hbb",
+					data:{ser_camp_name: searchFilterManager._inputFieldEl.value},
+					success: onSuccess,
+					error: onError
+				});
+				
+				function onSuccess(dataobj) {
+					const result = JSON.parse(dataobj);
+					const keyword = searchFilterManager._inputFieldEl.value.trim(); 
+					let contents = [];
+
+					if (result.length === 0) {
+						// 결과가 없을 때
+						contents.push(
+						`<li>
+							<a href="javascript:;">
+								<span class="searchPlace_icon"></span>
+								<p class="keword_text">검색된 캠핑장이 없습니다.</span></p>
+							</a>
+						</li>`);
+					} else {
+						// 결과가 있을 때
+						result.forEach((data) => {
+							const highlightedName = data.campName.replace(
+								new RegExp(`(${keyword})`, "gi"),
+								`<span style="color: #F27226; font-weight: bold;">$1</span>`
+							);
+
+							const el = 
+							`<li>
+								<a href="javascript:clkViewDirect('${data.campSeq}');">
+									<span class="searchPlace_icon"></span>
+									<p class="keword_text">${highlightedName}</p>
+									<p class="keword_content">${data.campType}, ${data.shortAddress}</p>
+								</a>
+							</li>`;
+							contents.push(el);
+						});
+					}
+
+					document.getElementById('search_result_box').innerHTML = contents.join("");
+				}
+
+
+				function onError() {}
+
+				resultBoxEl.style.display = 'block';
+				resultInfoBoxEl.style.display = 'block';
+			} else {
+				document.getElementById('search_result_box').innerHTML = "";
+				resultBoxEl.style.display = 'none';
+				resultInfoBoxEl.style.display = 'none';
+			}
+		},
+
+		getRegionList: function(region_grp, region, arr){
+		    const site_tp = searchFilterManager._filter.site_type ? searchFilterManager._filter.site_type.join(",") : "";
+		    const listType = "LIST";
+		    
+			$.ajax({
+				type: "POST",
+				url: "/search/axRegion.hbb",
+				data: {region_grp: region_grp, region: region, site_tp: site_tp},
+				success: onSuccess,
+				error: onError
+			});
+
+			function onSuccess(dataobj) {
+				document.getElementById('place_result_box').innerHTML = dataobj;
+				
+				if(listType == "COLLECT" || listType == "CAMPCOUPON"){
+				    document.querySelectorAll('.sub_region .tnum').forEach(el => el.remove());
+				}
+				
+				searchFilterManager.choiceRegion();
+			}
+
+			function onError() {}
+		},
+		choiceRegion: function() {
+			const allSubRegionButtonEl = document.getElementById("all_sub_region");
+			const subRegionButtonsEl = document.querySelectorAll('.sub_region');
+
+			// 페이지 로드 시 선택된 지역들에 대한 UI 상태 동기화
+			this.syncSubRegionUI();
+
+			subRegionButtonsEl.forEach(button => {
+				button.addEventListener('click', () => {
+					const value = button.getAttribute('data-sub-region');
+
+					if (this._filter.sub_region.includes(value)) {
+						// 선택된 지역에서 제거
+						this._filter.sub_region = this._filter.sub_region.filter(item => item !== value);
+						button.classList.remove('active');
+					} else {
+						// 선택된 개수가 3개 미만일 때만 추가
+						if (this._filter.sub_region.length < 3) {
+							this._filter.sub_region.push(value);
+							button.classList.add('active');
+						} else {
+							return; // 선택 개수 제한 초과 시 처리
+						}
+					}
+
+					// 지역 뱃지 업데이트
+					this.addRegionBadge();
+					this.updateRegionPlaceholder();
+				});
+			});
+
+			// "모든 지역 선택" 버튼 처리
+			allSubRegionButtonEl.addEventListener('click', () => {
+				this._filter.sub_region = [];
+				subRegionButtonsEl.forEach(button => button.classList.remove('active'));
+				allSubRegionButtonEl.classList.add('active');
+
+				// 지역 뱃지 및 플래이스홀더 업데이트
+				this.addRegionBadge();
+				this.updateRegionPlaceholder();
+			});
+		},
+		// 지역 UI 상태 동기화
+		syncSubRegionUI: function() {
+			const subRegionButtonsEl = document.querySelectorAll('.sub_region');
+			const allSubRegionButtonEl = document.getElementById("all_sub_region");
+
+			// 기존 선택된 지역들에 대한 UI 상태 업데이트
+			subRegionButtonsEl.forEach(button => {
+				const value = button.getAttribute('data-sub-region');
+				if (this._filter.sub_region.includes(value)) {
+					button.classList.add('active');
+				} else {
+					button.classList.remove('active');
+				}
+			});
+
+			// "모든 지역 선택" 버튼 처리
+			if (this._filter.sub_region.length === 0) {
+				allSubRegionButtonEl.classList.add('active');
+			} else {
+				allSubRegionButtonEl.classList.remove('active');
+			}
+		},
+		// 지역 선택 시 아래 뱃지 추가
+		addRegionBadge: function () {
+			const placeChoiceBox = document.getElementById('place_choice_box');
+			const placeChoiceUl = placeChoiceBox.querySelector('ul');
+
+			// 기존 뱃지들이 중복되지 않도록 처리
+			placeChoiceUl.innerHTML = ''; // 기존 뱃지들 초기화
+			this._filter.sub_region.forEach(sub_region => {
+				const li = document.createElement('li');
+				li.classList.add('badge_button');
+				li.setAttribute('data-value', sub_region);
+				li.innerHTML = `
+					${sub_region}
+					<button type="button" class="place_choice_delete btn_close" data-value="${sub_region}">
+						<img src="/images/tot_clo.png">
+					</button>
+				`;
+
+				li.querySelector('.place_choice_delete').addEventListener('click', () => {
+					this._filter.sub_region = this._filter.sub_region.filter(item => item !== sub_region);
+					document.querySelector(`.sub_region[data-sub-region="${sub_region}"]`)?.classList.remove('active');
+					this.addRegionBadge(); // 뱃지 업데이트
+					this.updateRegionPlaceholder(); // 플래이스홀더 업데이트
+				});
+
+				placeChoiceUl.appendChild(li);
+			});
+		},
+		// 지역 선택 시 placeholder 업데이트
+		updateRegionPlaceholder: function() {
+			const regionPlaceholder = document.querySelector('.place .placeholder');
+			
+			if (this._filter.region.length > 0) {
+				if(this._filter.sub_region.length > 0){
+					document.getElementById('all_sub_region')?.classList.remove("active");
+					regionPlaceholder.innerHTML = this._filter.region + ' ' + (this._filter.sub_region.length > 0 ? this._filter.sub_region.join(', ') : '');
+				}else{
+					document.getElementById('all_sub_region')?.classList.add("active");
+					regionPlaceholder.innerHTML = this._filter.region;
+				}
+			} else {
+				document.getElementById('all_sub_region')?.classList.add("active");
+				regionPlaceholder.innerHTML = '지역을 선택 하세요.';
+			}
+		},
+
+		getPersonCount: function() {
+			// 성인 카운트 관련 요소
+			const adultCountEl = document.querySelectorAll(".count_box.adult .count_box_num");
+			const adultIncreaseBtn = document.querySelectorAll(".count_box.adult .count_box_increase");
+			const adultDecreaseBtn = document.querySelectorAll(".count_box.adult .count_box_decrease");
+
+			// 아이(소인) 카운트 관련 요소
+			const childCountEl = document.querySelectorAll(".count_box.child .count_box_num");
+			const childIncreaseBtn = document.querySelectorAll(".count_box.child .count_box_increase");
+			const childDecreaseBtn = document.querySelectorAll(".count_box.child .count_box_decrease");
+
+			// 초기 값 반영
+			adultCountEl.forEach(el => el.textContent = searchFilterManager._filter.adultCount);
+			childCountEl.forEach(el => el.textContent = searchFilterManager._filter.childCount);
+
+			// 성인 증가 버튼 클릭 이벤트
+			adultIncreaseBtn.forEach(btn => {
+				btn.addEventListener("click", function () {
+					searchFilterManager._filter.adultCount++;
+					adultCountEl.forEach(el => el.textContent = searchFilterManager._filter.adultCount);
+					
+					searchFilterManager.updatePersonPlaceholder();
+					searchFilterManager.updateButtonState();
+				});
+			});
+
+			// 성인 감소 버튼 클릭 이벤트
+			adultDecreaseBtn.forEach(btn => {
+				btn.addEventListener("click", function () {
+					if (searchFilterManager._filter.adultCount > 1 || (searchFilterManager._filter.adultCount == 1 && searchFilterManager._filter.childCount == 0)) {
+						searchFilterManager._filter.adultCount--;
+						adultCountEl.forEach(el => el.textContent = searchFilterManager._filter.adultCount);
+
+						searchFilterManager.updatePersonPlaceholder();
+						searchFilterManager.updateButtonState();
+					}
+				});
+			});
+
+			// 아이(소인) 증가 버튼 클릭 이벤트
+			childIncreaseBtn.forEach(btn => {
+				btn.addEventListener("click", function () {
+					if (searchFilterManager._filter.adultCount > 0) {
+						searchFilterManager._filter.childCount++;
+						childCountEl.forEach(el => el.textContent = searchFilterManager._filter.childCount);
+						
+						searchFilterManager.updatePersonPlaceholder();
+						searchFilterManager.updateButtonState();
+					}
+				});
+			});
+
+			// 아이(소인) 감소 버튼 클릭 이벤트
+			childDecreaseBtn.forEach(btn => {
+				btn.addEventListener("click", function () {
+					if (searchFilterManager._filter.childCount > 0) {
+						searchFilterManager._filter.childCount--;
+						childCountEl.forEach(el => el.textContent = searchFilterManager._filter.childCount);
+
+						searchFilterManager.updatePersonPlaceholder();
+						searchFilterManager.updateButtonState();
+					}
+				});
+			});
+
+			// 업데이트 상태
+			this.updateButtonState();
+			this.updatePersonPlaceholder();
+		},
+		// 인원 버튼 상태 업데이트
+		updateButtonState: function(){
+			const adultDecreaseBtn = document.querySelectorAll(".count_box.adult .count_box_decrease");
+			const childDecreaseBtn = document.querySelectorAll(".count_box.child .count_box_decrease");
+			const childIncreaseBtn = document.querySelectorAll(".count_box.child .count_box_increase");
+
+			// 성인 버튼 상태
+			if (searchFilterManager._filter.adultCount == 0 || (searchFilterManager._filter.adultCount == 1 && searchFilterManager._filter.childCount > 0)) {
+				adultDecreaseBtn.forEach(adult => {
+					adult.classList.add("disabled");
+				})
+			} else {
+				adultDecreaseBtn.forEach(adult => {
+					adult.classList.remove("disabled");
+				})
+			}
+			// 아이 버튼 상태
+			if (searchFilterManager._filter.adultCount == 0) {
+				childIncreaseBtn.forEach(child => {
+					child.classList.add("disabled");
+				})
+			} else {
+				childIncreaseBtn.forEach(child => {
+					child.classList.remove("disabled");
+				})
+			}
+			// 아이 버튼 상태
+			if (searchFilterManager._filter.childCount == 0) {
+				childDecreaseBtn.forEach(child => {
+					child.classList.add("disabled");
+				})
+			} else {
+				childDecreaseBtn.forEach(child => {
+					child.classList.remove("disabled");
+				})
+			}
+		},
+		// 인원 수 선택 시 placeholder 업데이트
+		updatePersonPlaceholder: function() {
+			const personPlaceholders = document.querySelectorAll('.people .placeholder'); 
+			const adultCount = this._filter.adultCount;
+			const childCount = this._filter.childCount;
+
+			personPlaceholders.forEach(holder => holder.innerHTML = `성인${adultCount}, 소인${childCount}`);
+		},
+
+		getResDate: function(isReset){
+			if(isReset || (searchFilterManager._filter.res_date == "" && searchFilterManager._filter.res_end_date == "")){
+				const today = new Date();
+				const tomorrow = new Date(today);
+				tomorrow.setDate(today.getDate() + 1);
+
+				// 날짜 포맷 (yyyyMMdd)
+				const todayStr = today.getFullYear() + ('0' + (today.getMonth() + 1)).slice(-2) + ('0' + today.getDate()).slice(-2);
+				const tomorrowStr = tomorrow.getFullYear() + ('0' + (tomorrow.getMonth() + 1)).slice(-2) + ('0' + tomorrow.getDate()).slice(-2);
+
+				this._filter.res_date = todayStr;
+				this._filter.res_end_date = tomorrowStr;
+
+				// datePicker 값도 개별적으로 초기화
+				$(".datepicker-list").datepicker("setDate", today);
+				$(".datepicker-map").datepicker("setDate", today);
+			}
+
+			if(searchFilterManager._filter.res_date == searchFilterManager._filter.res_end_date || (searchFilterManager._filter.res_date != "" && searchFilterManager._filter.res_end_date == "")){
+				const siteTypeBoxEl = document.getElementById("search_site_type_box");
+				siteTypeBoxEl.style.display = "none";
+			}
+			
+			// 날짜를 placeholder에 반영
+			this.updateDatePlaceholder();
+		},
+		choiceDateStr: function(){
+		    const datePlaceholders = document.querySelectorAll('.calendar .placeholder');
+		    
+			// res_date를 Date 객체로 변환 (yyyyMMdd 형식)
+			const startDate = new Date(this._filter.ser_res_date.substring(0, 4), this._filter.ser_res_date.substring(4, 6) - 1, this._filter.ser_res_date.substring(6, 8));
+			const serStartDate = new Date(this._filter.res_date.substring(0, 4), this._filter.res_date.substring(4, 6) - 1, this._filter.res_date.substring(6, 8));
+			
+			// res_end_date도 동일하게 처리
+			const endDate = new Date(this._filter.ser_res_end_date.substring(0, 4), this._filter.ser_res_end_date.substring(4, 6) - 1, this._filter.ser_res_end_date.substring(6, 8));
+			const serEndDate = new Date(this._filter.res_end_date.substring(0, 4), this._filter.res_end_date.substring(4, 6) - 1, this._filter.res_end_date.substring(6, 8));
+
+			// 날짜 형식이 올바른지 확인
+			if (isNaN(startDate) || isNaN(endDate)) {
+				datePlaceholders.forEach(holder => holder.innerHTML = '날짜를 선택해 주세요.');
+				return;
+			}
+
+			// 날짜를 'yyyy.MM.dd' 형식으로 변환 (02.02)
+			//const startFormatted = startDate.getFullYear().toString().slice(-2) + '.' + ('0' + (startDate.getMonth() + 1)).slice(-2) + '.' + ('0' + startDate.getDate()).slice(-2);
+			//const endFormatted = startDate.getFullYear().toString().slice(-2) + '.' + ('0' + (endDate.getMonth() + 1)).slice(-2) + '.' + ('0' + endDate.getDate()).slice(-2);
+			const startFormatted = ('0' + (startDate.getMonth() + 1)).slice(-2) + '.' + ('0' + startDate.getDate()).slice(-2);
+            const endFormatted = ('0' + (endDate.getMonth() + 1)).slice(-2) + '.' + ('0' + endDate.getDate()).slice(-2);
+            const serStartFormatted = ('0' + (serStartDate.getMonth() + 1)).slice(-2) + '.' + ('0' + serStartDate.getDate()).slice(-2);
+            const serEndFormatted = ('0' + (serEndDate.getMonth() + 1)).slice(-2) + '.' + ('0' + serEndDate.getDate()).slice(-2);
+
+			// 요일 계산 (짧은 요일 이름)
+			const startDay = startDate.toLocaleString('ko-KR', { weekday: 'short' });
+			const endDay = endDate.toLocaleString('ko-KR', { weekday: 'short' });
+			const serStartDay = serStartDate.toLocaleString('ko-KR', { weekday: 'short' });
+            const serEndDay = serEndDate.toLocaleString('ko-KR', { weekday: 'short' });
+		
+            if (this._filter.ser_res_date == "" || this._filter.ser_res_end_date == "") {
+                datePlaceholders.forEach(holder => holder.innerHTML = `${serStartFormatted} ${serStartDay} - ${serEndFormatted} ${serEndDay}, ${this.calculateNights()}`);
+                return '일정 선택';
+            }
+
+			if((this._filter.res_date != "" && this._filter.res_end_date == "") || startFormatted == endFormatted){
+				return `${startFormatted} ${startDay}, ${this.calculateNights()}(피크닉)`;
+			}
+
+			return `${startFormatted} ${startDay} - ${endFormatted} ${endDay}, ${this.calculateNights()}`;
+		},
+		// 날짜 변경 시 placeholder 업데이트
+		updateDatePlaceholder: function() {
+			const datePlaceholders = document.querySelectorAll('.calendar .placeholder');
+			const dateChoiceInfo = document.querySelector(".twonight");
+    
+			// 결과 출력 (예: 2025.02.19 목 - 2025.02.20 금, 1박)
+			datePlaceholders.forEach(holder => holder.innerHTML = searchFilterManager.choiceDateStr());	
+			// 결과 출력 (예: 당일, 1박 선택, 2박 선택)
+			dateChoiceInfo.innerHTML = searchFilterManager.choiceDateStr();
+		},
+		// 숙박일수 계산
+		calculateNights: function() {
+			// 시작 날짜와 종료 날짜를 yyyyMMdd 형식에서 Date 객체로 변환
+			const startDate = new Date(this._filter.res_date.substring(0, 4), this._filter.res_date.substring(4, 6) - 1, this._filter.res_date.substring(6, 8));
+			const endDate = new Date(this._filter.res_end_date.substring(0, 4), this._filter.res_end_date.substring(4, 6) - 1, this._filter.res_end_date.substring(6, 8));
+			
+			// 날짜가 유효한지 확인
+			if (isNaN(startDate) || isNaN(endDate)) {
+				console.error("Invalid date format");
+				return 0; // 날짜가 유효하지 않으면 0박
+			}
+
+			// 날짜 차이 계산 (단위: 박)
+			const difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
+
+			// 0박 이하로 계산된 경우에는 당일로 처리
+			return difference <= 0 ? `당일` : `${difference}박`;
+		},
+
+		// 숙소 구분 세팅
+		getSiteType: function () {
+			const allButtonEl = document.getElementById("site_tp_all");
+			const value = searchFilterManager._filter['site_type'];
+
+			// 모든 버튼의 'active' 클래스 초기화
+			document.querySelectorAll(`.stay_button[name='site_tp']`).forEach(btn => btn.classList.remove("active"));
+
+			if (Array.isArray(value) && value.length > 0) {
+				value.forEach(val => {
+					document.querySelectorAll(`.stay_button[name='site_tp'][value='${val}']`).forEach(btn => btn.classList.add("active"));
+				});
+				allButtonEl.classList.remove("active"); // 개별 선택 시 '전체' 비활성화
+			} else {
+				allButtonEl.classList.add("active"); // 아무것도 선택되지 않으면 '전체' 활성화
+			}
+		},
+		// 숙소 구분 노출 여부
+		isSiteType: function(){
+		    const siteTypeBoxEl = document.getElementById("search_site_type_box");
+		
+		    if(searchFilterManager._filter.res_date == searchFilterManager._filter.res_end_date || (searchFilterManager._filter.res_date != "" && searchFilterManager._filter.res_end_date == "")){ 
+                siteTypeBoxEl.style.display = "none";
+            }else{
+                siteTypeBoxEl.style.display = "block";
+            }
+		},
+		// 숙소 구분 선택
+		choiceSiteType: function () {
+			const allButtonEl = document.getElementById("site_tp_all");
+			const siteTypeButtonEl = document.querySelectorAll('button[name="site_tp"]');
+			
+			// 전체 버튼 클릭 이벤트
+            allButtonEl.addEventListener('click', () => {
+                // 전체 선택 시 모든 개별 버튼 비활성화 & site_type 초기화
+                this._filter.site_type = [];
+                document.querySelectorAll(`button[name='site_tp']`).forEach(btn => btn.classList.remove('active'));
+                allButtonEl.classList.add("active"); // 전체 버튼 활성화
+        
+                // LIST 페이지 필터 동기화
+                searchFilterManager.syncFilters();
+            });
+
+            // 개별 버튼 클릭 이벤트
+			siteTypeButtonEl.forEach(button => {
+				button.addEventListener('click', () => {
+					const value = button.getAttribute('value');
+
+					if (this._filter.site_type.includes(value)) {
+						// 선택된 값 제거
+						this._filter.site_type = this._filter.site_type.filter(item => item !== value);
+						document.querySelectorAll(`button[name='site_tp'][value='${value}']`).forEach(btn => btn.classList.remove('active'));
+					} else {
+						// 선택된 값 추가
+						this._filter.site_type.push(value);
+						document.querySelectorAll(`button[name='site_tp'][value='${value}']`).forEach(btn => btn.classList.add('active'));
+					}
+					
+					// 숙소 구분 필터 싱크 맞추기
+					searchFilterManager.syncFilters();
+				});
+			});
+		},
+        // 최근 검색 테이블 등록
+        insertRecentSearch: function(){
+            let status = "NO";
+            
+            const params = {
+                search_keyword: searchFilterManager._inputFieldEl.value,
+                site_tp: searchFilterManager._filter.site_type.join(","),
+                res_date: searchFilterManager._filter.res_date,
+                res_end_date: searchFilterManager._filter.res_end_date,
+                region: searchFilterManager._filter.region,
+                sub_region: searchFilterManager._filter.sub_region.join(","),
+                adult_count: searchFilterManager._filter.adultCount,
+                child_count: searchFilterManager._filter.childCount,   
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/search/ax_insert_recent_search.hbb",
+                data: params,
+                success: onSuccess,
+                error: onError
+            });
+            
+            function onSuccess(dataobj) {
+                status = dataobj;
+                searchFilterManager.getRecentSearch();
+            }
+            function onError() {}   
+            
+            return status;
+        },
+        //최근검색리스트 가져오기
+        getRecentSearch: function(){
+            $.ajax({
+                type: "POST",
+                url: "/search/ax_get_recent_search.hbb",
+                success: onSuccess,
+                error: onError
+            });
+            
+            function onSuccess(dataobj){
+                const recentContentEl = document.getElementById("recentContent");
+                recentContent.innerHTML = dataobj;
+                
+                document.addEventListener("click", function (event) {
+                    const deleteButton = event.target.closest(".recentDeleteButton");
+                    const searchButton = event.target.closest(".recentButton");
+                
+                    // 최근검색조건 삭제 이벤트
+                    if (deleteButton) {
+                        event.stopPropagation();
+                        searchFilterManager.deleteRecentSearch(deleteButton);
+                        return;
+                    }
+                
+                    // 최근검색조건 이동 이벤트
+                    if (searchButton) {
+                        searchFilterManager.submitRecentSearch(searchButton);
+                    }
+                });
+            }
+            
+            function onError(){}
+        },
+        //최근검색 개별 삭제
+        deleteRecentSearch: function(el){
+            const campSearchSeq = el.dataset.seq;
+        
+            $.ajax({
+                type: "POST",
+                url: "/search/ax_delete_recent_search.hbb",
+                data: { delete_type: "ONE", camp_search_seq: campSearchSeq },
+                success: function (response) {
+                    const element = document.querySelector(`[data-value="${campSearchSeq}"]`);
+                    if (element) {
+                      element.remove();
+                    }
+                },
+                error: function () {
+                    
+                }
+            });
+        },
+        //최근검색 전체 삭제
+        deleteALLRecentSearch: function(){
+            $.ajax({
+                type: "POST",
+                url: "/search/ax_delete_recent_search.hbb",
+                data: { delete_type: "ALL" },
+                success: function (response) {
+                    const element = document.getElementById("recentContent");
+                    if (element) {
+                        element.innerHTML = `<li class="swiper-slide" style="width: 100%"><div class="box" style="justify-content: center">조회된 내역이 없습니다.</div></li>`;
+                    }
+                },
+                error: function () {
+                    
+                }
+            });
+        },
+        //최근검색 클릭 이벤트
+        submitRecentSearch: function(el){
+            popSearchManager.close();
+            
+            if(searchFilterManager._searchType == "LIST"){
+                searchFilterManager._filter.site_type = el.dataset.sitetp.split(",")
+                searchFilterManager._filter.res_date = el.dataset.resdate
+                searchFilterManager._filter.res_end_date = el.dataset.resenddate
+                searchFilterManager._filter.ser_res_date = el.dataset.resdate
+                searchFilterManager._filter.ser_res_end_date = el.dataset.resenddate
+                searchFilterManager._filter.region = el.dataset.region
+                searchFilterManager._filter.sub_region = el.dataset.subregion.split(",")
+                searchFilterManager._filter.adultCount = el.dataset.adultcount
+                searchFilterManager._filter.childCount = el.dataset.childcount
+                
+                popSearchManager.updateSearchInput();
+                searchFilterManager.updateRegionPlaceholder();
+                headFilterManager.isHeadFilterCheck();
+                DataListManager.fetchData(true);
+                
+                return;
+            }
+        
+            // URLSearchParams 객체 생성
+            const searchParams = new URLSearchParams({
+                site_tp: el.dataset.sitetp,
+                res_dt: el.dataset.resdate,
+                res_edt: el.dataset.resenddate,
+                region: el.dataset.region,
+                sub_region: el.dataset.subregion,
+                ser_adult_count: el.dataset.adultcount,
+                ser_child_count: el.dataset.childcount,
+                ser_keyword: ""
+            });
+            
+            window.location.href = `/resv/list.hbb?${searchParams.toString()}`;
+        },
+		//리스트 검색하기
+		submitSearch: function () {
+		    popSearchManager.close();
+		    
+		    if(searchFilterManager._searchType == "COLLECT" || searchFilterManager._searchType == "CAMPCOUPON"){
+		        searchFilterManager._filter.ser_res_date = searchFilterManager._filter.res_date;
+                searchFilterManager._filter.ser_res_end_date = searchFilterManager._filter.res_end_date; 
+                                
+		        popSearchManager.updateSearchInput();
+		        CollectManager.fetchDatas(true);
+		        return;
+		    }
+		    
+		    if(searchFilterManager._searchType == "LIST"){
+		        const result = searchFilterManager.insertRecentSearch();
+		        console.log(result);
+		        
+		        searchFilterManager._filter.ser_res_date = searchFilterManager._filter.res_date;
+                searchFilterManager._filter.ser_res_end_date = searchFilterManager._filter.res_end_date; 
+		    
+		        popSearchManager.updateSearchInput();
+				headFilterManager.isHeadFilterCheck();
+		        DataListManager.fetchData(true);
+		        
+                return;
+            }
+            
+            // 최근 검색 내역 등록
+            const result = searchFilterManager.insertRecentSearch();
+            console.log(result);
+
+			const strSubRegion = searchFilterManager._filter.sub_region.join(",");
+			const keyword = searchFilterManager._inputFieldEl.value;
+
+			// URLSearchParams 객체 생성
+			const searchParams = new URLSearchParams({
+				site_tp: searchFilterManager._filter.site_type,
+				res_dt: searchFilterManager._filter.res_date,
+				res_edt: searchFilterManager._filter.res_end_date,
+				region: searchFilterManager._filter.region,
+				sub_region: strSubRegion,
+				ser_adult_count: searchFilterManager._filter.adultCount,
+				ser_child_count: searchFilterManager._filter.childCount,
+				ser_keyword: keyword
+			});
+
+			// filterManager._selectedFilters가 존재할 경우 URL에 추가
+			const params = (typeof filterManager !== "undefined" && filterManager._selectedFilters) ? filterManager._selectedFilters : {};
+
+			// filterManager._selectedFilters 값이 있으면 추가
+			Object.keys(params).forEach((key) => {
+				const value = filterManager._selectedFilters[key];
+
+				if (Array.isArray(value) && value.length > 0) {
+					// 배열이면 쉼표로 구분된 문자열로 변환하여 추가
+					searchParams.append(key, value.join(","));
+				} else if (value) {
+					// 값이 비어있지 않으면 추가
+					searchParams.append(key, value);
+				}
+			});
+			
+			// 최종 URL 이동
+			window.location.href = `/resv/list.hbb?${searchParams.toString()}`;
+		},
+		//지도 검색하기
+		submitMapSearch: function(){
+		    popSearchManager.close();
+		    
+		    const markerCoordinate = searchMapManager.getMarkerCoordinate();
+            const lat = markerCoordinate.lat();
+            const lng = markerCoordinate.lng();
+            const zoom = searchMapManager._MAP.getZoom();
+
+		    if(searchFilterManager._searchType == "MAP"){
+                popSearchManager.updateSearchInput();
+                
+                _MAP.setZoom(zoom);
+                _MAP.setCenter(new naver.maps.LatLng(lat, lng));
+                DataManager.fetchData(_MAP, true);
+                return;
+            }
+            
+			const URL= `/search/mapSearch.hbb?zoom=${zoom}&res_dt=${searchFilterManager._filter.res_date}&res_edt=${searchFilterManager._filter.res_end_date}&lat=${lat}&lng=${lng}`;
+		
+			// URL 이동
+			window.location.href = URL;
+		}
+	}
+
+	/* 달력 관련 함수 */
+	const searchCalendarManager = {
+		init: function(){
+			$.datepicker.setDefaults({
+				  closeText: "닫기",
+				  prevText: "이전달",
+				  nextText: "다음달",
+				  currentText: "오늘",
+				  monthNames: ["1월", "2월", "3월", "4월", "5월", "6월","7월", "8월", "9월", "10월", "11월", "12월"],
+				  monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월","7월", "8월", "9월", "10월", "11월", "12월"],
+				  dayNames: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
+				  dayNamesShort: ["일", "월", "화", "수", "목", "금", "토"],
+				  dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+				  weekHeader: "주",
+				  dateFormat: "yymmdd",
+				  firstDay: 0,
+				  isRTL: false,
+				  showMonthAfterYear: true,
+				  yearSuffix: "년",
+				  defaultDate: searchFilterManager._filter.ser_res_date
+			})
+			$(".datepicker-list").datepicker({
+				minDate: 0,
+				selectOtherMonths: true,
+				beforeShowDay: searchCalendarManager.funcBeforeShowDay,
+				onSelect: function (selected, event) {
+					var dt = $(this).val();
+					searchCalendarManager.selectCalendar(dt);	    	
+				}
+			});
+
+			$(".datepicker-map").datepicker({
+				minDate: 0,
+				selectOtherMonths: true,
+				beforeShowDay: searchCalendarManager.funcBeforeShowDay,
+				onSelect: function (selected, event) {
+					var dt = $(this).val();
+					searchCalendarManager.selectCalendar(dt);	    	
+				}
+			});
+		},
+		selectCalendar: function(dt){
+			if(searchFilterManager._filter.res_end_date=="" && searchFilterManager._filter.res_date <= dt) {
+				//예약불가검색
+				if(searchFilterManager._filter.res_date < dt) {
+					var s_dt = searchFilterManager._filter.res_date
+					var s_days = diff_date(searchFilterManager._filter.res_date, dt)
+				} else {
+					var s_dt = dt
+					var s_days = diff_date(dt,searchFilterManager._filter.res_date)
+				}
+
+				if (s_days > 6) {
+					action_popup.alert("최대 6박까지 검색이 가능합니다.")
+					searchFilterManager._filter.res_date = dt
+					searchFilterManager._filter.res_end_date = ""
+					searchFilterManager._filter.ser_res_date = dt
+                    searchFilterManager._filter.ser_res_end_date = ""
+					searchFilterManager._filter.site_type = ['BB006']
+					
+					// 숙소 구분 필터 싱크 맞추기
+                    searchFilterManager.syncFilters();
+                    
+					return
+				}
+
+				searchFilterManager._filter.res_date = s_dt
+				searchFilterManager._filter.ser_res_date = s_dt
+				var ndt = new Date(s_dt.substr(0,4),parseInt(s_dt.substr(4,2))-1,parseInt(s_dt.substr(6,2)));
+				ndt.setDate(ndt.getDate() + s_days);
+				searchFilterManager._filter.res_end_date = ndt.getFullYear()+''+filldate(ndt.getMonth()+1)+''+filldate(ndt.getDate())
+				searchFilterManager._filter.ser_res_end_date = searchFilterManager._filter.res_end_date
+				searchFilterManager._filter.res_day = s_days
+				if(searchFilterManager._filter.ser_res_date == searchFilterManager._filter.ser_res_end_date){
+				    searchFilterManager._filter.site_type = ['BB006']
+				}else{
+				    searchFilterManager._filter.site_type = []
+				}
+				$(".datepicker-list").datepicker({beforeShowDay: searchCalendarManager.funcBeforeShowDay});
+				$(".datepicker-map").datepicker({beforeShowDay: searchCalendarManager.funcBeforeShowDay});
+			} else {
+				searchFilterManager._filter.res_date = dt
+				searchFilterManager._filter.res_end_date = ""
+				searchFilterManager._filter.ser_res_date = dt
+                searchFilterManager._filter.ser_res_end_date = ""
+				searchFilterManager._filter.site_type = ['BB006']
+			}
+
+			searchFilterManager.syncFilters();
+            searchFilterManager.isSiteType();
+			searchFilterManager.updateDatePlaceholder();
+		},
+		funcBeforeShowDay: function (date) {
+            var result = null;
+            var m = date.getMonth(), d = date.getDate(), y = date.getFullYear();
+            result = [true, ""]; // 기본값은 빈 문자열
+        
+            var formattedDate = y + '' + filldate(m + 1) + '' + filldate(d); // 현재 날짜 포맷팅
+        
+            // 선택한 날짜가 범위 내에 있을 때 ui-state-active 클래스 추가
+            if (searchFilterManager._filter.res_date <= formattedDate && searchFilterManager._filter.res_end_date >= formattedDate) {
+                if(searchFilterManager._filter.res_date == searchFilterManager._filter.res_end_date){
+                    result = [true, "ui-state-active"];
+                }else{
+                    if(searchFilterManager._filter.res_date == formattedDate){
+                        result = [true, "ui-state-active left"];
+                    }else if(searchFilterManager._filter.res_end_date == formattedDate){
+                        result = [true, "ui-state-active right"];
+                    }else{
+                        result = [true, "ui-state-active-a"];
+                    }
+                }
+                
+            }
+            // 그 외에는 기본값으로 빈 문자열을 반환
+            else {
+                result = [true, ""];
+            }
+        
+            return result;
+        },
+	}
+
+	// 네이버 지도 관련
+    const searchMapManager = {
+		_LAT: null,
+		_LNG: null,
+		_MAP: null,
+		init: function() {
+			// 대체 좌표
+			this._LAT = 37.82883056;
+			this._LNG = 127.5117778;
+			this.createMap(searchMapManager._LAT, searchMapManager._LNG);
+			
+			if(app_yn=='Y') {
+			    if(app_os=='android'){
+			        window.Android.getGpsLocation();
+			    }
+                if(app_os=='ios'){
+                    goIosAp('getGpsLocation');
+                }
+            }else{
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(searchMapManager.locationSuccess.bind(this), searchMapManager.locationError.bind(this));
+                } else {
+                    this.locationError("이 브라우저는 Geolocation을 지원하지 않습니다.");
+                }
+            }
+		
+		},
+		locationSuccess: function(position) {
+			this._LAT = position.coords.latitude;
+			this._LNG = position.coords.longitude;
+			searchMapManager.createMap(searchMapManager._LAT, searchMapManager._LNG);
+		},
+		locationError: function(error) {
+			switch(error.code) {
+				case error.PERMISSION_DENIED:
+					console.log("사용자가 위치 정보 요청을 거부했습니다.");
+					break;
+				case error.POSITION_UNAVAILABLE:
+					console.log("위치 정보를 사용할 수 없습니다.");
+					break;
+				case error.TIMEOUT:
+					console.log("위치 정보 요청이 시간 초과되었습니다.");
+					break;
+				case error.UNKNOWN_ERROR:
+					console.log("알 수 없는 오류가 발생했습니다.");
+					break;
+			}
+		},
+        createMap: function(lat, lng) {
+            const mapOptions = {
+                center: new naver.maps.LatLng(lat, lng),
+                zoom: 10
+            };
+
+            this._MAP = new naver.maps.Map("search_map", mapOptions);
+        },
+		getMarkerCoordinate: function(){
+			return this._MAP.getCenter();
+		}
+    };
+    
+    // 앱 함수
+    function getLocation(data) {
+		console.log("===== 앱 호출 =====");
+		// 검색 데이터
+		const serLat = parseFloat("");
+        const serLng = parseFloat("");
+
+		// data를 ','로 분리하여 변수에 저장
+		let [lat, lng] = data.split(',').map(Number);
+
+		// 값 설정
+		searchMapManager._LAT = lat;
+		searchMapManager._LNG = lng;
+		
+		if(searchMapManager._MAP == null){
+		    searchMapManager.createMap(searchMapManager._LAT, searchMapManager._LNG);
+		}
+
+		if (typeof _LAT !== "undefined" && typeof _LNG !== "undefined") {
+		    _myLat = lat;
+		    _myLng = lng;
+		    
+			_LAT = _myLat;
+			_LNG = _myLng;
+			
+			if(_MAP == null){
+			    if(!isNaN(serLat) || !isNaN(serLng)){
+                    MapManager.init(serLat, serLng);
+                    return;
+                }
+                
+                MapManager.init(_LAT, _LNG);
+			}
+		}
+	}
+
+
+	// 초기화 코드
+	$(document).ready(function () {
+		// 팝업 관련 이벤트
+		popSearchManager.init();
+		// 탭 관련 이벤트
+		tabManager.init();
+		// 스와이퍼 관련 이벤트
+		swiperManager.init();
+		// 검색 관련 이벤트
+		searchFilterManager.init();
+		// 달력 관련 이벤트
+		searchCalendarManager.init();
+	});
+</script>
+
+        </div><!-- //wrap_in -->
+       
+    </div> <!--// wrap -->
+<input type="hidden" name="festa_yn" value="Y">
+</form>
+</body>
+<script>
+	const mem_grade = "0";
+	const enter_path = "";
+</script>
+<script src="/js/search_list.js?version=20261001-1"></script>
+<script>
+$(window).scroll(function(){
+    if($("#wrap").css("display") != "none") {
+        sc_top = Math.ceil($(window).scrollTop())
+        sc_hei = Math.ceil($(document).height() - $(window).height())
+        //$(".head_in").html(sc_hei + "/" + sc_top)
+        if(sc_hei - 150 < sc_top && !DataListManager._isPending) {
+            DataListManager.goResSerNext()
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // 필터 순서 정렬 이벤트
+    filterManager.sortSelect(() => DataListManager.fetchData(true));
+
+    // 데이터 조회 이벤트
+    DataListManager.init();
+
+    // 태그 검색하기 버튼 이벤트
+    filterManager.createTagClickEvent(()=>{
+        filterManager._selectedFilters.page = 0;
+        DataListManager.fetchData(true);
+    });
+
+    // 필터 검색하기 버튼 이벤트
+    filterManager.updateEmptyState();
+    document.getElementById("searchSubmitButton").addEventListener('click', function(){
+        filterManager.close();
+        filterManager._selectedFilters.page = 0;
+        DataListManager.fetchData(true);
+    })
+
+    // 예약가능 버튼 이벤트
+    document.getElementById("empty_y").addEventListener('click', function(){
+        filterManager._selectedFilters.page = 0;
+        filterManager.toggleEmpty();
+        DataListManager.fetchData(true);
+    })
+
+    // 뷰 타입 버튼 이벤트
+    document.addEventListener("click", function (event) {
+        const selViewBtn = document.querySelector(".sel_view img");
+        const galleryView = DataListManager._viewType;
+
+        // `.sel_view` 버튼 클릭 시 실행
+        if (event.target.closest(".sel_view")) {
+            if (galleryView == "PIC") {
+                DataListManager._viewType = "LIST";
+                selViewBtn.src = "../images/thumb-pic.png";
+                selViewBtn.alt = "갤러리형으로 보기";
+                document.getElementById("DivResvList").classList.add("view_type_info");
+                document.getElementById("DivResvPrList").classList.add("view_type_info");
+            } else {
+                DataListManager._viewType = "PIC";
+                selViewBtn.src = "../images/thumb.png";
+                selViewBtn.alt = "리스트로 보기";
+                document.getElementById("DivResvList").classList.remove("view_type_info");
+                document.getElementById("DivResvPrList").classList.remove("view_type_info");
+            }
+        }
+    });
+
+    // 찜 버튼
+    document.getElementById("DivResvList").addEventListener("click", function (event) {
+        if (event.target.classList.contains("btn_zzim")) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const memseq = "";
+            const $zzimEl = $(event.target);
+            const campseq = $zzimEl.data("value");
+
+            if(memseq == ""){
+                action_popup.alert('로그인후 이용해 주세요.');
+                return;
+            }
+
+            chgFavor($zzimEl,campseq,1)
+        }
+    });
+
+    // 신기능 안내 말풍선
+    document.getElementById("viewInfoBox").classList.add("active");
+    setTimeout(() => {
+        viewInfoBox.classList.remove("active");
+    }, 5000);
+});
+
+</script>
+</html>

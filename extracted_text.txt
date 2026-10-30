@@ -1,0 +1,2506 @@
+﻿
+ë¡íìº í | ëì ì ìº íì¥ | ì¶©ë¨ | ì¤í ìº í
+// HTTPíë¡í ì½ HTTPSë¡ ë³ê²½
+	
+	if (document.location.protocol == 'http:') {
+		if (document.location.href.search("/talk/write") < 0 && document.location.href.search("/used/write") < 0) {
+			document.location.href = document.location.href.replace('http:', 'https:');
+		}
+	}
+	
+	var app_yn	= ""
+	var app_os	= ""
+	var app_ver	= "0"
+	var varUA = navigator.userAgent.toLowerCase(); //userAgent ê° ì»ê¸°
+	var mobileApp = varUA.indexOf("/app/") > -1 ? true : false;
+  if (mobileApp==true && varUA.indexOf('android') > -1) {
+		app_yn = "Y"
+		app_os = "android"
+		app_ver = window.Android.getAppVer()
+  } else if (mobileApp==true && (varUA.indexOf("ios") > -1||varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 )) {
+  	app_yn = "Y"
+		app_os = "ios";
+		if (varUA.indexOf("appver") > -1) {
+			app_ver = varUA.split('appver')[1].substr(0,5).replaceAll('.','')
+		}
+  }
+ 	/*
+ 	if (app_yn=="Y" && app_ver!="0" && ("/resv/view.hbb"=="/main.hbb" || "/resv/view.hbb"=="/my/main.hbb")) {
+		$.ajax({
+			type: "POST",
+	    url: "/app/ver_sav.hbb",
+	    data:{app_ver:app_ver},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {}
+	  function onError() {}	  	
+  }
+  */
+  
+	Kakao.init('27aa85bb599bbd835014e7a7dd9b7207');	
+	
+	var app_mem	= ""
+    function goUrl(url,pop_yn,pop_loc) {
+        //if(url.indexOf('https://m.thankqcamping.com')>-1) url=replace(url,'https://m.thankqcamping.com','')
+      
+        var fullUrl = ((url.indexOf('http') > -1) ? '' : $('#site_url').html()) + url;
+        var isInstagramUrl =
+            fullUrl.indexOf('instagram.com') > -1 ||
+            fullUrl.indexOf('www.instagram.com') > -1 ||
+            fullUrl.indexOf('instagr.am') > -1;
+      
+        if(app_yn=='Y') {
+      
+            // ì¸ì¤í URLì´ë©´ ë¤ì´í°ë¸ ì± í¸ì¶
+            if (isInstagramUrl) {
+                if (app_os == "android") {
+                    if (typeof Android !== "undefined" && typeof Android.openInstagram === "function") {
+                        Android.openInstagram(fullUrl);
+                        return;
+                    }
+                } else {
+                    goIosAp('openInstagram', fullUrl);
+                    return;
+                }
+            }
+      
+            if(app_ver!="") {
+                //if(parseInt(app_ver) > 18) {
+                    if (pop_yn=='N') {
+                        location.href = fullUrl;
+                    } else {
+                        if (app_os == "android" && parseInt(app_ver) < 49) {
+                            location.href = ((pop_loc!='') ? pop_loc+'://' : '') + fullUrl;
+                        } else {
+                            winOpen(fullUrl,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.');
+                        }
+                    }
+                    /*
+                    if (app_os == "android") {
+                        location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#site_url').html()) + url
+                    } else {
+                        winOpen($('#site_url').html() + url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+                    }
+                    */
+                //} else {
+                //	if(confirm('ì ê· ì´í ìë°ì´í¸ë¥¼ í´ì£¼ìê¸° ë°ëëë¤.\nì´ì  ë²ì  ì¬ì©ì ìë¹ì¤ ì´ì©ì ì¤ë¥ê° ë°ìí  ì ììµëë¤.\në§ì½, ìë°ì´í¸íìë ì´ ë©ìì§ê° ëì¤ì ë¤ë©´ í°ì¤ì  > ì íë¦¬ì¼ì´ì > ë¡íìº í > ì ì¥ê³µê°ìì ë°ì´í° ë° ìºìë¥¼ ì­ì í ë¤ì ì´ì©í´ ë³´ìê¸° ë°ëëë¤.')) {
+                //		location.href = 'market://details?id=com.habb.thankq'
+                //	} else {
+                //		if(pop_yn=='Y') {
+                //			winOpen($('#site_url').html() + url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+                //		} else {
+                //			location.href = $('#site_url').html() + url
+                //		}
+                //	}
+                //}
+            } else {
+                location.href = fullUrl;
+                /*
+                if (app_os == "android") {
+                    location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#site_url').html()) + url
+                } else {
+                    winOpen($('#site_url').html() + url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+                }
+                */
+            }
+        } else {
+            if(pop_yn=='Y') {
+                //if(pop_loc=="pop") {
+                    winOpen(url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.');
+                //} else {
+                //	location.href = url
+                //}
+            } else {
+                location.href = url;
+            }
+        }
+    }
+	function goShopUrl(url,pop_yn,pop_loc) {
+		if(app_yn=='Y') {
+			if(app_ver!="") {
+				//if(parseInt(app_ver) > 18) {
+					if (app_os == "android" && parseInt(app_ver) < 49) {
+						location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+					} else {
+						winOpen(((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+					}
+				//} else {
+				//	if(confirm('ì ê· ì´í ìë°ì´í¸ë¥¼ í´ì£¼ìê¸° ë°ëëë¤.\nì´ì  ë²ì  ì¬ì©ì ìë¹ì¤ ì´ì©ì ì¤ë¥ê° ë°ìí  ì ììµëë¤.\në§ì½, ìë°ì´í¸íìë ì´ ë©ìì§ê° ëì¤ì ë¤ë©´ í°ì¤ì  > ì íë¦¬ì¼ì´ì > ë¡íìº í > ì ì¥ê³µê°ìì ë°ì´í° ë° ìºìë¥¼ ì­ì í ë¤ì ì´ì©í´ ë³´ìê¸° ë°ëëë¤.')) {
+				//		location.href = 'market://details?id=com.habb.thankq'
+				//	} else {
+				//		if(pop_yn=='Y') {
+				//			winOpen(((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+				//		} else {
+				//			location.href = ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+				//		}
+				//	}
+				//}
+			} else {
+				if (app_os == "android" && parseInt(app_ver) < 49) {
+					location.href = ((pop_loc!='')?pop_loc+'://':'') + ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+				} else {
+					winOpen($('#shop_url').html() + url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+				}
+			}
+		} else {
+			url = ((url.indexOf('http')>-1)?'':$('#shop_url').html()) + url
+			if(pop_yn=='Y') {
+				//if(pop_loc=="pop") {
+					winOpen(url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+				//} else {
+				//	location.href = url
+				//}
+			} else {
+				location.href = url
+			}
+		}
+	}
+	function goResAppUrl(url,app_yn,app_os) {
+		if (app_yn=="Y") {
+			if (app_os=="android" && parseInt(app_ver) < 49) {
+				location.href = url
+			} else {
+				winOpen(url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+			}
+		} else {
+			winOpen(url,1,'íìì°¨ë¨ê¸°ë¥ì´ ì¤ì ëì´ ììµëë¤.\nì°¨ë¨í´ì í ë¤ì ì´ì©í´ ì£¼ì­ìì¤.')
+		}	
+	}	
+	function appPopReload(pop_loc) {
+		if(parseInt(app_ver) >= 23 && pop_loc!='') {
+			appPopReloadAp()
+			//window.Android.popReload(pop_loc);
+		} else {
+			appPopReloadAp()
+		}
+	}
+	
+	//ì±ë¦¬ë¡ë
+	function appPopReloadAp() {
+		if(app_os=="android") {
+			window.Android.pop_reload();
+		} else {
+			goIosAp('pop_reload','')
+		}
+	}
+
+	//ìº íì¥ ìì¸ë³´ê¸°
+	function cback(cseq) {
+		goUrl('/resv/view.hbb?cseq='+cseq,'Y','pop')
+	}
+	//ìº íì¥ ìì¸ë³´ê¸°
+	function goCampView(cseq,res_dt) {
+		goUrl('/resv/view.hbb?cseq='+cseq+'&res_dt='+res_dt,'N','pop')
+	}
+
+	//ìº íì¥ ì¤ìê°ìì½
+	function goRes() {
+		var frm = document.campForm
+		var campseq = frm.cseq.value
+		var res_dt	= frm.res_dt.value
+		var res_edt	= frm.res_edt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var couponId = frm.couponId.value
+		var ser_res_days = frm.res_days.value
+
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&res_edt="+res_edt+"&ser_res_days="+ser_res_days+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq+"&partnseq=&partnmemseq=&site_tp="+site_tp+"&couponId="+couponId;
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//ìº íì¥ ì¤ìê°ìì½
+	function goResStep(campseq, campsiteseq, res_dt) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&campsiteseq="+campsiteseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//ìº íì¥ ì¤ìê°ìì½
+	function goResStepDays(campseq, campsiteseq, res_dt, res_edt, res_days) {
+		//ìº íì¥ ì¤ìê°ìì½
+		var frm = document.form
+		var temporary_yn = frm.temporary_yn.value
+		var wg_pass = frm.wg_pass.value
+		if (frm.betatest_yn.value=='Y') {
+			var rfrm = document.resform
+			$.ajax({
+				type: "POST",
+		    url: "/booking/axCampResUrl.hbb",
+			data:{campseq:campseq,campsiteseq:campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        $('#resform').empty()
+				$('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+				$('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+				$('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+				$('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+				$('#resform').append("<input type='hidden' name='res_days' value='"+res_days+"'>")
+				$('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+				$('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+				$('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+				$('#resform').append("<input type='hidden' name='wg_pass' value='"+wg_pass+"'>")
+				//goUrl(url+'?campseq='+campseq+'&campsiteseq='+campsiteseq+'&res_dt='+res_dt+'&res_edt='+res_edt+'&res_days='+res_days+'&res_path='+res_path+'&enter_path='+enter_path+'&temporary_yn='+temporary_yn+'&wg_pass='+wg_pass,'Y','pop3');
+				document.resform.action = url
+				document.resform.submit()
+		  }
+		  function onError() {}	
+		} else {
+			//ìº íì¥ ì¤ìê°ìì½
+			var frm = document.form
+			$.ajax({
+				type: "POST",
+		    url: "/resv/axCampResUrl.hbb",
+		    data:{campseq:campseq,campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				// var url = dataobj + '&temporary_yn='+temporary_yn
+				// if (app_yn!="Y" && url.indexOf('res_path') < 0) url += "&res_path=HM"
+				// goResAppUrl(url,app_yn,app_os)
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        var access_token = dataobj.split('?')[3]
+        var imseq = ""
+        if (access_token=="") imseq = dataobj.split('?')[4]
+        $('#resform').empty()
+        $('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+        $('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+        $('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+        $('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+        $('#resform').append("<input type='hidden' name='ser_res_days' value='"+res_days+"'>")
+        $('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+        $('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+        $('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+        $('#resform').append("<input type='hidden' name='access_token' value='"+access_token+"'>")
+        $('#resform').append("<input type='hidden' name='imseq' value='"+imseq+"'>")
+        $('#resform').append("<input type='hidden' name='thankq_yn' value='Y'>")
+        goUrl(url+'?campseq='+campseq+'&campsiteseq='+campsiteseq+'&res_dt='+res_dt+'&res_edt='+res_edt+'&ser_res_days='+res_days+'&res_path='+res_path+'&enter_path='+enter_path+'&temporary_yn='+temporary_yn+'&access_token='+access_token+'&imseq='+imseq+'&thankq_yn=Y','Y','pop3');
+        //document.resform.action = url
+        //document.resform.submit()
+		  }
+		  function onError() {}	
+		}
+	}
+
+	//ìº íì¥ ì¤ìê°ìì½
+	function goResStepDaysNoti(campseq, campsiteseq, res_dt, res_edt, res_days) {
+		//ìº íì¥ ì¤ìê°ìì½
+		var frm = document.form
+		var temporary_yn = frm.temporary_yn.value
+		if (frm.betatest_yn.value=='Y') {
+		    $('#loading').show();
+			var rfrm = document.resform
+			$.ajax({
+				type: "POST",
+		    url: "/booking/axCampResUrl.hbb",
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				var url = dataobj.split('?')[0]
+                var res_path = dataobj.split('?')[1]
+                if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+                var enter_path = dataobj.split('?')[2]
+                $('#resform').empty()
+				$('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+				$('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+				$('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+				$('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+				$('#resform').append("<input type='hidden' name='res_days' value='"+res_days+"'>")
+				$('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+				$('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+				$('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+				document.resform.action = url
+				document.resform.submit()
+		  }
+		  function onError() { $('#loading').hide(); }	
+		} else {
+			//ìº íì¥ ì¤ìê°ìì½
+			var frm = document.form
+			$.ajax({
+				type: "POST",
+		    url: "/resv/axCampResUrl.hbb",
+		    data:{campseq:campseq,campsiteseq,res_dt:res_dt,res_edt:res_edt,res_days:res_days},
+		    success: onSuccess,
+		    error: onError
+			});
+			function onSuccess(dataobj) {
+				// var url = dataobj + '&temporary_yn='+temporary_yn
+				// if (app_yn!="Y" && url.indexOf('res_path') < 0) url += "&res_path=HM"
+				// goResAppUrl(url,app_yn,app_os)
+				var url = dataobj.split('?')[0]
+        var res_path = dataobj.split('?')[1]
+        if (res_path=="") res_path = (app_yn=="Y")?"MO":"HM"
+        var enter_path = dataobj.split('?')[2]
+        var access_token = dataobj.split('?')[3]
+        var imseq = ""
+        if (access_token=="") imseq = dataobj.split('?')[4]
+        $('#resform').empty()
+        $('#resform').append("<input type='hidden' name='campseq' value='"+campseq+"'>")
+        $('#resform').append("<input type='hidden' name='campsiteseq' value='"+campsiteseq+"'>")
+        $('#resform').append("<input type='hidden' name='res_dt' value='"+res_dt+"'>")
+        $('#resform').append("<input type='hidden' name='res_edt' value='"+res_edt+"'>")
+        $('#resform').append("<input type='hidden' name='ser_res_days' value='"+res_days+"'>")
+        $('#resform').append("<input type='hidden' name='res_path' value='"+res_path+"'>")
+        $('#resform').append("<input type='hidden' name='enter_path' value='"+enter_path+"'>")
+        $('#resform').append("<input type='hidden' name='temporary_yn' value='"+temporary_yn+"'>")
+        $('#resform').append("<input type='hidden' name='access_token' value='"+access_token+"'>")
+        $('#resform').append("<input type='hidden' name='imseq' value='"+imseq+"'>")
+        $('#resform').append("<input type='hidden' name='thankq_yn' value='Y'>")
+        document.resform.action = url
+        document.resform.submit()
+		  }
+		  function onError() {}	
+		}
+		window.addEventListener('pageshow', function(e) {
+            $('#loading').hide();
+        });
+        window.addEventListener('popstate', function() {
+            $('#loading').hide();
+        });
+	}
+	
+	//ìº íì¥ ìì½ë°ë¡ê°ê¸°
+	function goResDirect(seq,dt,days) {
+		var url = '/resv/view.hbb?cseq='+seq+(dt!=''&&typeof dt!='undefined'?'&res_dt='+dt:'')+(days!=''&&typeof days!='undefined'?'&ser_res_days='+days:'')+(dt!=''&&typeof dt!='undefined'?'#booking_dt':'')
+		location.href = url
+		/*
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	  */
+	}
+
+	//ìº íì¥ ìì½ë°ë¡ê°ê¸°
+	function goResDirectDt(seq,dt,edt) {
+		var url = '/resv/view.hbb?cseq='+seq+(dt!=''&&typeof dt!='undefined'?'&res_dt='+dt:'')+(edt!=''&&typeof edt!='undefined'?'&res_edt='+edt:'')+(dt!=''&&typeof dt!='undefined'?'#booking_dt':'')
+		location.href = url
+		/*
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	  */
+	}
+
+	//ìº íì¥ ìì½ë°ë¡ê°ê¸°
+	function goMemResDirect(seq) {
+		
+	  	alert('íìë¡ê·¸ì¸í ìì½íì¤ ì ììµëë¤.');	
+	  
+	}
+
+	//ìº íì¥ ìì½ë°ë¡ê°ê¸°
+	function goResEmpty(seq,emptyseq) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:seq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+seq+"&emptyseq="+emptyseq+"&thankq_app="+app_yn+"&thankq_yn=Y&partnseq=&partnmemseq=";
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}			
+	}
+	
+	//ìº íì¥ ì¤ìê°ìì½
+	function goResStep2(campseq, campsiteseq) {
+		var frm = document.form
+		var res_dt	= frm.res_dt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var couponId = frm.couponId.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&campsiteseq="+campsiteseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq+"&partnseq=&partnmemseq=&site_tp="+site_tp+"&couponId="+couponId;
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	
+	//ìº íì¥ ì´ë²¤í¸ìì½
+	function goResEvent(cseq) {
+		var frm = document.form
+		var campseq = cseq
+		var res_dt	= frm.res_dt.value
+		var region 	= frm.region.value
+		var site_tp	= frm.site_tp.value
+		var tema	= frm.tema.value
+		var keyword	= frm.keyword.value
+		var disc_yn	= frm.disc_yn.value
+		var camp_tp	= frm.camp_tp.value
+		var page	= frm.page_num.value
+		var reseventseq	= frm.reseventseq.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y&reseventseq="+reseventseq
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//ìº íì¥ ì¤ìê°ìì½
+	function goResPop(cseq) {
+		var campseq = cseq
+		var res_dt	= document.form.res_dt.value
+		var region 	= document.form.region.value
+		var site_tp	= document.form.site_tp.value
+		var tema	= document.form.tema.value
+		var keyword	= document.form.keyword.value
+		var disc_yn	= document.form.disc_yn.value
+		var camp_tp	= document.form.camp_tp.value
+		var page	= document.form.page_num.value
+		var res_url = res_dt+"$"+region+"$"+site_tp+"$"+tema+"$"+keyword+"$"+disc_yn+"$"+camp_tp+"$"+page
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&res_dt="+res_dt+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+	//ìº íì¥ ìì½íì¸
+	function goResView(campseq,reserveseq,status,page,page_k) {
+		var res_url = "myResList$"+status+"$"+page+"$"+page_k
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reserveseq="+reserveseq+"&thankq_app="+app_yn+"&thankq_rurl="+res_url+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	//ìº íì¥ ìì½íì¸
+	function goResCertView(campseq,reserveseq,status,rnd_num) {
+		$.ajax({
+			type: "POST",
+	    url: "/resv/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reserveseq="+reserveseq+"&thankq_app="+app_yn+"&rnd_num="+rnd_num+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+	//ìº íì¥ ì¥ë°ìì½íì¸
+	function goResLongView(campseq,reslongseq,status,page,page_k) {
+		var res_url = "myResList$"+status+"$"+page+"$"+page_k
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&reslongseq="+reslongseq+"&thankq_app="+app_yn+"&thankq_rurl="+res_url+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+		
+	//ì´ë²¤í¸ ì¼íëª° í¸ì¶
+	function goShopPop(gseq) {
+		location.href= 'https://m.shop.thankqcamping.com/shopMain.hbb?ser_good_id='+gseq
+
+	}
+          
+	//íë¨ë©ë´ ê²ì
+	function Bmenu(url) {
+		$("#Lmnu").html('<div class="modal-dialog"><div class="modal-content"><div id="spinner_pop"></div></div></div>');
+		//$("#spinner_pop").show();
+		location.href = url
+	}
+	
+	//ëª¨ë¬ì°½ ë«ê¸°
+	function modalClose() {
+		$(".close").click();
+	}
+
+	//íí¸ë íìë¡ê·¸ì¸
+	function partnLoginAp() {	
+			var frm = document.loginForm
+			
+			if(frm.h_telno.value=="") {
+				alert("í´ëí°ë²í¸ë¥¼ ìë ¥í´ì£¼ì¸ì.")
+				frm.h_telno.focus()
+				return
+			} else
+			if(frm.pwd.value=="") {
+				alert("ë¹ë°ë²í¸ë¥¼ ìë ¥í´ì£¼ì¸ì.")
+				frm.pwd.focus()
+				return
+			} else {
+				//frm.ret_url.value = encodeURIComponent(frm.ret_url.value)
+				frm.action = "https://m.thankqcamping.com/join/login_ok.hbb"
+				frm.target = "job"
+				frm.submit();		
+			}	   
+	}
+	
+	//ë°°ëë¸ì¶
+	function axBannerViewCount(c) {
+		if ($("#BN"+c)) {
+			if($("#BN"+c).html().indexOf("B") > -1 && $("#Lmnu").attr('class').indexOf('in') < 0) {
+				$.ajax({
+					type: "POST",
+			    url: "/inc/axBannerViewCount.hbb",
+			    data:{ seq:$("#BN"+c).html().replace("B","") },
+			    success: onSuccess,
+			    error: onError
+				});		
+				function onSuccess(dataobj) {}
+			  function onError() {}				
+			}
+		}
+	}
+	//ëª¨ë¬ íì´ì§ ì´ë
+	function goModalReUrl(url) {
+		goUrl(url,'Y','pop')
+	}
+
+	//ë¨¹ê±°ë¦¬êµ¬ë§¤ ìì¸íì¸
+	function goResGoodView(campseq,resgoodseq) {
+		$.ajax({
+			type: "POST",
+	    url: "/inc/axCampResVerUrl.hbb",
+	    data:{campseq:campseq},
+	    success: onSuccess,
+	    error: onError
+		});
+		function onSuccess(dataobj) {	
+			var url = dataobj+"/thankQRes.hbb?campseq="+campseq+"&resgoodseq="+resgoodseq+"&thankq_app="+app_yn+"&thankq_yn=Y"
+			if (app_yn!="Y") url += "&res_path=HM"
+			goResAppUrl(url,app_yn,app_os)
+	  }
+	  function onError() {}	
+	}
+
+//ë©ì¸ìë
+function mainNoti(id,tit,msg,url) {
+	if(get_cookie("mainNoti_"+id)==null) { 
+		setCookie("mainNoti_"+id, "Y", false)
+		txt = "<div class=\"pop_conts\">"
+		txt += "	<p class=\"txt1\">"+tit+"</p>"
+		txt += "	<p class=\"txt2\">"+msg+"</p>"
+		txt += "</div>"
+		txt += "<span href=\"#\" class=\"sprite btn_layerClose2\" onclick=\"ly_close()\"></span>"
+		txt += "<button type=\"button\" class=\"btn\" onClick=\"ly_close();"+url+"\">ë°ë¡ê°ê¸°</button>"
+		$('#divMainNoti').html(txt);
+		ly_open();
+	}
+}
+//ì¸ë¶ì¤íì°½ì´ê¸°
+function outOpen(url) {
+	if(app_yn=='Y') {
+		if ((app_os=='android' && parseInt(app_ver) < 51) || (app_os=='ios' && parseInt(app_ver) < 38)) {
+			open(url,'_blank','')
+		} else {
+			if(app_os=='ios') {
+				goIosAp('openBrowser',url)
+			} else {
+				try {
+		    	location.href = "blank://" + url
+		    } catch(e) {
+		      open(url,'_blank','')
+		    }
+		  }
+		}
+	} else {
+		open(url,'','')
+	}
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-64792179-1', 'auto');
+		ga('send', 'pageview');
+		//document.ondragstart = new Function('return false');     // ëëê·¸ ë°©ì§
+		//document.onselectstart = new Function('return false');   // ì í ë°©ì§
+		//document.oncontextmenu = new Function('return false');   // ì í ë°©ì§
+window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-EZH75RFPSZ');
+window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+	    gtag('config', 'GTM-5WNWZSZ');
+(function (cfg) {
+            cfg.tenantId = 'TN251104-8C1A44EC';
+            cfg.domainName = 'thankqcamping.com';
+            cfg.customId = '';
+            cfg.serverUrl = 'https://botmanager.stclab.com/api/v1/macro';
+        })(window['BotManager-config'] || (window['BotManager-config'] = {}));
+body { background: #f9f9f9; }
+https://m.thankqcamping.com
+https://m.thankqcamping.com
+document.addEventListener("DOMContentLoaded", function(){
+    if(app_yn != "Y"){
+        // ì± ì ë QR ì½ë ì¶ê°
+        const newDiv = document.createElement("div");
+        newDiv.classList.add("background_content");
+        
+        newDiv.innerHTML = `
+            <div class="content_group">
+                <a href="#">
+                    <img src="/images/deep_qr.svg" alt="ë¥ë§í¬ QR" class="img_qr">
+                    <img src="/images/deep_logo.png" alt="LOGO" class="img_logo">
+                </a>
+                <div class="text_box">
+                    <p>ì±ì ì¤ì¹íë©´<br>ë ë§ì ííì<br>ë°ì ë³¼ ì ìì´ì!</p>
+                    <span>ì¹´ë©ë¼ë¡ QRì½ëë¥¼ ì¤ìºí´ë³´ì¸ì</span>
+                </div>
+            </div>
+        `;
+        
+        const firstChild = document.getElementById("wrap").firstChild;
+        document.getElementById("wrap").insertBefore(newDiv, firstChild);
+    }
+})
+íì¸
+íì¸
+ì·¨ì
+íì¸
+íì¸
+íì¸
+/* ëìì */
+.video_wp { position: relative; }
+.video-container { position: relative; /*aspect-ratio: 16 / 9;*/ height: 100%; overflow: hidden; }
+.video-play,
+.video-container iframe,
+.video-container object,
+.video-container embed { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; }
+
+.date-fee-01 a { position: relative; }
+.date-fee-01 a:after { position: absolute; left: 50%; bottom: 6px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-fee_02 a { position: relative; }
+.date-fee_02 a:after { position: absolute; left: 50%; bottom: 6px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; }
+
+.date-disabled a { position: relative; color: rgba(192,192,192,0.5) !important; }
+.date-sunday a { position: relative; color: #f80f0f !important; }
+.date-sunday-disabled a { position: relative; color: rgba(248,15,15,0.5) !important; }
+
+.date-sunday-fee01 a { position: relative; color: #f80f0f !important; }
+.date-sunday-fee01 a:after { position: absolute; left: 50%; bottom: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-sunday-fee02 a { position: relative; color: #f80f0f !important; }
+.date-sunday-fee02 a:after { position: absolute; left: 50%; bottom: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-sunday-fee-01 a { position: relative; color: #f80f0f !important; }
+.date-sunday-fee-01 a:after { position: absolute; left: 50%; top: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-sunday-fee-02 a { position: relative; color: #f80f0f !important; }
+.date-sunday-fee-02 a:after { position: absolute; left: 50%; top: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+
+.date-saturday a { position: relative; color: #f80f0f !important; }
+.date-saturday-fee01 a { position: relative; }
+.date-saturday-fee01 a:after { position: absolute; left: 50%; bottom: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-saturday-fee02 a { position: relative; }
+.date-saturday-fee02 a:after { position: absolute; left: 50%; bottom: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-saturday-fee-01 a { position: relative; }
+.date-saturday-fee-01 a:after { position: absolute; left: 50%; top: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-saturday-fee-02 a { position: relative; }
+.date-saturday-fee-02 a:after { position: absolute; left: 50%; top: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+
+.date-weekday-fee01 a { position: relative; } 
+.date-weekday-fee01 a:after { position: absolute; left: 50%; bottom: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-weekday-fee02 a { position: relative; } 
+.date-weekday-fee02 a:after { position: absolute; left: 50%; bottom: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-weekday-fee-01 a { position: relative; } 
+.date-weekday-fee-01 a:after { position: absolute; left: 50%; top: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(236,54,54,0.9); border-radius: 0; content: ""; display: block; clear: both; } 
+.date-weekday-fee-02 a { position: relative; } 
+.date-weekday-fee-02 a:after { position: absolute; left: 50%; top: 0px; margin-left: -8px; width: 16px; height: 2px; background: rgba(18,125,235,0.9); border-radius: 0; content: ""; display: block; clear: both; }
+//$('#loading').show();	
+$( document ).ready( function() {
+	//$('#loading').hide();
+	//timeInit('20261030135004');
+	//timefunction();
+	ServerTimeInit();
+	setDatePicker(document.form, '20261030', '20270106')
+	//$("#DivCalendar").datepicker({ maxDate : '20270106' });
+	$("#DivCalendar").datepicker({maxDate: '20270106'});
+	axBeforeShowDay('2026', '10', $("#DivCalendar"));	
+	//getResCampSite();
+	
+	selectCalendar('20261031',false,false)
+	
+	//resDtPrint()
+  var ci_top_swiper = new Swiper('.ci_top_swiper', {
+	    pagination: {
+	                    el: ".pagination_com",
+                        type: "fraction",
+	                },
+	    slidesPerView: '1',
+	    paginationClickable: true,
+	    centeredSlides: true,
+	    lazyLoading: true,
+	    observer: true,
+	    observeParents: true,
+	    loop: false,
+	    on : {
+		    slideChange : function (){
+			    var isVideo = ci_top_swiper.slides[ci_top_swiper.previousIndex].querySelector('.video-container');
+					if (isVideo) {
+					  YT.get(isVideo.querySelector('.video-iframe').id).stopVideo()
+					  $('#play_state').val(0)
+					}
+		    }
+	    },
+	});
+	//ì¸ì±ë¦¬ë·°
+	inAppReviewOpen('D','')
+	//ì´ìì ìì ê³µê°
+	
+});
+
+//ì¡°íìì¦ê°
+function VcntAdd(id) {
+	$.ajax({
+		type: "POST",
+    url: "/resv/axVideoCntOk.hbb",
+    data: {id:id},
+    success: onSuccess,
+    error: onError
+	});		
+	function onSuccess(dataobj) {
+  }
+  function onError() {
+		//alert("ì¤ë¥ê° ë°ìíììµëë¤.");
+	}	
+}
+
+//ìº íì¥ìì½ì¬ì´í¸ê°ì ¸ì¤ê¸°
+function getResCampSite(tp) {
+	$('#loading_image').show();
+	$("#resCampSiteList").html('');
+	var frm = document.form
+	$.ajax({
+		type: "POST",
+    url: "/resv/axResCampSite.hbb",
+    data:{campseq:frm.cseq.value,res_dt:frm.res_dt.value,res_edt:frm.res_edt.value,res_days:frm.ser_res_days.value,site_tp:frm.site_tp.value,only_able_yn:''},
+    success: onSuccess,
+    error: onError
+	});
+	function onSuccess(dataobj) {
+		$("#resCampSiteList").html(dataobj);
+		$('#loading_image').hide();
+		if(tp==true) {
+			location.href='#booking_dt';
+			//if(!$(".site_dtl_sec .btn_ci_more").hasClass("up")) $('.btn_ci_more').click()
+		}
+		//if(tp==false && $('.site_list').height() > 700) {
+		//	$('#btn_site_list').show()
+		//	$(".site_list").css("maxHeight","700px");
+		//}
+  }
+  function onError() {alert('ëª©ë¡ì ê°ì ¸ì¤ëë° ì¤í¨íììµëë¤.');$('#loading_image').hide();}		
+}
+
+var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var ytplayer;
+
+    function onYouTubeIframeAPIReady() {
+        var container = document.querySelectorAll('.video-container');
+        for (var i = 0; i < container.length; i++) {
+            initPlayer(container[i])
+        }
+    }      
+    var initPlayer = function(element) {
+        var player = element.querySelector('.video-iframe');
+        var button = element.querySelector('.video-play');
+        ytplayer = new YT.Player(player, {
+        		playerVars: {
+            'autoplay': 0,
+            'modestbranding': 1,
+            'controls': 0,
+            'rel': 0,
+            },
+            videoId: element.dataset.id,
+            events: {
+	            'onReady': onPlayerReady
+	          }
+        });
+        function onPlayerReady(event) {
+	        //ytplayer.playVideo();
+	      }
+				button.addEventListener('click', function() {
+						switch (parseInt($('#play_state').val())) {
+            case 1:
+                ytplayer.pauseVideo();
+                $('#play_state').val(0)
+                break;
+            default:
+                ytplayer.playVideo();
+								$('#play_state').val(1)
+                var videoid = ytplayer.getVideoUrl().split('=')[1]	      	
+                VcntAdd(videoid)
+                break;
+            }
+        });	      
+    }
+ëì ì ìº íì¥ ìì½ ìì¸ íì´ì§
+ê³µì§ì¬í­, ê¸°ë³¸ì ë³´, ì´ìì ì±, ìì¤/íê²½, ë°°ì¹ë, ìì½ìë´, ë°©ë¬¸íê¸°, íë§¤ìì ë³´ë±
+back
+ëì ì ìº íì¥
+ìì½ì¡°í
+ë¡ê·¸ì¸
+ì´
+            íìí©ëë¤.
+Welcome to Q
+0
+Q-Point
+0
+ì¿ í°
+0
+íì´ë£°ë 
+ìë¡ìì§ íì´ë£°ë  ì´ë²¤í¸
+ë°©ë¬¸íê¸° ìì±íê³
+ì¶ì ì²´í¬íê³
+ìº íì¥ ë°©ë¬¸íê³
+ìí êµ¬ë§¤íê³
+ë¬´ë£ íì´ë£°ë  ì´ì©ê¶
+ë°ê¸°
+ìì½
+ì¤í ìº í
+ê¸ë¨í
+ì¹´ë¼ë°
+íì
+í¼í¬ë
+ì¼í
+ì¼íí
+íìí¹ê°
+ìº íì©í
+ë¨¹ê±°ë¦¬
+ë¸ëë
+ë¦¬ë·°ì¡´
+ê¸°íì 
+ë©ì¸ê¸°íì 
+ì¼íê¸°íì 
+ì´ë²¤í¸
+ìº í¡
+ë¹íììì½ì¡°í
+ê³µì§ì¬í­
+ìì£¼ë¬»ëì§ë¬¸
+ì í´ë¬¸ì
+ìë´ìì°ê²°
+ìë´ìê° :
+íì¼ 9:30~18:00 (ì ì¬ìê° 12:30~13:30)
+ë¡ê·¸ì¸
+íìê°ì
+ì ì²´ë³´ê¸°
+ì¤í ìº í
+ëì ì ìº íì¥
+ìë¦¼ë°ê¸°
+ë¤ìí íí ììì ë°ìë³´ì¸ì!
+ì¶©ë¨ íì±êµ° ìë¶ë©´ ë¨ë¹í­ë¡213ë²ê¸¸ 126 (ë¨ë¹ë¦¬)
+0507-1332-5207
+ë°©ë¬¸íê¸° 60ê±´
+Q-Pointì¬ì©
+ë¹ìë¦¬ìë¦¼
+ì ì©ì¹´ë
+ê°ìê³ì¢
+ê³ ìº íì¸ì¦
+ìµê·¼ íë¬ëì
+7,813ëª
+ë°©ë¬¸   |
+202ëª
+ì´ ìì½íì¨ìµëë¤.
+ì¿ í°
+ê³µì§ì¬í­
+ê¸°ë³¸ì ë³´
+ì´ìì ì±
+ìì¤/íê²½
+ë°°ì¹ë
+ìì½ìë´
+ë°©ë¬¸íê¸°
+íë§¤ìì ë³´
+document.addEventListener('DOMContentLoaded', () => {
+						// Swiper ì´ê¸°í
+						var swiper = new Swiper('.view_top_fixed', {
+							slidesPerView: 'auto',
+							spaceBetween: 8,
+							freeMode: true
+						});
+						
+						const fixedTop = document.querySelector('.view_top_fixed');
+						let initialTopPosition = fixedTop.offsetTop; // ì´ê¸° ìì¹ íì
+				
+						const updateFixedTop = () => {
+							if (window.scrollY >= initialTopPosition) {
+								fixedTop.classList.add('fixed');
+							} else {
+								fixedTop.classList.remove('fixed');
+							}
+						};
+				
+						// í­ ì¤í¬ë¡¤ ì´ë²¤í¸ ì¤ì 
+						let isManualScroll = false; // ìë ì¤í¬ë¡¤ íëê·¸
+
+						document.addEventListener('scroll', () => {
+								if (isManualScroll) return; // ìë ì¤í¬ë¡¤ ì ì¤í¬ë¡¤ ì´ë²¤í¸ ë¬´ì
+								updateFixedTop(); // ìë¨ ê³ ì  ì²ë¦¬
+
+								const allTabs = document.querySelectorAll('.tab_item');
+								let activeTabFound = false;  // íì±íë í­ì í ë²ë§ ì°¾ìë´ëë¡ íëê·¸ ì¤ì 
+
+								allTabs.forEach((tab, index) => {
+										const targetId = tab.getAttribute('data-target');
+										const targetElement = document.getElementById(targetId);
+
+										if (targetElement && !activeTabFound) {
+												const rect = targetElement.getBoundingClientRect();
+												if (rect.top <= 128 && rect.bottom >= 128) { 
+														// ì¹ìì´ íë©´ ë´ 128px ììì ë³´ì¼ ë íì±í
+														tab.classList.add('active');
+														activeTabFound = true; // ì²« ë²ì§¸ë¡ ë³´ì´ë ì¹ìì í´ë¹íë í­ì activeë¡ ì¤ì 
+
+														// Swiperë¥¼ í´ë¹ í­ ìì¹ë¡ ì´ë (ëª¨ë°ì¼ì¼ ê²½ì°ë§ ì ì©)
+														if (window.innerWidth <= 768) { // ëª¨ë°ì¼ ì²´í¬
+															swiper.slideTo(index); // active í­ì¼ë¡ swiper ì´ë
+														}
+												} else {
+														tab.classList.remove('active');
+												}
+										} else {
+												tab.classList.remove('active'); // ëë¨¸ì§ í­ì active ì ê±°
+										}
+								});
+						});
+
+
+						// í­ í´ë¦­ ì ìëì¼ë¡ íì±í ì¤ì 
+						document.querySelectorAll('.tab_item').forEach((tab, index) => {
+							tab.addEventListener('click', function() {
+									if (tab.style.display === 'none') return; // display: none ìíì í­ì ë¬´ì
+									// ì¤í¬ë¡¤ ì´ë²¤í¸ë¥¼ ì¼ìì ì¼ë¡ ë¹íì±í
+									isManualScroll = true;
+
+									// í­ íì±í ìí ìë°ì´í¸
+									document.querySelectorAll('.tab_item').forEach(item => item.classList.remove('active'));
+									this.classList.add('active');
+
+									// í´ë¹ ì¹ìì¼ë¡ ì¤í¬ë¡¤ ì´ë
+									const targetId = this.getAttribute('data-target');
+									const targetElement = document.getElementById(targetId);
+									if (targetElement) {
+											window.scrollTo({
+													top: targetElement.offsetTop - 50, 
+													behavior: 'smooth'
+											});
+
+											if (window.innerWidth <= 768) { // ëª¨ë°ì¼ ì²´í¬
+													swiper.slideTo(index); // í´ë¦­í í­ì¼ë¡ swiper ì´ë
+											}
+
+											// ì¤í¬ë¡¤ì´ ëë í ë¤ì ì¤í¬ë¡¤ ì´ë²¤í¸ íì±í
+											setTimeout(() => {
+													isManualScroll = false;
+											}, 500); 
+									}
+							});
+					    });
+
+						// ì´ê¸° ìì¹ ìë°ì´í¸ë¥¼ ìí ë¦¬ì¬ì´ì¦ ì´ë²¤í¸ ì²ë¦¬
+						window.addEventListener('resize', () => {
+							initialTopPosition = fixedTop.offsetTop;
+							updateFixedTop();
+						});
+				
+						updateFixedTop(); // ì´ê¸° ì¤í¬ë¡¤ ìì¹ ê¸°ë° ìë°ì´í¸
+						
+						
+						document.getElementById("mapInfoBox").classList.add("active");
+                        setTimeout(() => {
+                            mapInfoBox.classList.remove("active");
+                        }, 5000);
+                        
+					});
+ëë³´ê¸°
+const CouponPopManager = {
+                    init: function(){
+                        this.addEventListener();
+                    },
+                    addEventListener: function(){
+                        this.getCampCouponList();
+                    },
+                    getCampCouponList: function(){
+                        const couponCampListEl = document.getElementById("couponCampList");
+
+                        // ì¿ í° ë¤ì´ë¡ë ë²í¼ ì´ë²¤í¸
+                        const downButtonEl = document.querySelectorAll(".down_coupon");
+                        downButtonEl.forEach(el=> el.addEventListener("click", CouponPopManager.createCoupon));
+
+                        // ì¿ í° ìì¸ë³´ê¸° ë²í¼ ì´ë²¤í¸
+                        const detailButtonEl = document.querySelectorAll(".down_detail");
+                        detailButtonEl.forEach(el=> el.addEventListener("click", CouponPopManager.getCampCouponDetail));
+
+                        // ì í´ ì¿ í° ë¦¬ì¤í¸ ë³´ê¸° ë²í¼ ì´ë²¤í¸
+                        const jhDownListButtonEl = document.querySelectorAll(".down_jh_go_list");
+                        jhDownListButtonEl.forEach(el=> el.addEventListener("click", CouponPopManager.getJhCouponList))
+
+                        CouponPopManager.showFirstCoupons();
+                    },
+                    getJhCouponList: function(){
+                        goUrl('/place/list.hbb','Y','pop3');
+                    },
+                    showFirstCoupons: function(){
+                        const couponMoreWrapEl = document.getElementById("couponMoreWrap");
+                        const couponMoreButtonEl = document.getElementById("couponMoreButton");
+
+                        const couponList = Array.from(document.querySelectorAll(".coupon_list_wrap_3 > li.coupon"));
+                        if (couponList.length === 0)  return;
+
+                        const sortedCouponList = couponList
+                            .map(function(el, index){
+                                return {
+                                    el: el,
+                                    order: Number(window.getComputedStyle(el).order || 0),
+                                    index: index
+                                };
+                            })
+                            .sort(function(a, b){
+                                if (a.order !== b.order) {
+                                    return a.order - b.order;
+                                }
+
+                                return a.index - b.index;
+                            })
+                            .map(function(item){
+                                return item.el;
+                            });
+
+                        function showOnlyFirstThree() {
+                            sortedCouponList.forEach(function(el, index){
+                                if (index < 3) {
+                                    el.classList.remove("coupon_hidden");
+                                } else {
+                                    el.classList.add("coupon_hidden");
+                                }
+                            });
+
+                            if (couponMoreButtonEl) {
+                                couponMoreButtonEl.innerText = "ëë³´ê¸°";
+                                couponMoreButtonEl.dataset.open = "N";
+                            }
+                        }
+
+                        function showAllCoupons() {
+                            sortedCouponList.forEach(function(el){
+                                el.classList.remove("coupon_hidden");
+                            });
+
+                            if (couponMoreButtonEl) {
+                                couponMoreButtonEl.innerText = "ì ê¸°";
+                                couponMoreButtonEl.dataset.open = "Y";
+                            }
+                        }
+
+                        // ì²ììë 3ê°ë§ ë¸ì¶
+                        showOnlyFirstThree();
+
+                        // ì¿ í°ì´ 4ê° ì´ìì¼ ëë§ ë²í¼ ë¸ì¶
+                        if (couponMoreWrapEl && sortedCouponList.length > 3) {
+                            couponMoreWrapEl.style.display = "block";
+                        }
+
+                        if (couponMoreButtonEl) {
+                            couponMoreButtonEl.onclick = function(){
+                                if (couponMoreButtonEl.dataset.open === "Y") {
+                                    showOnlyFirstThree();
+                                } else {
+                                    showAllCoupons();
+                                }
+                            };
+                        }
+                    },
+                    getCampCouponDetail: function(e){
+                        console.log("e", e);
+                        const buttonEl = e.currentTarget;
+                        const campseq = buttonEl.dataset.campseq;
+                        const templateseq = buttonEl.dataset.templateseq;
+                        const param = {
+                            campseq : campseq,
+                            templateseq: templateseq
+                        };
+
+                        $.ajax({
+                            type: "POST",
+                            url: "/coupon/ax_camp_coupon_detail.hbb",
+                            data: param,
+                            success: function(dataObj){
+                                action_popup.popup(dataObj);
+                            },
+                            error: function(error){
+                                console.log(error);
+                            }
+                        });
+                    },
+
+                    createCoupon: function(e){
+                        const buttonEl = e.currentTarget;
+                        const campSeq = buttonEl.dataset.campseq;
+                        const templateSeq = buttonEl.dataset.templateseq;
+                        const couponEl = buttonEl.parentElement.parentElement;
+                        const couponTxtEl = buttonEl.parentElement;
+                        const param = {
+                            campseq: campSeq,
+                            templateseq: templateSeq
+                        };
+
+                        if(typeof templateSeq == "undefined" || templateSeq == null || templateSeq == "") {
+                            action_popup.confirm(
+                                "<h2 style='font-weight: 700; font-size: 18px;word-break: keep-all; margin-bottom: 8px;'>ë¡ê·¸ì¸ì´ íìí ìë¹ì¤ìëë¤.</h2><p style='color: #4F4F4F;word-break: keep-all;'>ë¡ê·¸ì¸ íìê² ìµëê¹?</p>",
+                                function(res) {
+                                    if (res) {
+                                        location.href = "/join/login.hbb?login_loc=/resv/view.hbb?cseq="+campSeq;
+                                    }
+                                }
+                            );
+                        } else {
+                            $.ajax({
+                                type: "POST",
+                                url: "/coupon/ax_camp_coupon_down_ver2.hbb",
+                                data: param,
+                                success: function(res) {
+                                    const resultCode = res.split("^")[0];
+
+                                    if (resultCode == "000") {
+                                        CouponCommonManager.showToast("ì¿ í° ë°ê¸ì´ ìë£ëììµëë¤.");
+                                    }else if (resultCode == "100") {
+                                        CouponCommonManager.showToast("ì¿ í° ë°ê¸ì´ ìë£ëììµëë¤.");
+                                        couponEl.classList.add('disabled');
+                                        couponTxtEl.innerHTML = "ë°ê¸ìë£";
+                                    }else if (resultCode == "200") {
+                                        CouponCommonManager.showToast("ì´ë¯¸ ì¿ í°ì ë°ê¸ ë°ì¼ì¨ìµëë¤.");
+                                        couponEl.classList.add('disabled');
+                                        couponTxtEl.innerHTML = "ë°ê¸ìë£";
+                                    }else if (resultCode == "300") {
+                                        CouponCommonManager.showToast("ë¡ê·¸ì¸í ì´ì©í´ ì£¼ì¸ì.");
+                                        goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');
+                                    }else if (resultCode == "400") {
+                                        CouponCommonManager.showToast("ë°ê¸ì¡°ê±´ ëììê° ìëëë¤.");
+                                        couponEl.classList.add('disabled');
+                                        couponTxtEl.innerHTML = "ë°ê¸<br>ì¡°ê±´<br>ë¯¸ì¶©ì¡±";
+                                    }else if (resultCode == "500") {
+                                        CouponCommonManager.showToast("ë°ê¸ê¸°ê°ì´ ìëëë¤.");
+                                        couponEl.remove();
+                                    }else if (resultCode == "600") {
+                                        CouponCommonManager.showToast("ì¡´ì¬íì§ ìë ì¿ í°ìëë¤.");
+                                        couponEl.remove();
+                                    }
+                                },
+                                error: function(error){
+                                    console.log(error);
+                                }
+                            });
+                        }
+                    },
+
+                    createCouponAll: function(campSeq){
+                        CouponCommonManager.showToast("ì¿ í° ë°ê¸ì´ ìë£ëììµëë¤.");
+                        closeLayer('coupon_camp_pop');
+                    }
+                };
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    CouponPopManager.init();
+                });
+ê³µì§ì¬í­
+ìì
+ëì ì ìº íì¥ 26-27ë ëê³ ì¥ë°ìì½ ì¤í
+ìì
+ëì ì ìº íì¥ ë§¤ì  ì¤í!
+ìë´
+ìº íì¥ ì´ìì ì±
+íë
+ë°ë ¤ê²¬ ëë° ê°ë¥ì¬ë¶
+ìì
+🎃ëì ì ìº íì¥ í ë¡ì ì´ë²¤í¸🎃
+ìë´
+ëì ì ìº íì¥ ì ê¸° ë°©ì­ & ììê´ë¦¬ ìë´
+íë
+ëì ì ìº íì¥ ì¤ìë ê¸¸
+ìì
+[ììíí] ì¬ì´í¸ë¹ 1ë°ì ë¬´ë£ìë£ ì¿ í° 1ì¥ ì¦ì 
+$(document).ready(function () {
+												$(".ci_notice_sec ul li").each(function (index) {
+													if (index >= 3) {
+														$(this).addClass("hidden");
+													}
+												});
+
+												$(".more_arr").click(function () {
+													if (!$(this).hasClass("up")) {
+														$(this).addClass("up");
+
+														$(".ci_notice_sec ul li.hidden").removeClass("hidden");
+													} else {
+														$(this).removeClass("up");
+
+														$(".ci_notice_sec ul li").each(function (index) {
+															if (index >= 3) {
+																$(this).addClass("hidden");
+															}
+														});
+													}
+												});
+											});
+ê¸°ë³¸ì ë³´
+ë°ë¤ì ë¸ì, ê·¸ë¦¬ê³  ìì ì´ ë¨¸ë¬´ë ê³³.
+ìí´ë°ë¤ë¥¼ ê°ì¥ ìë²½íê² íì ê³µê°ê³¼ ë³¼ê±°ë¦¬, ê·¸ë¦¬ê³  ì¦ê¸¸ê±°ë¦¬ê° íë¶í, ëì ì ìº íì¥.
+íí¸ ë¬¸ì ì¬ë ìê°, ììí ë°ë¤ ë°ëê³¼ ì£¼íë¹ì¼ë¡ ë¬¼ëë ê·¹ì ì¸ ë¸ìì´ ëìì í¼ì³ì§ë ê³³. 50ê° ì¬ì´í¸ì ì¬ì ë¡ì´ ê³µê°ìì ë³µì¡í ì¼ìì ë¹ì°ê³  ì¤ë¡¯ì´ ìì°ì ëª°ìí  ì ìë ê³³ìëë¤.
+ì´ë¡ë¹ ì¡°ê²½ê³¼ ìí´ë°ë¤ ê³ì ëë ê¸¸ì´ ìê³ , ìº íì¥ ë´ ì°ì±ë¡ì íë¼ì ë²¤ì¹ì ê°ë§í ìì ë°ë¤ë¥¼ ë°ë¼ë³´ë ê² ë§ì¼ë¡ë ìë²½í íë§ì´ ë©ëë¤.
+ìº íì¥ ë´ ê°¤ë¬ë¦¬ ì¹´íììë ì¸ê³ ëªìì ì¬ì§ ìíë¤ì ê°ìíë©°, ë¤ìí ìë£ì í¨ê» ê³ ìí ì¬ìì ìê°ì ì¦ê¸¸ ì ììµëë¤.
+ë®ìë í¸ë¥¸ ìí´ë°ë¤ì ì¬ì§ ìì ì, ì ëìë ê°ì´ ë²ì°¬ ëì¡°ë¥¼ ì¦ê¸¸ ì ìë í¹ë³í ë¬¸íì ì¬ì ê³¼ ê°ìì, íì±ì¤ì¹´ì´íì ë± ì£¼ë³ ëªìë¤ì ê°ìí  ì ììµëë¤.
+ë³µì¡í ë§ìì ë¹ì°ê³ , ë°ë¤ ììì ì¨ì í ì¼ì ê²½íí´ ë³´ì¸ì.
+ëë³´ê¸°
+$(document).ready(function(){
+                        		if($('#divCampComment').height() > 120) {
+                        			$('#btn_comment_more').show()
+                        			$(".ci_intro_sec .txt").css("maxHeight","120px");
+                        		}
+                            $(".ci_intro_sec .btn_ci_more").click(function(){
+                                if( !$(this).hasClass("up")){
+                                    $(this).addClass("up");
+                                    $(this).text('ì ê¸°');
+                                    $(".ci_intro_sec .txt").css("maxHeight","100%");
+                                } else {
+                                    $(this).removeClass("up");
+                                    $(".ci_intro_sec .txt").css("maxHeight","120px");
+                                    $(this).text('ëë³´ê¸°');
+                                }
+                            });
+                        });
+ì´ìì ì±
+ë±ë¡ì ë³´
+ê´ê´ì¬ììë¡ ë±ë¡ë ìº íì¥ìëë¤.
+[ë°ë¡ê°ê¸°]
+ì ê³µ : íêµ­ê´ê´ê³µì¬ ê³ ìº í
+ë¹ìë¦¬ìë¦¼
+ê°ë¥
+Q-Pointì¬ì©
+ê°ë¥
+ì ìê²°ì 
+ê°ë¥
+ë§¤ëíì
+ìì 22:00
+ì¢ë£ 08:00
+ì¤í ìº í
+ìì¤ 14:00
+í´ì¤ 12:00
+ìì¤/íê²½
+ì ì²´ë³´ê¸°
+ê³µì©ìì¤
+íì¥ì¤
+ì¤ìì¤
+ê°ìë
+ìì´íì´
+ë§¤ì 
+ì¹´í
+í¸ììë¹ì¤
+í¸ììì¤
+ë£¨íí
+ì°ì±ë¡
+ì¸ê·¼ë ì 
+ê°¯ë²
+ì´ì©ê°ë¥
+ë°ë ¤ëë¬¼
+í¸ë ì¼ë¬ì§ì
+ì¹´ë¼ë°ì§ì
+ì°¨ë°
+ì£¼ë³íê²½
+ë°ë¤
+var com_lnb_swiper = new Swiper('.fac_info_swiper', {
+                          pagination: false,
+                          slidesPerView: 'auto',
+                          paginationClickable: true,
+                          freeMode: true,
+                          lazyLoading: true,
+                          observer: true,
+                          observeParents: true,
+                          loop: false
+                      });
+                      $(".btn_toggle").on("click",function(){
+                          if($(".swiper_").hasClass("fac_info_swiper")) {
+                              com_lnb_swiper.destroy();
+                              $(".swiper_").removeClass("fac_info_swiper");
+                              $(".swiper_").addClass("fac_info_con");
+                          }
+                      })
+ë°°ì¹ë
+í¬ê²ë³´ê¸°
+ìì½ìë´
+ìì½ê°ë¥
+2026.12.31ê¹ì§
+ìµëìì½
+ìµë 6ë° / 2ê° ê¹ì§
+ì¤íì£¼ê¸°
+ë§¤ì 1ì¼  0ì ì¤í 
+                                        	
+                                        	(2ê°ì ë¨ì)
+ë¤ììì½
+2026.11.01 0ì ì¤í  2027.01.31ê¹ì§
+ìì¤
+2026.10.30
+~
+í´ì¤
+ë³ê²½
+ë ì§ ìë¡ê³ ì¹¨
+ì´ì©ê¸°ê° :
+2026.12.01~2027.03.31
+ì´ì©ì ë³´ :
+ìº ì§ê¸°ìì£¼
+ì¶ê°ì ë³´ :
+ëì ì ìº íì¥ ëê³ì¥ë° ê´ë ¨ ìì¸ì ë³´ë ë¡íìº í ìììì ì°¸ê³  ë¶íëë¦½ëë¤. ì¥ë°ìì½ ì, ëê³ì¥ë° ì´ì© ì½ê´ ë° ëììë¥¼ ë§í¬ë¡ ë³´ë´ëë¦¬ë©°, ì ììëªì íìì¸ ì  ìë´ëë¦½ëë¤.
+2ê°ì
+900,000ì ~
+ì¥ë°ì ì²­ íê¸°
+âì¬ì´í¸(ê°ì¤)ë¥¼ ì íí´ì£¼ì¸ì.
+ë°©ë¬¸íê¸° (
+60
+)
+const CampReviewPreviewManager = {
+	_campSeq: "20430",
+	_memSeq: "",
+	_size: 3,
+	_total: 0,
+	_loading: false,
+	_likeLoading: {},
+
+	init: function () {
+		const likedMoreBtn = document.getElementById("campRvPreviewLikedMore");
+		if (likedMoreBtn) likedMoreBtn.addEventListener("click", CampReviewPreviewManager.toggleLiked);
+
+		CampReviewPreviewManager.getCampInfo();
+		CampReviewPreviewManager.getReviewList();
+	},
+
+	requireLogin: function () {
+		const memSeq = String(CampReviewPreviewManager._memSeq || "").trim();
+		if (!memSeq || memSeq === "0") {
+			if (typeof goLoginAp === "function") goLoginAp("pop3");
+			else location.href = "/join/login.hbb";
+			return false;
+		}
+		return true;
+	},
+
+	parseLikeState: function (data, btn) {
+		const curLiked = btn.classList.contains("on");
+		const curCnt = Number(btn.getAttribute("data-like-cnt") || 0);
+		if (!data) {
+			return { liked: !curLiked, likeCnt: !curLiked ? curCnt + 1 : Math.max(0, curCnt - 1) };
+		}
+
+		let liked = null;
+		if (data.viewLikeCheck != null) liked = data.viewLikeCheck === true || data.viewLikeCheck === "Y";
+		else if (data.liked != null) liked = data.liked === true || data.liked === "Y";
+		else if (data.likeYn != null) liked = data.likeYn === true || data.likeYn === "Y";
+		else if (data.favorYn != null) liked = data.favorYn === true || data.favorYn === "Y";
+
+		let likeCnt = data.viewLikeCount;
+		if (likeCnt == null) likeCnt = data.likeCount;
+		if (likeCnt == null) likeCnt = data.likeCnt;
+
+		if (liked == null) liked = !curLiked;
+		if (likeCnt == null) likeCnt = liked ? curCnt + 1 : Math.max(0, curCnt - 1);
+		return { liked: !!liked, likeCnt: Number(likeCnt) || 0 };
+	},
+
+	applyLikeBtn: function (btn, liked, likeCnt) {
+		if (!btn) return;
+		btn.classList.toggle("on", !!liked);
+		btn.setAttribute("data-liked", liked ? "Y" : "N");
+		btn.setAttribute("data-like-cnt", String(likeCnt));
+		const span = btn.querySelector("span");
+		if (span) span.textContent = CampReviewPreviewManager.formatNumber(likeCnt);
+	},
+
+	toggleLike: function (reviewSeq, btn) {
+		if (!CampReviewPreviewManager.requireLogin()) return;
+		if (!reviewSeq || !btn) return;
+		if (CampReviewPreviewManager._likeLoading[reviewSeq]) return;
+
+		CampReviewPreviewManager._likeLoading[reviewSeq] = true;
+		$.ajax({
+			type: "POST",
+			url: "/talk/api/ax_camp_review_like.hbb",
+			data: { reviewSeq: reviewSeq },
+			dataType: "json",
+			success: function (res) {
+				CampReviewPreviewManager._likeLoading[reviewSeq] = false;
+				if (!res || res.code == 401) {
+					CampReviewPreviewManager.requireLogin();
+					return;
+				}
+				if (!res || res.code != 200) {
+					alert((res && res.message) || "ì¢ìì ì²ë¦¬ì ì¤í¨íìµëë¤.");
+					return;
+				}
+				const state = CampReviewPreviewManager.parseLikeState(res.data, btn);
+				CampReviewPreviewManager.applyLikeBtn(btn, state.liked, state.likeCnt);
+			},
+			error: function () {
+				CampReviewPreviewManager._likeLoading[reviewSeq] = false;
+				alert("ì¢ìì ì²ë¦¬ì ì¤í¨íìµëë¤.");
+			}
+		});
+	},
+
+	toggleLiked: function () {
+		document.getElementById("campRvPreviewLiked").classList.toggle("expanded");
+		document.getElementById("campRvPreviewLikedMore").classList.toggle("on");
+		document.querySelector("#campRvPreviewLiked .camp_rv_liked_list").classList.toggle("expanded");
+	},
+
+	getCampInfo: function () {
+		$.ajax({
+			type: "POST",
+			url: "/talk/api/ax_camp_review_info.hbb",
+			data: { campSeq: CampReviewPreviewManager._campSeq },
+			dataType: "json",
+			success: function (res) {
+				if (!res || res.code != 200 || !res.data) return;
+				CampReviewPreviewManager.renderLiked(res.data);
+				if (res.data.reviewCount != null) {
+					CampReviewPreviewManager._total = Number(res.data.reviewCount) || CampReviewPreviewManager._total;
+					const titleCnt = document.getElementById("campRvPreviewCnt");
+					if (titleCnt) titleCnt.innerText = CampReviewPreviewManager.formatNumber(res.data.reviewCount);
+				}
+			}
+		});
+	},
+
+	renderLiked: function (data) {
+		const likedList = data.likedList || [];
+		const likedWrap = document.getElementById("campRvPreviewLikedList");
+		const likedSec = document.getElementById("campRvPreviewLiked");
+		const likedMore = document.getElementById("campRvPreviewLikedMoreWrap");
+		if (!likedWrap || !likedSec) return;
+
+		if (likedList.length === 0) {
+			likedSec.style.display = "none";
+			return;
+		}
+
+		likedSec.style.display = "";
+		let html = "";
+		likedList.forEach(function (item, idx) {
+			html += '<div class="item' + (idx >= 3 ? " hide" : "") + '">'
+				+ '<span class="name">' + CampReviewPreviewManager.escapeHtml(item.value) + "</span>"
+				+ '<span class="cnt">' + CampReviewPreviewManager.formatNumber(item.count) + "</span>"
+				+ "</div>";
+		});
+		likedWrap.innerHTML = html;
+
+		if (likedMore) {
+			likedMore.style.display = likedList.length > 3 ? "" : "none";
+		}
+	},
+
+	parseApiDate: function (dt) {
+		if (!dt) return null;
+		if (dt instanceof Date) return isNaN(dt.getTime()) ? null : dt;
+		const s = String(dt).trim();
+		if (/^\d{8}$/.test(s)) {
+			return new Date(+s.slice(0, 4), +s.slice(4, 6) - 1, +s.slice(6, 8));
+		}
+		if (/^\d{10,14}$/.test(s)) {
+			return new Date(
+				+s.slice(0, 4), +s.slice(4, 6) - 1, +s.slice(6, 8),
+				+(s.slice(8, 10) || 0), +(s.slice(10, 12) || 0), +(s.slice(12, 14) || 0)
+			);
+		}
+		const d = new Date(s);
+		return isNaN(d.getTime()) ? null : d;
+	},
+
+	formatNumber: function (n) {
+		return Number(n || 0).toLocaleString();
+	},
+
+	formatScore: function (score) {
+		return Number(score || 0).toFixed(1);
+	},
+
+	formatDate: function (dt) {
+		const d = CampReviewPreviewManager.parseApiDate(dt);
+		if (!d) {
+			if (!dt) return "";
+			return String(dt).replace(/-/g, ".").substring(0, 10);
+		}
+		const y = d.getFullYear();
+		const m = String(d.getMonth() + 1).padStart(2, "0");
+		const day = String(d.getDate()).padStart(2, "0");
+		return y + "." + m + "." + day;
+	},
+
+	formatRelativeDate: function (dt) {
+		const d = CampReviewPreviewManager.parseApiDate(dt);
+		if (!d) return CampReviewPreviewManager.formatDate(dt);
+
+		const diffSec = Math.floor((Date.now() - d.getTime()) / 1000);
+		if (diffSec < 60) return "ë°©ê¸ ì ";
+		const diffMin = Math.floor(diffSec / 60);
+		if (diffMin < 60) return diffMin + "ë¶ ì ";
+		const diffHour = Math.floor(diffMin / 60);
+		if (diffHour < 24) return diffHour + "ìê° ì ";
+		const diffDay = Math.floor(diffHour / 24);
+		if (diffDay < 30) return diffDay + "ì¼ ì ";
+		const diffMonth = Math.floor(diffDay / 30);
+		if (diffMonth < 12) return diffMonth + "ê°ì ì ";
+		return Math.floor(diffMonth / 12) + "ë ì ";
+	},
+
+	buildImagesHtml: function (images) {
+		if (!images || images.length === 0) return "";
+		const urls = images.map(function (img) {
+			return img.url || img.imgUrl || "";
+		}).filter(Boolean);
+		if (urls.length === 0) return "";
+
+		const total = urls.length;
+		let cls = "camp_rv_imgs";
+		let show = urls;
+		if (total === 1) cls += " count_1";
+		else if (total === 2) cls += " count_2";
+		else {
+			cls += " count_many";
+			show = urls.slice(0, 3);
+		}
+
+		let html = '<div class="' + cls + '">';
+		show.forEach(function (url, idx) {
+			html += '<div class="img' + (total >= 3 && idx === 0 ? " main" : "") + '">'
+				+ '<img src="' + CampReviewPreviewManager.escapeHtml(url) + '" alt="">';
+			if (total > 3 && idx === 2) {
+				html += '<span class="more_num">+' + (total - 3) + " ëë³´ê¸°</span>";
+			}
+			html += "</div>";
+		});
+		html += "</div>";
+		return html;
+	},
+
+	escapeHtml: function (str) {
+		return String(str == null ? "" : str)
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;")
+			.replace(/'/g, "&#39;");
+	},
+
+	getStatusNotice: function (status) {
+		if (status === "A") return { type: "host", text: "ì¬ì¥ëìê²ë§ ë³´ì´ë íê¸°ìì" };
+		if (status === "N") return { type: "blind-ing", text: "ë¸ë¼ì¸ë ì²ë¦¬ ì¤ì´ìì." };
+		if (status === "B") return { type: "blind", text: "ë¸ë¼ì¸ë ì²ë¦¬ë ë¦¬ë·°ê¸ì´ìì." };
+		return null;
+	},
+
+	goReviewDetail: function (reviewSeq) {
+		if (!reviewSeq) return;
+		location.href = "/talk/view.hbb?ser_reviewseq=" + encodeURIComponent(reviewSeq);
+	},
+
+	pickUserMemSeq: function (user) {
+		if (!user) return "";
+		const seq = user.memSeq != null ? user.memSeq : user.memseq;
+		const s = String(seq == null ? "" : seq).trim();
+		return (!s || s === "0") ? "" : s;
+	},
+
+	goReviewMore: function () {
+		if (typeof goReviewMore === "function") {
+			goReviewMore(CampReviewPreviewManager._campSeq);
+			return;
+		}
+		location.href = "/talk/list.hbb?ser_campseq=" + encodeURIComponent(CampReviewPreviewManager._campSeq);
+	},
+
+	toggleContent: function (btn) {
+		const txt = btn.previousElementSibling;
+		if (!txt || !txt.classList.contains("camp_rv_content")) return;
+		const label = btn.querySelector(".label");
+		if (txt.classList.contains("clamp")) {
+			txt.classList.remove("clamp");
+			btn.classList.add("is_open");
+			if (label) label.textContent = "ì ê¸°";
+		} else {
+			txt.classList.add("clamp");
+			btn.classList.remove("is_open");
+			if (label) label.textContent = "ëë³´ê¸°";
+		}
+	},
+
+	bindContentMore: function (card) {
+		const txt = card.querySelector(".camp_rv_content");
+		const moreBtn = card.querySelector(".camp_rv_content_more");
+		if (!txt || !moreBtn) return;
+		moreBtn.style.display = "none";
+		requestAnimationFrame(function () {
+			if (txt.scrollHeight > txt.clientHeight + 1) {
+				moreBtn.style.display = "";
+				moreBtn.addEventListener("click", function (e) {
+					e.stopPropagation();
+					CampReviewPreviewManager.toggleContent(moreBtn);
+				});
+			} else {
+				txt.classList.remove("clamp");
+				moreBtn.remove();
+			}
+		});
+	},
+
+	buildPickBadgeHtml: function (status) {
+		if (String(status || "").toUpperCase() !== "G") return "";
+		return '<span class="camp_rv_pick_badge">'
+			+ '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3.5L19 21V5a2 2 0 0 0-2-2z"/></svg>'
+			+ "ì¬ì¥ë PICK</span>";
+	},
+
+	buildMoreBtnHtml: function () {
+		return '<button type="button" class="camp_rv_content_more" style="display:none;">'
+			+ '<span class="label">ëë³´ê¸°</span>'
+			+ '<svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.33 16.414a.934.934 0 0 0 1.324 0l7.504-7.5a.937.937 0 0 0-1.324-1.324l-6.836 6.835-6.84-6.84A.937.937 0 0 0 3.834 8.91z"/></svg>'
+			+ "</button>";
+	},
+
+	showLoadError: function () {
+		const wrap = document.getElementById("divCampReviewPreview");
+		const moreWrap = document.getElementById("campRvPreviewMore");
+		if (!wrap) return;
+
+		if (moreWrap) {
+			moreWrap.style.display = "none";
+			moreWrap.innerHTML = "";
+		}
+
+		wrap.innerHTML =
+			'<div class="camp_rv_empty camp_rv_load_error">'
+			+ '<p class="msg">íê¸°ë¥¼ ë¶ë¬ì¤ì§ ëª»íìµëë¤.</p>'
+			+ '<button type="button" class="camp_rv_retry_btn" id="campRvPreviewRetryBtn">ë¤ì ì¡°í</button>'
+			+ "</div>";
+
+		const btn = document.getElementById("campRvPreviewRetryBtn");
+		if (btn) {
+			btn.addEventListener("click", function () {
+				CampReviewPreviewManager.retryReviewList();
+			});
+		}
+	},
+
+	retryReviewList: function () {
+		CampReviewPreviewManager.getCampInfo();
+		CampReviewPreviewManager.getReviewList();
+	},
+
+	getReviewList: function () {
+		const wrap = document.getElementById("divCampReviewPreview");
+		if (!wrap) return;
+		if (CampReviewPreviewManager._loading) return;
+
+		CampReviewPreviewManager._loading = true;
+		wrap.innerHTML = '<div class="camp_rv_empty">íê¸°ë¥¼ ë¶ë¬ì¤ë ì¤...</div>';
+
+		const moreWrap = document.getElementById("campRvPreviewMore");
+		if (moreWrap) {
+			moreWrap.style.display = "none";
+			moreWrap.innerHTML = "";
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "/talk/api/ax_camp_review_list.hbb",
+			data: {
+				campSeq: CampReviewPreviewManager._campSeq,
+				page: 0,
+				size: CampReviewPreviewManager._size,
+				sort: "RECOMMEND",
+				photoOnly: "false"
+			},
+			dataType: "json",
+			success: function (res) {
+				CampReviewPreviewManager._loading = false;
+
+				if (!res || res.code != 200 || !res.data) {
+					CampReviewPreviewManager.showLoadError();
+					return;
+				}
+
+				const data = res.data;
+				const list = data.content || data.list || [];
+				const total = data.totalElements != null ? data.totalElements : list.length;
+				CampReviewPreviewManager._total = Number(total) || 0;
+
+				const titleCnt = document.getElementById("campRvPreviewCnt");
+				if (titleCnt) titleCnt.innerText = CampReviewPreviewManager.formatNumber(CampReviewPreviewManager._total);
+
+				if (list.length === 0) {
+					wrap.innerHTML = '<div class="camp_rv_empty">ë±ë¡ë ë°©ë¬¸íê¸°ê° ììµëë¤.</div>';
+					return;
+				}
+
+				wrap.innerHTML = "";
+				CampReviewPreviewManager.renderReviewList(list);
+				CampReviewPreviewManager.renderMoreBtn();
+			},
+			error: function () {
+				CampReviewPreviewManager._loading = false;
+				CampReviewPreviewManager.showLoadError();
+			}
+		});
+	},
+
+	renderMoreBtn: function () {
+		const moreWrap = document.getElementById("campRvPreviewMore");
+		if (!moreWrap) return;
+
+		const remain = CampReviewPreviewManager._total - CampReviewPreviewManager._size;
+		if (remain <= 0) {
+			moreWrap.style.display = "none";
+			moreWrap.innerHTML = "";
+			return;
+		}
+
+		moreWrap.style.display = "";
+		moreWrap.innerHTML = '<button type="button" class="camp_rv_preview_more_btn" id="campRvPreviewMoreBtn">'
+			+ "íê¸° " + CampReviewPreviewManager.formatNumber(remain) + "ê±´ ëë³´ê¸°</button>";
+
+		const btn = document.getElementById("campRvPreviewMoreBtn");
+		if (btn) {
+			btn.addEventListener("click", function () {
+				CampReviewPreviewManager.goReviewMore();
+			});
+		}
+	},
+
+	renderReviewList: function (list) {
+		const wrap = document.getElementById("divCampReviewPreview");
+		if (!wrap) return;
+
+		const starSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.72 8.24h-6.68L13.97 1.88c-.81-2.51-2.13-2.51-2.95 0l-2.07 6.36H2.28c-2.63 0-3.04 1.25-.91 2.8l5.41 3.93-2.06 6.36c-.81 2.51.25 3.28 2.39 1.73l5.41-3.93 5.41 3.93c2.13 1.55 3.2.77 2.39-1.73l-2.07-6.36 5.41-3.93c2.13-1.55 1.72-2.8-.91-2.8z"/></svg>';
+		const likeSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>';
+		const infoSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm.75 14.5h-1.5v-6h1.5v6zm0-8h-1.5V7h1.5v1.5z"/></svg>';
+
+		list.forEach(function (item) {
+			const user = item.reviewWriteUser || {};
+			const camp = item.reviewCamp || {};
+			const reserve = item.reviewReserve || {};
+			const images = item.reviewImages || item.images || [];
+			const replies = item.replyList || [];
+			const status = item.status || "Y";
+			const notice = CampReviewPreviewManager.getStatusNotice(status);
+			const showBody = !notice;
+			const reviewSeq = item.reviewSeq || item.seq || item.bbsId || "";
+
+			const nick = user.nickName || "ìµëª";
+			const writeCnt = user.reviewWriteCount != null ? user.reviewWriteCount : "";
+			const avatar = user.memImgUrl || "";
+			const userMemSeq = CampReviewPreviewManager.pickUserMemSeq(user);
+			const scoreNum = Number(item.score || 0);
+			const score = CampReviewPreviewManager.formatScore(scoreNum);
+			const createDate = CampReviewPreviewManager.formatRelativeDate(item.createDate);
+			const content = CampReviewPreviewManager.escapeHtml(item.content || "").replace(/\r\n/g, "<br>").replace(/\n/g, "<br>");
+			const siteName = camp.campSiteName || "";
+			const checkIn = CampReviewPreviewManager.formatDate(reserve.checkInDate);
+			const resDays = reserve.resDays != null ? reserve.resDays : "";
+			const likeCnt = item.viewLikeCount != null ? item.viewLikeCount : 0;
+			const liked = item.viewLikeCheck === true || item.viewLikeCheck === "Y";
+
+			let statusHtml = "";
+			if (notice) {
+				statusHtml = '<div class="camp_rv_status ' + notice.type + '">'
+					+ '<span class="ico">' + infoSvg + "</span>"
+					+ '<span class="txt">' + notice.text + "</span>"
+					+ "</div>";
+			}
+
+			let bodyHtml = "";
+			if (showBody) {
+				let rateHtml = "";
+				if (checkIn || resDays !== "") {
+					rateHtml += '<span class="visit">' + checkIn + " ë°©ë¬¸" + (resDays !== "" ? " (" + resDays + "ë°)" : "") + "</span>";
+				}
+				rateHtml += CampReviewPreviewManager.buildPickBadgeHtml(status);
+
+				let imgHtml = CampReviewPreviewManager.buildImagesHtml(images);
+
+				let replyHtml = "";
+				if (replies.length > 0) {
+					const reply = replies[0];
+					replyHtml = '<div class="camp_rv_reply">'
+						+ '<div class="top"><span class="who">ìº ì§ê¸° ëµë³</span>'
+						+ '<span class="date">' + CampReviewPreviewManager.formatDate(reply.createDate) + "</span></div>"
+						+ '<p class="txt">' + CampReviewPreviewManager.escapeHtml(reply.content || "") + "</p>"
+						+ "</div>";
+				}
+
+				bodyHtml =
+					(rateHtml ? '<div class="camp_rv_rate">' + rateHtml + "</div>" : "")
+					+ '<div class="camp_rv_content clamp">' + content + "</div>"
+					+ CampReviewPreviewManager.buildMoreBtnHtml()
+					+ imgHtml
+					+ replyHtml
+					+ '<div class="camp_rv_help">'
+                    + '<p class="ask">ì´ íê¸°ê° ëìì´ ëìëì?</p>'
+                    + '<button type="button" class="btn_like' + (liked ? " on" : "") + '" data-review-seq="' + CampReviewPreviewManager.escapeHtml(String(reviewSeq || "")) + '" data-liked="' + (liked ? "Y" : "N") + '" data-like-cnt="' + likeCnt + '">'
+                    + likeSvg + "<span>ëìë¼ì " + CampReviewPreviewManager.formatNumber(likeCnt) + "</span></button>"
+                    + "</div>";
+			}
+
+			let scoreHtml = "";
+			if (scoreNum > 0) {
+				scoreHtml = '<div class="score">' + starSvg + '<span>' + score + "</span></div>";
+			}
+
+			const card = document.createElement("div");
+			card.className = "camp_rv_card";
+			if (reviewSeq) {
+				card.setAttribute("data-review-seq", reviewSeq);
+				card.addEventListener("click", function () {
+					CampReviewPreviewManager.goReviewDetail(reviewSeq);
+				});
+			}
+			card.innerHTML =
+				'<div class="camp_rv_profile">'
+				+ (userMemSeq
+					? '<a class="camp_rv_profile_user" href="/talk/user_review.hbb?memSeq=' + encodeURIComponent(userMemSeq) + '">'
+					: '<div class="camp_rv_profile_user">')
+				+ '<div class="avatar">' + (avatar ? '<img src="' + CampReviewPreviewManager.escapeHtml(avatar) + '" alt="">' : "") + "</div>"
+				+ '<div class="meta">'
+				+ '<p class="nick">' + CampReviewPreviewManager.escapeHtml(nick) + "</p>"
+				+ (writeCnt !== "" ? '<p class="cnt">ìì±í íê¸° ' + CampReviewPreviewManager.formatNumber(writeCnt) + "</p>" : "")
+				+ "</div>"
+				+ (userMemSeq ? "</a>" : "</div>")
+				+ '<div class="side">'
+				+ '<p class="date">' + createDate + "</p>"
+				+ scoreHtml
+				+ "</div>"
+				+ "</div>"
+				+ statusHtml
+				+ bodyHtml;
+
+			wrap.appendChild(card);
+			CampReviewPreviewManager.bindContentMore(card);
+
+			const userLink = card.querySelector("a.camp_rv_profile_user");
+			if (userLink) {
+				userLink.addEventListener("click", function (e) {
+					e.stopPropagation();
+				});
+			}
+
+			const likeBtn = card.querySelector(".btn_like");
+			if (likeBtn) {
+				likeBtn.addEventListener("click", function (e) {
+					e.stopPropagation();
+					CampReviewPreviewManager.toggleLike(likeBtn.getAttribute("data-review-seq") || reviewSeq, likeBtn);
+				});
+			}
+		});
+	}
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+	CampReviewPreviewManager.init();
+});
+ì´ë° ì ì´ ì¢ìì´ì
+íë§¤ì ì ë³´
+ìí¸
+ëì ì ìº íì¥
+ëíìëª
+ì´ì¬ì
+ì£¼ì
+ì¶©ë¨ íì±êµ° ìë¶ë©´ ë¨ë¹í­ë¡213ë²ê¸¸ 126 (ë¨ë¹ë¦¬)
+ì íë²í¸
+0507-1332-5207
+ì´ë©ì¼
+0000@naver.com
+ì¬ììë²í¸
+íë§¤ì ì ë³´ë
+íë§¤ìì ëªìì  ëì ìì´ ìë¦¬ ëª©ì ì ë§ì¼íÂ·ê´ê³  ë±ì íì©í  ì ììµëë¤.
+ì´ë¥¼ ì´ê¸¸ ì ì ë³´íµì ë§ë² ë± ê´ë ¨ ë²ë ¹ì ìê±°íì¬ ê³¼íë£ ë¶ê³¼ ë° ë¯¼íì¬ì ì±ìì ì§ê² ë  ì ììµëë¤.
+document.addEventListener("DOMContentLoaded", function () {
+											const toggleBtn = document.querySelector("#view_sinfo .sec_title");
+											const content = document.querySelector("#view_sinfo .seller_table_area");
+
+											toggleBtn.addEventListener("click", function () {
+												content.classList.toggle("show");
+											});
+										});
+ìì½íê¸°
+2ë°ì°ì  ìì½ì¬ì´í¸ ê°ì¤ìëë¤.
+ë¨, í¬ë§ ìì½ì ì²­ì¼ ìë¤ë¡ ì±ì¬ë ìì½ì´ ìì´ 2ë° ìì½ì´ ë¶ê°í ê²½ì° 1ë° ìì½ ê°ë¥í©ëë¤.
+ê°ì¤ë²í¸ìì íì¸í´ ë³´ìê¸° ë°ëëë¤.
+*
+ë¶í°ë ì¡°ê±´ìì´ 1ë° ìì½ì´ ê°ë¥í©ëë¤.
+ë¡íìº í íì ë¡ê·¸ì¸ ì§í í ìì½ììë§
+Qí¬ì¸í¸ê° ì ë¦½ (ìë°ìê¸ì 0%)
+ë©ëë¤.
+(ë¹íìì¼ë¡ ìì½ ì, ì ë¦½ë¶ê°)
+* ë¹íìì¼ë¡ ìì½ì í´ëí° ë²í¸ì¸ì¦ì´ íìí©ëë¤.
+ë¡íìº í íìì¼ë¡ ê°ìíìë©´, ë¹ ë¥¸ ìì½ê³¼ ê°ì¢ í ì¸ííì ë°ì¼ì¤ ì ììµëë¤.
+ë¹íì ìì½íê¸°
+ë¡ê·¸ì¸í ìì½íê¸°
+2ë°ì°ì  ìì½ì¬ì´í¸ ê°ì¤ìëë¤.
+ë¨, í¬ë§ ìì½ì ì²­ì¼ ìë¤ë¡ ì±ì¬ë ìì½ì´ ìì´ 2ë° ìì½ì´ ë¶ê°í ê²½ì° 1ë° ìì½ ê°ë¥í©ëë¤.
+ê°ì¤ë²í¸ìì íì¸í´ ë³´ìê¸° ë°ëëë¤.
+*
+ë¶í°ë ì¡°ê±´ìì´ 1ë° ìì½ì´ ê°ë¥í©ëë¤.
+ë¡íìº í íì ë¡ê·¸ì¸ ì§í í ìì½ììë§
+íëì§ì ì ë¦½ (ê²°ì ê¸ì¡ì 5%)
+ë©ëë¤.
+* ë¹íìì¼ë¡ ìì½ì í´ëí° ë²í¸ì¸ì¦ì´ íìí©ëë¤.
+ë¡íìº í íìì¼ë¡ ê°ìíìë©´, ë¹ ë¥¸ ìì½ê³¼ ê°ì¢ í ì¸ííì ë°ì¼ì¤ ì ììµëë¤.
+ë¹íì ìì½íê¸°
+ë¡ê·¸ì¸í ìì½íê¸°
+ë³¸ì¸ì¸ì¦ ì ì°¨ë¥¼ ìë£í´ì¼ í©ëë¤.
+ìì¸í ë±ê³¼ ê°ì ê³µê³µê¸°ê´ ìë°í ì¸ê¶ ë° íí ì ì©ì,
+íì ì¬í­ì¸ 1ì¸ ì í ì ì±ì íìí ìë¹ì¤ ì ê³µì ìí¨ìëë¤.
+ë¤ìí ì´ë²¤í¸, íí ë± ëì± ìì í ìë¹ì¤ ì´ì©ì ìí´ ë³¸ì¸ì¸ì¦ì ì°¸ì¬í´ì£¼ì¸ì!
+ë³¸ì¸ì¸ì¦í ìì½íê¸°
+ë¹ìë¦¬ ìë¦¼ì ì ì²­
+ë¹ìë¦¬ ìë¦¼ ì ì²­
+íì¸
+// DL004 ìí íì ë¸ì¶
+window.addEventListener('DOMContentLoaded', function () {
+//	const couponButton = document.querySelector('.btn_coupon.DL004');
+
+//	if (couponButton) {
+//		const clickEvent = new Event('click');
+//		couponButton.dispatchEvent(clickEvent);
+//	}
+});
+
+//ì¿ í°ë°ê¸°
+function getCoupon(tp,seq,s_dt,e_dt,cptp) {
+	if(tp=='CAMP') {
+		$.ajax({
+			type: "POST",
+			url: "/resv/ax_camp_coupon_issue.hbb",
+			data:{ campseq:'20430', couponrandseq:seq },
+			success: onSuccess,
+			error: onError
+		});		
+		function onSuccess(dataobj) {
+			var result = dataobj.split('^')[0]
+			var msg = dataobj.split('^')[1]
+			if(result == "100") {
+				action_popup.alert(msg)
+			} else
+			if (result == "200") {
+				action_popup.alert(msg, $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+			} else {
+				if(result=="500") $("button[class^='btn_coupon Camp']").addClass('disabled')
+				action_popup.alert(msg);
+			}
+		}
+		function onError() {}
+	} else if(tp=='DL002') {
+		$.ajax({
+			type: "POST",
+			url: "/promotion/easycamp/get_coupon.hbb",
+			data:{s_dt:s_dt,e_dt:e_dt},
+			success: onSuccess,
+			error: onError
+		});		
+		function onSuccess(dataobj) {
+			if(dataobj.split('@')[0]=='Y') {
+				$('#div_festa_coupon').html(dataobj.split('@')[1])
+				openLayer('pop_easycamp')
+			} else {
+				var result = dataobj.split('@')[1]
+				if (result == "200") {
+					action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+				}else if (result == "300") {
+					action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb','Y','pop');});
+				}else if (result == "400") {
+					action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2004ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+				}else if (result == "500") {
+					action_popup.alert("ì¿ í°ì "+parseInt(s_dt.substring(2,2))+"ì "+parseInt(s_dt.substring(5,2))+"ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+				}else if (result == "600") {
+					action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+				}else if (result == "700") {
+					action_popup.alert("ì´ë²¤í¸ ì¡°ê¸° ì¢ë£ ìë´<br>(ì ì°©ì ì¿ í° ë§ê°)");
+				}
+			}
+		}
+		function onError() {}
+	} else if(tp=='DL000') {	//ìì¸í
+		$.ajax({
+			type: "POST",
+			url: "/acmfesta/get_coupon.hbb",
+			data:{s_dt:s_dt,e_dt:e_dt,campseq:'20430'},
+			success: onSuccess,
+			error: onError
+		});
+		function onSuccess(dataobj) {
+			if(dataobj.split('@')[0]=='Y') {
+				$('#div_festa_coupon').html(dataobj.split('@')[1])
+				openLayer('pop_acmfesta')
+			} else {
+				var result = dataobj.split('@')[1]
+				if (result == "200") {
+					action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+				}else if (result == "300") {
+					action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb?festa=Y','Y','pop');});
+				}else if (result == "400") {
+					action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2005ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+				}else if (result == "500") {
+					action_popup.alert("ì¿ í°ì 6ì 2ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+				}else if (result == "600") {
+					action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+				}else if (result == "700") {
+					action_popup.alert("ì´ë²¤í¸ ì¡°ê¸° ì¢ë£ ìë´<br>(ì ì°©ì ì¿ í° ë§ê°)");
+				}
+			}
+		}
+		function onError() {}
+	} else if(tp=='DL004') {
+		$.ajax({
+			type: "POST",
+			url: "/promotion/taean/get_coupon.hbb",
+			data:{s_dt:s_dt,e_dt:e_dt},
+			success: onSuccess,
+			error: onError
+		});
+		function onSuccess(dataobj) {
+			if(dataobj.split('@')[0]=='Y') {
+				$('#div_festa_coupon').html(dataobj.split('@')[1])
+				openLayer('pop_taean')
+			} else {
+				var result = dataobj.split('@')[1]
+				if (result == "200") {
+					action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+				}else if (result == "300") {
+					action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb?festa=Y','Y','pop');});
+				}else if (result == "400") {
+					action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2004ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+				}else if (result == "500") {
+					action_popup.alert("ì¿ í°ì "+parseInt(s_dt.substring(2,2))+"ì "+parseInt(s_dt.substring(5,2))+"ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+				}else if (result == "600") {
+					action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+				}else if (result == "700") {
+					action_popup.alert("ì´ë²¤í¸ ì¡°ê¸° ì¢ë£ ìë´<br>(ì ì°©ì ì¿ í° ë§ê°)");
+				}
+			}
+		}
+		function onError() {}
+	} else if (tp=='DL005') {	//Qíì¤í	
+		
+		$.ajax({
+			type: "POST",
+			url: "/resv/ax_qfesta_coupon_issue.hbb",
+			data:{ campseq:'20430', couponType:cptp },
+			success: onSuccess,
+			error: onError
+		});		
+		function onSuccess(res) {			
+			var result = res.split('^')[0];
+			if (result == "100") {
+				msg = "ì¿ í°ë°ê¸ì´ ìë£ëììµëë¤.";
+				action_popup.alert(msg);
+			}else if (result == "200") {
+				msg = "ì´ë¯¸ ì¿ í°ì ë°ê¸ ë°ì¼ì¨ìµëë¤.";
+				action_popup.alert(msg);
+			}else if (result == "300") {
+				msg = "ë¡ê·¸ì¸í ì´ì©í´ ì£¼ì¸ì.";
+				action_popup.alert(msg, $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+			}
+		}
+		function onError() {}
+
+	} else if (tp=='DL006') {	//ì°íì¤í	
+		
+			$.ajax({
+				type: "POST",
+				url: "/resv/ax_coupon_zzimfesta_issue.hbb",
+				data:{ campseq:'20430' },
+				success: onSuccess,
+				error: onError
+			});		
+			function onSuccess(res) {
+				if (res == "100") {
+					msg = "ì¿ í°ë°ê¸ì´ ìë£ëììµëë¤.";
+					$('.coupon_cont').removeClass('zzim');
+					$('.coupon_cont').addClass('disabled');
+					action_popup.alert(msg);
+				}else if (res == "200") {
+					msg = "ì´ë¯¸ ì¿ í°ì ë°ê¸ ë°ì¼ì¨ìµëë¤.";
+					action_popup.alert(msg);
+				}else if (res == "300") {
+					msg = "ë¡ê·¸ì¸í ì´ì©í´ ì£¼ì¸ì.";
+					action_popup.alert(msg, $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+				}else if (res == "400") {
+					msg = "ì° ì íí ì´ì©í´ ì£¼ì¸ì.";
+					action_popup.alert(msg);
+			 	}
+			}
+			function onError() {}
+	} else if (tp == 'DL001') {	//ì¶©ë¶íì¤í
+			$.ajax({
+				type: "POST",
+				url: "/promotion/cbfesta/get_coupon.hbb",
+				data:{s_dt:s_dt,e_dt:e_dt},
+				success: onSuccess,
+				error: onError
+			});
+			function onSuccess(dataobj) {
+				if(dataobj.split('@')[0]=='Y') {
+					$('#div_festa_coupon').html(dataobj.split('@')[1])
+					openLayer('pop_acmfesta')
+				} else {
+					var result = dataobj.split('@')[1]
+					if (result == "200") {
+						action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+					}else if (result == "300") {
+						action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb?festa=Y','Y','pop');});
+					}else if (result == "400") {
+						action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2005ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+					}else if (result == "500") {
+						action_popup.alert("ì¿ í°ì 6ì 9ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+					}else if (result == "600") {
+						action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+					}else if (result == "700") {
+						action_popup.alert("ì´ë²¤í¸ ì¡°ê¸° ì¢ë£ ìë´<br>(ì ì°©ì ì¿ í° ë§ê°)");
+					}
+				}
+			}
+			function onError() {}
+	} else if (tp == 'DL007') {	//êµ­ê·¼ë³µì§ë¨
+			$.ajax({
+				type: "POST",
+				url: "/promotion/welfare.mil/get_coupon.hbb",
+				data:{campseq:'20430'},
+				success: onSuccess,
+				error: onError
+			});
+			function onSuccess(dataobj) {
+				if(dataobj.split('@')[0]=='Y') {
+					$('#div_festa_coupon').html(dataobj.split('@')[1])
+					openLayer('pop_acmfesta')
+				} else {
+					var result = dataobj.split('@')[1]
+					if (result == "200") {
+						action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+					}else if (result == "300") {
+						action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb?festa=Y','Y','pop');});
+					}else if (result == "400") {
+						action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2006ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+					}else if (result == "500") {
+						action_popup.alert("ì¿ í°ì 10ì 1ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+					}else if (result == "600") {
+						action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+					}else if (result == "700") {
+						action_popup.alert("ì´ë²¤í¸ ì¡°ê¸° ì¢ë£ ìë´<br>(ì ì°©ì ì¿ í° ë§ê°)");
+					}
+				}
+			}
+			function onError() {}
+	} else if (tp == 'DL009') {	//ì¥ì² íì¤í
+			$.ajax({
+				type: "POST",
+				url: "/promotion/okcheon/get_coupon.hbb",
+				data:{campseq:'20430'},
+				success: onSuccess,
+				error: onError
+			});
+			function onSuccess(dataobj) {
+				if(dataobj.split('@')[0]=='Y') {
+					$('#div_festa_coupon').html(dataobj.split('@')[1])
+					openLayer('pop_acmfesta')
+				} else {
+					var result = dataobj.split('@')[1]
+					if (result == "200") {
+						action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+					}else if (result == "300") {
+						action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb?festa=Y','Y','pop');});
+					}else if (result == "400") {
+						action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2006ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+					}else if (result == "500") {
+						action_popup.alert("ì¿ í°ì 2ì 10ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+					}else if (result == "600") {
+						action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+					}else if (result == "700") {
+						action_popup.alert("ì¿ í°ì´ ëª¨ë ìì§ëììµëë¤.");
+					}
+				}
+			}
+			function onError() {}
+	} else if (tp == 'DL008') {	//ê°í íì¤í
+			$.ajax({
+				type: "POST",
+				url: "/promotion/gapyeong/get_coupon.hbb",
+				data:{campseq:'20430'},
+				success: onSuccess,
+				error: onError
+			});
+			function onSuccess(dataobj) {
+				if(dataobj.split('@')[0]=='Y') {
+					$('#div_festa_coupon').html(dataobj.split('@')[1])
+					openLayer('pop_acmfesta')
+				} else {
+					var result = dataobj.split('@')[1]
+					if (result == "200") {
+						action_popup.alert("ë¡ê·¸ì¸ í ì´ì©í´ì£¼ì¸ì", $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+					}else if (result == "300") {
+						action_popup.alert("ë³¸ì¸ì¸ì¦ì´ íìí©ëë¤.", $.fnLogin = function() { goUrl('/inc/checkplus/main.hbb?festa=Y','Y','pop');});
+					}else if (result == "400") {
+						action_popup.alert("ë¯¸ì±ëìë ë°ê¸ ë¶ê°í©ëë¤.<br>(2006ë ì¶ììê¹ì§ ë°ê¸ ê°ë¥í©ëë¤.)");
+					}else if (result == "500") {
+						action_popup.alert("ì¿ í°ì 10ì 1ì¼ 10ìë¶í° ë°ê¸ ê°ë¥í©ëë¤.");
+					}else if (result == "600") {
+						action_popup.alert("ì¿ í°ë°ê¸ìê°ì<br>ë¹ì¼10:00 ~ ìµì¼07:00ê¹ì§ ìëë¤.");
+					}else if (result == "700") {
+						action_popup.alert("ì¿ í°ì´ ëª¨ë ìì§ëììµëë¤.");
+					}
+				}
+			}
+			function onError() {}
+	} else if (tp == 'DL010') {	//ì¶ììë°í ì¸ì¿ í°
+	
+		$.ajax({
+			type: "POST",
+			url: "/promotion/chuseok/coupon_issue.hbb",
+			data:{ campseq:'20430', couponType:cptp },
+			success: onSuccess,
+			error: onError
+		});		
+		function onSuccess(res) {			
+			var result = res.split('^')[0];
+			if (result == "100") {
+				msg = "ì¿ í°ë°ê¸ì´ ìë£ëììµëë¤.";
+				action_popup.alert(msg);
+			}else if (result == "200") {
+				msg = "ì´ë¯¸ ì¿ í°ì ë°ê¸ ë°ì¼ì¨ìµëë¤.";
+				action_popup.alert(msg);
+			}else if (result == "300") {
+				msg = "ë¡ê·¸ì¸í ì´ì©í´ ì£¼ì¸ì.";
+				action_popup.alert(msg, $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+			}
+		}
+		function onError() {}
+	} else if (tp == 'DL012') {	//ìíêµ°ìë°ì¸ì¼íì¤í
+	
+		$.ajax({
+			type: "POST",
+			url: "/promotion/yangpyeong/coupon_issue.hbb",
+			data:{ campseq:'20430', couponType:cptp },
+			success: onSuccess,
+			error: onError
+		});		
+		function onSuccess(res) {			
+			var result = res.split('^')[0];
+			if (result == "100") {
+				msg = "ì¿ í°ë°ê¸ì´ ìë£ëììµëë¤.";
+				action_popup.alert(msg);
+			}else if (result == "200") {
+				msg = "ì´ë¯¸ ì¿ í°ì ë°ê¸ ë°ì¼ì¨ìµëë¤.";
+				action_popup.alert(msg);
+			}else if (result == "300") {
+				msg = "ë¡ê·¸ì¸í ì´ì©í´ ì£¼ì¸ì.";
+				action_popup.alert(msg, $.fnLogin = function() { goUrl('/join/login.hbb?reurl=%2Fresv%2Fview%2Ehbb%3Fcseq%3D20430','N','');});
+			}else if (result == "400") {
+				action_popup.alert("ì¿ í°ì´ ëª¨ë ìì§ëììµëë¤.");
+			}
+		}
+		function onError() {}
+	}
+}
+$( document ).ready(function() {
+		if(document.querySelector('.coupon_list_wrap_3').childElementCount > 0 && 0 > 0) {
+			// ì¿ í° ì ë ë²í¼
+			floating_noti("ð¥ ì§ê¸ ëì¹ë©´ ìê¹ì´ ì¿ í° íì¸íê¸° <img style='width: 20px; margin-left: 6px;' src='/images/ico_download_w.png' />", function(){ $('#tab_view_coupon').click(); })
+		}
+	  //í­ íì±í
+	  if(document.querySelector('.coupon_list_wrap_3').childElementCount == 0) $("#tab_view_coupon").remove();
+	  $("#tab_view_notice").addClass("active");
+	
+	    // ìë¦¼ë°ê¸° ì´ë²¤í¸
+	    const notiButtonEl = document.getElementById("notiButton");
+	    notiButtonEl.addEventListener("click", function() {
+            
+            action_popup.confirm(
+                "<h2 style='font-weight: 700; font-size: 18px;word-break: keep-all; margin-bottom: 8px;'>ë¡ê·¸ì¸ì´ íìí ìë¹ì¤ìëë¤.</h2><p style='color: #4F4F4F;word-break: keep-all;'>ë¡ê·¸ì¸ íìê² ìµëê¹?</p>",
+                function(res) {
+                    if (res) {
+                        location.href = "/join/login.hbb?login_loc=";
+                    }
+                }
+            );
+            
+        });
+	});
+🎃ëì ì ìº íì¥ í ë¡ì ì´ë²¤í¸🎃
+🍂🎃
+THE SUNSET CAMPING 2026 HALLOWEEN EVENT
+🎃🍂
+ì¬ê°ì, ëì ì ìº íì¥ì´ ì¡°ê¸ í¹ë³í ëª¨ìµì¼ë¡ ë³ì í©ëë¤.
+ì ì í ê°ìë°ëê³¼ ìí´ì ë¸ì, ê·¸ë¦¬ê³  ìº íì ë­ë§ì í ë¡ìì ì¦ê±°ìì ëí´
+2026 ëì ì ìº íì¥ HALLOWEEN EVENT
+ë¥¼ ì§íí©ëë¤. 👻✨
+1) 📅
+10.09 – 10.31 | HALLOWEEN í¬í ì¡´
+ê´ë¦¬ë ìê³¼ ì ë¬¸ ì ì°ì±ë¡ ì¼í°ì í ë¡ì í¬í ì¡´ì´ ì´ìë©ëë¤. ìº í ì¤ ìì ì¶ìµë ì¬ì§ì¼ë¡ ë¨ê²¨ë³´ì¸ì. 📸
+2) 🏕️
+10.09 – 10.31 ë§¤ì£¼ í ìì¼ | ë² ì¤í¸ í ë¡ì íí¸ ì½íì¤í¸
+10.09ë¶í° 10.31ì¼ê¹ì§ ë§¤ì£¼ í ìì¼ë§ë¤ í ë¡ì ë¶ìê¸°ë¡ ê°ì± ìê² ê¾¸ë¯¼ íí¸ë¥¼ ì ì í©ëë¤.
+ìì¨ì ì¼ë¡ ì°¸ì¬ ê°ë¥íë©°, 1ë±ë¶í° 3ë±ê¹ì§ ììí🎁ì´ ì¦ì ëë ë§ì ì°¸ì¬ ë¶íëë¦½ëë¤!
+3) 👻
+10.24 & 10.31 | ì´ë¦°ì´ í ë¡ì ì½ì¤í¬
+ë©ì§ ì½ì¤í¬ì ìì ì´ë¦°ì´ ê³ ê°ë¤ì ê´ë¦¬ëìì
+í´ë¼ë¡ì´ëë¡ ì¦ìì¬ì§ì ì´¬ì
+📷 í´ëë¦½ëë¤.
+ì´¬ìí ì¬ì§ì ê´ë¦¬ëì ê²ìëë©°, ìì¨ì ì¼ë¡ ì°¾ìê°ìë©´ ë©ëë¤.
+4) 🍬
+10.24 & 10.31 | TRICK OR TREAT
+ê° ì¬ì´í¸ íí¸ìì ìì ë¡­ê² ì°¸ì¬í´ì£¼ì¸ì.
+ìì´ë¤ì´ âTrick or Treat!âì ì¸ì¹ë©° ì´ì íí¸ë¥¼ ë°©ë¬¸íê³  ì¬íê³¼ ê°ìì ëëë í ë¡ì ì íµ ëì´ìëë¤.
+10ì 31ì¼ìë ê´ë¦¬ëììë í¨ê» ì§íí©ëë¤.
+🍭🍫
+5) 🎨
+10.31 | ì´ë¦°ì´ íì´ì¤ íì¸í (ë¬´ë£)
+í ë¡ì ë¶ìê¸°ë¥¼ íì¸µ ë í¹ë³íê² ë§ë¤ì´ ì¤
+ì´ë¦°ì´ ê³ ê° ëì íì´ì¤ íì¸í
+ë ì¤ë¹ëì´ ììµëë¤.
+ìì í¸ë°, ê±°ë¯¸ ë± ê·ì¬ì´ í ë¡ì íì¸íê³¼ í¨ê» ì¦ê²¨ì£¼ì¸ì. 🕷️🎃
+íì´ì¤ íì¸í ì´ì ì¼ì ì 10ì31ì¼ ì¤í 2:30~6:30ê¹ì§ 4ìê°ëìë§ ì§í
+ëë©°, ì¥ìë 10.31ì¼ ì²´í¬ì¸ ì ê³µì§ë  ìì ìëë¤.
+ê°ìì ë¸ìê³¼ ìº í, ê·¸ë¦¬ê³  í ë¡ìì´ í¨ê»íë 10ì.
+ê°ì¡±, ìì´ë¤ê³¼ í¨ê»
+ëì ì ìº íì¥ìì ì¤ë ê¸°ìµë  í ë¡ì ì¶ìµì ë§ë¤ì´ë³´ì¸ì.
+🌅🏕️🎃
+ëì ì ìº íì¥ ì´ìì§ ëë¦¼
+ì¼ì£¼ì¼ëì ë³´ì§ ìê¸°
+ë«ê¸°
+const slides = document.querySelectorAll('.pop_center_set .swiper-container .swiper-slide');
+
+	const swiperOptions = {
+			slidesPerView: 1,
+			watchOverflow: true,
+			touchMoveStopPropagation: false,
+	};
+
+	// ì¬ë¼ì´ë ê°ìê° 2ê° ì´ìì¼ ëë§ ë£¨íì íì´ì§ë¤ì´ì íì±í
+	if (slides.length > 1) {
+		swiperOptions.loop = true;
+		swiperOptions.pagination = {
+			el: '.swiper-pagination',
+			clickable: true
+		};
+	}
+
+	// Swiper ì¸ì¤í´ì¤ ìì±
+	const pop_swiper = new Swiper('.pop_center_set .swiper-container', swiperOptions);
+if(get_cookie("noti_urgency_20430")!="true") {openLayer('pop_notice_urgency');}
+function noti_close(id,val,dt) {
+      setCookie("noti_"+id+"_"+val, true, dt)
+      if (app_yn=='Y' && app_os=='ios') {
+          goIosAp('setCookie','noti_'+id+'_'+val)
+      }
+      closeLayer('pop_notice_'+id)
+    }
