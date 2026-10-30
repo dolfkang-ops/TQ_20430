@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://thesunsetcamping.com/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp11.jpg</image:loc>
+      <image:title>더선셋 캠핑장 서해 노을 전경</image:title>
+      <image:caption>충남 홍성 남당항 앞바다의 아름다운 붉은 낙조와 오션뷰 캠핑 사이트</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp1.jpg</image:loc>
+      <image:title>더선셋 캠핑장 전경</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp13.jpg</image:loc>
+      <image:title>더선셋 캠핑장 황금빛 골든아워 노을</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp14.jpg</image:loc>
+      <image:title>더선셋 캠핑장 바다로 떨어지는 낙조</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp16.jpg</image:loc>
+      <image:title>더선셋 캠핑장 낭만적인 밤 풍경</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp2.jpg</image:loc>
+      <image:title>더선셋 캠핑장 푸른 서해바다 오션뷰 사이트</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp4.jpg</image:loc>
+      <image:title>더선셋 캠핑장 해안 둘레길 산책로</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/camp15.jpg</image:loc>
+      <image:title>더선셋 캠핑장 와이드 파노라마 전경</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thesunsetcamping.com/images/map.jpg</image:loc>
+      <image:title>더선셋 캠핑장 전체 사이트 배치도</image:title>
+    </image:image>
+  </url>
+</urlset>
